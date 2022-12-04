@@ -24,9 +24,7 @@ fn part1(lines: &Vec<String>) -> usize {
 
 fn part2(lines: &Vec<String>) -> usize {
     parse_pairs(lines).iter()
-        .filter(|line|
-            !line[0].is_disjoint(&line[1]) && !line[1].is_disjoint(&line[0])
-        ).count()
+        .filter(|line| !line[0].is_disjoint(&line[1])).count()
 }
 
 fn main() {
