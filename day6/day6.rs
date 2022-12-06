@@ -2,12 +2,11 @@ use std::io;
 use std::collections::HashSet;
 
 fn helper(line: &String, num_distinct: usize) -> usize {
-    for i in 0..line.len() {
-        if line[i..i+num_distinct].chars().collect::<HashSet<char>>().len() == num_distinct {
-            return i+num_distinct;
-        }
-    }
-    return 0;
+    line.as_bytes()
+        .windows(num_distinct).enumerate()
+        .find(|(_, window)| window.iter().collect::<HashSet<_>>().len() == num_distinct)
+        .expect("Couldn't find valid window").0
+    + num_distinct
 }
 
 fn main() {
