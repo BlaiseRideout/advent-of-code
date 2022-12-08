@@ -60,50 +60,6 @@ fn part1(grid: &Vec<Vec<i32>>) -> usize {
         }
     }
 
-    // From right
-    for x in grid[0].len()..0 {
-        let mut highest: i32 = -1;
-        // From right-bottom
-        for (y, row) in grid.iter().enumerate().rev() {
-            let tree: i32 = row[x];
-            if tree > highest {
-                visible_trees.insert((x, y));
-                highest = tree;
-            }
-        }
-
-        highest = -1;
-        // From right-top
-        for (y, row) in grid.iter().enumerate() {
-            let tree: i32 = row[x];
-            if tree > highest {
-                visible_trees.insert((x, y));
-                highest = tree;
-            }
-        }
-    }
-
-    // From bottom
-    for (y, row) in grid.iter().enumerate().rev() {
-        let mut highest: i32 = 0;
-        // From bottom-right
-        for (x, &tree) in row.iter().enumerate().rev() {
-            if tree > highest {
-                visible_trees.insert((x, y));
-                highest = tree;
-            }
-        }
-
-        highest = -1;
-        // From bottom-left
-        for (x, &tree) in row.iter().enumerate() {
-            if tree > highest {
-                visible_trees.insert((x, y));
-                highest = tree;
-            }
-        }
-    }
-
     for (y, row) in grid.iter().enumerate() {
         for (x, &tree) in row.iter().enumerate() {
             if visible_trees.contains(&(x, y)) {
