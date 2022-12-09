@@ -1,6 +1,14 @@
+use colored::Colorize;
+use once_cell::sync::Lazy;
 use std::cmp::{max, min};
 use std::collections::HashMap;
+use std::thread;
+use std::time;
 use std::{collections::HashSet, io};
+
+static PRINT_GRID: bool = false;
+static ANIMATE_GRID: bool = false;
+static ANIMATION_SPEED: time::Duration = time::Duration::from_millis(20);
 
 #[derive(Copy, Clone, PartialEq, Eq, Debug)]
 enum Direction {
@@ -33,64 +41,42 @@ fn parse_moves(lines: &Vec<String>) -> Vec<(Direction, usize)> {
         .collect()
 }
 
-fn print_grid(head_pos: (i32, i32), tail_poss: &Vec<(i32, i32)>) {
-    /*println!(
-        "head_pos: {}, {} tail_pos: {}, {}",
-        head_pos.0, head_pos.1, tail_pos.0, tail_pos.1
-    );*/
-    let min_bound = -10;
-    let max_bound = 10;
+fn print_grid(
+    head_pos: (i32, i32),
+    tail_poss: &Vec<(i32, i32)>,
+    visited: &HashSet<(i32, i32)>,
+    visited_of_interest: &HashSet<(i32, i32)>,
+) {
+    static MAX_X: i32 = 31;
+    static MIN_X: i32 = -MAX_X;
+    static MAX_Y: i32 = 30;
+    static MIN_Y: i32 = -MAX_Y;
 
     let mut covers = HashMap::<String, Vec<String>>::new();
 
-    for y in (min(
-        min(
-            head_pos.1,
+    let reduce_pos = |getter: fn(&(i32, i32)) -> i32, reduce: &fn(i32, i32) -> i32| {
+        reduce(
+            getter(&head_pos),
             tail_poss
                 .iter()
-                .map(|pos| pos.1)
-                .min()
+                .map(getter)
+                .reduce(reduce)
                 .expect("Couldn't get min tail pos"),
-        ),
-        min_bound,
-    )
-        ..=max(
-            max(
-                head_pos.1,
-                tail_poss
-                    .iter()
-                    .map(|pos| pos.1)
-                    .max()
-                    .expect("Couldn't get min tail pos"),
-            ),
-            max_bound,
-        ))
+        )
+    };
+
+    let min_y_pos = reduce_pos(|pos| pos.1, &(min::<i32> as fn(i32, i32) -> i32));
+    let max_y_pos = reduce_pos(|pos| pos.1, &(max::<i32> as fn(i32, i32) -> i32));
+    let min_x_pos = reduce_pos(|pos| pos.0, &(min::<i32> as fn(i32, i32) -> i32));
+    let max_x_pos = reduce_pos(|pos| pos.0, &(max::<i32> as fn(i32, i32) -> i32));
+    for y in (min(min_y_pos, max(MIN_Y, MIN_Y - (MAX_Y - max_y_pos)))
+        ..=max(max_y_pos, min(MAX_Y, MAX_Y - (MIN_Y - min_y_pos))))
         .rev()
     {
-        for x in min(
-            min(
-                head_pos.0,
-                tail_poss
-                    .iter()
-                    .map(|pos| pos.0)
-                    .min()
-                    .expect("Couldn't get min tail pos"),
-            ),
-            min_bound,
-        )
-            ..=max(
-                max(
-                    head_pos.0,
-                    tail_poss
-                        .iter()
-                        .map(|pos| pos.0)
-                        .max()
-                        .expect("Couldn't get min tail pos"),
-                ),
-                max_bound,
-            )
+        for x in min(min_x_pos, max(MIN_X, MIN_X - (MAX_X - max_x_pos)))
+            ..=max(max_x_pos, min(MAX_X, MAX_X - (MIN_X - min_x_pos)))
         {
-            let matching_tail_pos = tail_poss
+            let matching_tail_poss = tail_poss
                 .iter()
                 .enumerate()
                 .filter_map(|(i, pos)| {
@@ -101,31 +87,41 @@ fn print_grid(head_pos: (i32, i32), tail_poss: &Vec<(i32, i32)>) {
                     }
                 })
                 .collect::<Vec<_>>();
-            let num_matching_tails = matching_tail_pos.len();
+            let num_matching_tails = matching_tail_poss.len();
             if head_pos.0 == x && head_pos.1 == y {
-                print!("H");
+                print!("{}", format!("H").bright_green());
                 let mut covers_val: Vec<_> =
-                    matching_tail_pos.iter().map(usize::to_string).collect();
+                    matching_tail_poss.iter().map(usize::to_string).collect();
                 if x == 0 && y == 0 {
                     covers_val.push("s".to_string());
                 }
                 covers.insert("H".to_string(), covers_val);
             } else if num_matching_tails > 0 {
-                let mut matching_tails = matching_tail_pos.iter();
+                let mut matching_tails = matching_tail_poss.iter();
                 let tail_index = *matching_tails.next().expect("Couldn't get tail name");
-                print!("{}", tail_index);
+                print!("{}", format!("{}", tail_index).bright_green());
                 let mut covers_val: Vec<_> = matching_tails.map(usize::to_string).collect();
                 if x == 0 && y == 0 {
                     covers_val.push("s".to_string());
                 }
                 covers.insert(tail_index.to_string(), covers_val);
             } else if x == 0 && y == 0 {
-                print!("s");
+                static START_STR: Lazy<String> = Lazy::new(|| format!("s").red().to_string());
+                print!("{}", *START_STR);
             } else {
-                print!(".");
+                static INTEREST_STR: Lazy<String> =
+                    Lazy::new(|| format!("X").bright_blue().to_string());
+                static VISITED_STR: Lazy<String> = Lazy::new(|| format!("-").green().to_string());
+                if visited_of_interest.contains(&(x, y)) {
+                    print!("{}", *INTEREST_STR);
+                } else if visited.contains(&(x, y)) {
+                    print!("{}", *VISITED_STR);
+                } else {
+                    print!(" ");
+                }
             }
         }
-        println!("");
+        println!();
     }
     println!(
         "{}",
@@ -137,7 +133,7 @@ fn print_grid(head_pos: (i32, i32), tail_poss: &Vec<(i32, i32)>) {
                 None
             })
             .collect::<Vec<_>>()
-            .join("\n")
+            .join("; ")
     );
 }
 
@@ -158,108 +154,67 @@ fn sub(lhs: (i32, i32), rhs: (i32, i32)) -> (i32, i32) {
     (lhs.0 - rhs.0, lhs.1 - rhs.1)
 }
 
-fn dist(diff: (i32, i32)) -> i32 {
-    i32::abs(diff.0) + i32::abs(diff.1)
-}
-
 fn dir(diff: (i32, i32)) -> (i32, i32) {
-    match diff {
-        (0, 2) => (0, -1),
-        (0, -2) => (0, 1),
-        (2, 0) => (-1, 0),
-        (-2, 0) => (1, 0),
-
-        (2, 1) => (-1, -1),
-        (-2, 1) => (1, -1),
-        (2, -1) => (-1, 1),
-        (-2, -1) => (1, 1),
-
-        (1, 2) => (-1, -1),
-        (1, -2) => (-1, 1),
-
-        (-1, 2) => (1, -1),
-        (-1, -2) => (1, 1),
-
-        (-2, -2) => (1, 1),
-        (-2, 2) => (1, -1),
-
-        (2, 2) => (-1, -1),
-        (2, -2) => (-1, 1),
-
-        _ => (0, 0),
-    }
-    /*
     (
-        if sub.0 != 0 { sub.0 / sub.0 } else { 0 },
-        if sub.1 != 0 { sub.1 / sub.1 } else { 0 },
+        if diff.0 != 0 {
+            diff.0 / i32::abs(diff.0)
+        } else {
+            0
+        },
+        if diff.1 != 0 {
+            diff.1 / i32::abs(diff.1)
+        } else {
+            0
+        },
     )
-    */
 }
 
-fn part1(moves: &Vec<(Direction, usize)>) -> usize {
+fn rope_sim(moves: &Vec<(Direction, usize)>, num_tails: usize, tail_of_interest: usize) -> usize {
     let mut visited = HashSet::<(i32, i32)>::new();
+    let mut visited_of_interest = HashSet::<(i32, i32)>::new();
     let mut head_pos = (0, 0);
-    let mut tail_pos = (0, 0);
-    visited.insert(tail_pos);
-    for (head_move, count) in moves {
-        for _ in 0..*count {
-            head_pos = add(head_pos, get_dir(*head_move));
+    let mut tail_poss = vec![head_pos; num_tails];
+    visited.insert(head_pos);
+    visited_of_interest.insert(head_pos);
 
-            let diff = sub(tail_pos, head_pos);
-            /*println!(
-                "diff: {:?}, dist(diff): {}, dir(diff): {:?}",
-                diff,
-                dist(diff),
-                dir(diff)
-            );*/
-            tail_pos = add(tail_pos, dir(diff));
-            visited.insert(tail_pos);
-            //print_grid(head_pos, &vec![tail_pos]);
-        }
+    if PRINT_GRID {
+        print_grid(head_pos, &tail_poss, &visited, &visited_of_interest);
     }
-    visited.len()
-}
-
-fn part2(moves: &Vec<(Direction, usize)>, num_tails: usize, tail_of_interest: usize) -> usize {
-    let mut visited = HashSet::<(i32, i32)>::new();
-    let mut head_pos = (0, 0);
-    let mut tail_poss = vec![(0, 0); num_tails];
-    visited.insert(tail_poss[tail_of_interest]);
-
-    //print_grid(head_pos, &tail_poss);
 
     for (head_move, count) in moves {
         for _ in 0..*count {
             head_pos = add(head_pos, get_dir(*head_move));
+            visited.insert(head_pos);
 
             let mut prev_pos = head_pos;
-            let mut test_print_grid = false;
             for tail_pos in &mut tail_poss {
-                let diff = sub(*tail_pos, prev_pos);
+                let diff = sub(prev_pos, *tail_pos);
 
-                if i32::abs(diff.0) > 2 || i32::abs(diff.1) > 2 {
-                    println!(
-                        "diff: {:?}, dist(diff): {}, dir(diff): {:?}",
-                        diff,
-                        dist(diff),
-                        dir(diff)
-                    );
-
-                    test_print_grid = true;
+                if i32::abs(diff.0) >= 2 || i32::abs(diff.1) >= 2 {
+                    *tail_pos = add(*tail_pos, dir(diff));
+                    visited.insert(*tail_pos);
                 }
-                *tail_pos = add(*tail_pos, dir(diff));
                 prev_pos = *tail_pos;
             }
-            if test_print_grid {
-                print_grid(head_pos, &tail_poss);
-                break;
+
+            visited_of_interest.insert(tail_poss[tail_of_interest]);
+
+            if ANIMATE_GRID {
+                thread::sleep(ANIMATION_SPEED);
+                println!("\x1Bc");
+                print_grid(head_pos, &tail_poss, &visited, &visited_of_interest);
             }
-            visited.insert(tail_poss[tail_of_interest]);
         }
-        //print_grid(head_pos, &tail_poss);
+        if PRINT_GRID && !ANIMATE_GRID {
+            print_grid(head_pos, &tail_poss, &visited, &visited_of_interest);
+        }
     }
-    //print_grid(head_pos, &tail_poss);
-    visited.len()
+
+    if PRINT_GRID {
+        print_grid(head_pos, &tail_poss, &visited, &visited_of_interest);
+    }
+
+    visited_of_interest.len()
 }
 
 fn main() {
@@ -267,6 +222,6 @@ fn main() {
 
     let moves = parse_moves(&lines);
 
-    println!("Part 1: {}", part1(&moves));
-    println!("Part 2: {}", part2(&moves, 9, 8));
+    println!("Part 1: {}", rope_sim(&moves, 1, 0));
+    println!("Part 2: {}", rope_sim(&moves, 9, 8));
 }
