@@ -65,7 +65,6 @@ fn part2(registers_over_t: &Vec<i32>) {
                     }
                 })
                 .collect::<String>())
-            .into_iter()
             .fold(String::new(), |a, s| a + &s + "\n")
     );
 }
