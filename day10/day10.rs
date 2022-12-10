@@ -49,19 +49,25 @@ fn part1(registers_over_t: &Vec<i32>) -> i32 {
 fn part2(registers_over_t: &Vec<i32>) {
     static HEIGHT: usize = 6;
     static WIDTH: usize = 40;
-    for y in 0..HEIGHT {
-        for x in 0..WIDTH {
-            let cycle_index = y * WIDTH + x + 1;
-            let x_min: i32 = x as i32 - 1;
-            let x_max: i32 = x as i32 + 1;
-            if (x_min..=x_max).contains(&registers_over_t[cycle_index]) {
-                print!("#");
-            } else {
-                print!(".");
-            }
-        }
-        println!();
-    }
+
+    println!(
+        "{}",
+        (0..HEIGHT)
+            .map(|y| (0..WIDTH)
+                .map(|x| {
+                    let cycle_index = y * WIDTH + x + 1;
+                    let x_min: i32 = x as i32 - 1;
+                    let x_max: i32 = x as i32 + 1;
+                    if (x_min..=x_max).contains(&registers_over_t[cycle_index]) {
+                        '#'
+                    } else {
+                        '.'
+                    }
+                })
+                .collect::<String>())
+            .into_iter()
+            .fold(String::new(), |a, s| a + &s + "\n")
+    );
 }
 
 fn main() {
