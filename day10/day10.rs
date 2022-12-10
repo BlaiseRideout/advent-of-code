@@ -31,18 +31,16 @@ fn run_program(commands: &Vec<Instruction>) -> Vec<i32> {
         .fold(vec![1, 1], |x_over_t, command| -> Vec<i32> {
             let x = *x_over_t.last().expect("Couldn't get current x val");
             match command {
-                Instruction::Add { count } => {
-                    x_over_t.iter().copied().chain([x, x + count]).collect()
-                }
-                Instruction::Noop => x_over_t.iter().copied().chain([x]).collect(), /*)*/
+                Instruction::Add { count } => x_over_t.into_iter().chain([x, x + count]).collect(),
+                Instruction::Noop => x_over_t.into_iter().chain([x]).collect(),
             }
         })
 }
 
 fn part1(registers_over_t: &Vec<i32>) -> i32 {
     [20, 60, 100, 140, 180, 220]
-        .iter()
-        .map(|ind| registers_over_t[*ind] * *ind as i32)
+        .into_iter()
+        .map(|ind| registers_over_t[ind] * ind as i32)
         .sum()
 }
 
