@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::io;
 
 fn parse(lines: &Vec<String>) -> Vec<Vec<char>> {
@@ -52,39 +52,48 @@ fn path_for_starting_pos(grid: &Vec<Vec<char>>, start_pos: (usize, usize)) -> Op
     let width: usize = grid[0].len();
     let end_pos = find_char_pos(&grid, 'E');
     let mut steps_to_field = HashMap::<(usize, usize), usize>::new();
+    let mut checked_fields = HashSet::<(usize, usize)>::new();
     steps_to_field.insert(start_pos, 0);
     while !steps_to_field.contains_key(&end_pos) {
         let next_steps_to_field = steps_to_field
             .iter()
-            .map(|(path_pos, path_steps)| {
+            .filter_map(|(path_pos, path_steps)| {
                 let c_height = char_to_height(grid[path_pos.1][path_pos.0]);
 
-                [(1, 0), (-1, 0), (0, 1), (0, -1)]
-                    .into_iter()
-                    .map(|dir| add(dir, (path_pos.0 as isize, path_pos.1 as isize)))
-                    .filter_map(|surrounding_pos| {
-                        if (0..width as isize).contains(&surrounding_pos.0)
-                            && (0..height as isize).contains(&surrounding_pos.1)
-                        {
-                            let surrounding_pos =
-                                (surrounding_pos.0 as usize, surrounding_pos.1 as usize);
+                if checked_fields.contains(path_pos) {
+                    None
+                } else {
+                    checked_fields.insert(*path_pos);
+                    Some(
+                        [(1, 0), (-1, 0), (0, 1), (0, -1)]
+                            .into_iter()
+                            .map(|dir| add(dir, (path_pos.0 as isize, path_pos.1 as isize)))
+                            .filter_map(|surrounding_pos| {
+                                if (0..width as isize).contains(&surrounding_pos.0)
+                                    && (0..height as isize).contains(&surrounding_pos.1)
+                                {
+                                    let surrounding_pos =
+                                        (surrounding_pos.0 as usize, surrounding_pos.1 as usize);
 
-                            if steps_to_field.contains_key(&surrounding_pos) {
-                                None
-                            } else {
-                                let surrounding_height =
-                                    char_to_height(grid[surrounding_pos.1][surrounding_pos.0]);
-                                if surrounding_height - 1 <= c_height {
-                                    Some((surrounding_pos, path_steps + 1))
+                                    if steps_to_field.contains_key(&surrounding_pos) {
+                                        None
+                                    } else {
+                                        let surrounding_height = char_to_height(
+                                            grid[surrounding_pos.1][surrounding_pos.0],
+                                        );
+                                        if surrounding_height - 1 <= c_height {
+                                            Some((surrounding_pos, path_steps + 1))
+                                        } else {
+                                            None
+                                        }
+                                    }
                                 } else {
                                     None
                                 }
-                            }
-                        } else {
-                            None
-                        }
-                    })
-                    .collect::<Vec<_>>()
+                            })
+                            .collect::<Vec<_>>(),
+                    )
+                }
             })
             .collect::<Vec<_>>();
 
