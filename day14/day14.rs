@@ -168,7 +168,7 @@ impl Grid {
                 .join("\n")
         );
         for y in min(miny, 0)..=maxy {
-            print!("{} ", y);
+            print!("{:0>3} ", y);
             for x in minx..=maxx {
                 print!(
                     "{}",
