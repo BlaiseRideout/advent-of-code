@@ -4,6 +4,8 @@ use std::collections::HashSet;
 use std::env;
 use std::fs::File;
 use std::io::{self, BufRead};
+//use std::ops::RangeInclusive;
+use std::cmp::{max, min};
 
 #[derive(PartialEq, Eq, Clone, Copy, Debug, Hash)]
 struct Point {
@@ -90,58 +92,49 @@ fn part1(sensors: &Vec<Sensor>, y: isize) -> usize {
         .len()
 }
 
-fn part2(sensors: &Vec<Sensor>, max_coord: isize) -> isize {
+fn part2_ranges(sensors: &Vec<Sensor>, max_coord: isize) -> isize {
     let minx: isize = 0;
     let maxx: isize = max_coord;
 
-    let border_points = sensors
-        .into_iter()
-        .map(|sensor| {
-            ((-sensor.range)..=(sensor.range))
-                .map(|y_offset| {
-                    let y = sensor.position.y + y_offset;
-                    let horizontal_range_at_y = sensor.range - isize::abs(y_offset);
-                    [
-                        Point {
-                            x: sensor.position.x - horizontal_range_at_y - 1,
-                            y,
-                        },
-                        Point {
-                            x: sensor.position.x + horizontal_range_at_y + 1,
-                            y,
-                        },
-                    ]
-                })
-                .chain([[
-                    Point {
-                        x: sensor.position.x,
-                        y: sensor.position.y + sensor.range + 1,
-                    },
-                    Point {
-                        x: sensor.position.x,
-                        y: sensor.position.y - sensor.range - 1,
-                    },
-                ]])
-                .fold(Vec::<Point>::new(), |mut hs1, hs2| {
-                    hs1.extend(hs2);
-                    hs1
-                })
-        })
-        .reduce(|mut hs1, hs2| {
-            hs1.extend(&hs2);
-            hs1
-        })
-        .expect("Couldn't reduce all border points");
-
-    let beacon_point = border_points
-        .into_iter()
-        .filter(|p| (minx..=maxx).contains(&p.x) && (minx..=maxx).contains(&p.y))
-        .find(|border_point| {
-            !sensors
+    let beacon_point = (0..=max_coord)
+        .find_map(|y| {
+            let mut x_ranges = sensors
                 .iter()
-                .any(|sensor| manhattan(sensor.position, *border_point) <= sensor.range)
+                .filter_map(|sensor| {
+                    let horizontal_range_at_y = sensor.range - isize::abs(sensor.position.y - y);
+                    if horizontal_range_at_y > 0 {
+                        Some(
+                            max(sensor.position.x - horizontal_range_at_y, minx)
+                                ..=min(sensor.position.x + horizontal_range_at_y, maxx),
+                        )
+                    } else {
+                        None
+                    }
+                })
+                .collect::<Vec<_>>();
+            x_ranges.sort_by(|r1, r2| isize::cmp(r1.start(), r2.start()));
+            let reduced_range = x_ranges
+                .into_iter()
+                .reduce(|r1, r2| {
+                    if r1.end() < r2.start() {
+                        r1
+                    } else {
+                        *min(r1.start(), r2.start())..=*max(r1.end(), r2.end())
+                    }
+                })
+                .expect("Couldn't reduce ranges");
+            //println!("x_ranges: {:?}", reduced_range);
+            if *reduced_range.end() != maxx {
+                let x = reduced_range.end() + 1;
+                Some(Point { x, y })
+            } else if *reduced_range.start() != minx {
+                let x = reduced_range.start() - 1;
+                Some(Point { x, y })
+            } else {
+                None
+            }
         })
-        .expect("Couldn't find open position for beacon");
+        .expect("Couldn't find beacon point");
 
     println!(
         "Possible sensor location: {},{}",
@@ -171,5 +164,5 @@ fn main() {
     let parsed = parse(&lines);
 
     println!("Part 1: {}", part1(&parsed, pt1_y));
-    println!("Part 2: {}", part2(&parsed, pt2_y));
+    println!("Part 2: {}", part2_ranges(&parsed, pt2_y));
 }
