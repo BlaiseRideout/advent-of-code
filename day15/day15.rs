@@ -94,7 +94,7 @@ fn part2(sensors: &Vec<Sensor>, max_coord: isize) -> isize {
     let minx: isize = 0;
     let maxx: isize = max_coord;
 
-    let beacon_point = sensors
+    let border_points = sensors
         .into_iter()
         .map(|sensor| {
             ((-sensor.range)..=(sensor.range))
@@ -131,7 +131,9 @@ fn part2(sensors: &Vec<Sensor>, max_coord: isize) -> isize {
             hs1.extend(&hs2);
             hs1
         })
-        .expect("Couldn't reduce all border points")
+        .expect("Couldn't reduce all border points");
+
+    let beacon_point = border_points
         .into_iter()
         .filter(|p| (minx..=maxx).contains(&p.x) && (minx..=maxx).contains(&p.y))
         .find(|border_point| {
