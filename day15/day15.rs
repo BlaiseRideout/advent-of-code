@@ -1,11 +1,10 @@
 use once_cell::sync::Lazy;
 use regex::Regex;
+use std::cmp::{max, min};
 use std::collections::HashSet;
 use std::env;
 use std::fs::File;
 use std::io::{self, BufRead};
-//use std::ops::RangeInclusive;
-use std::cmp::{max, min};
 
 #[derive(PartialEq, Eq, Clone, Copy, Debug, Hash)]
 struct Point {
@@ -98,37 +97,39 @@ fn part2_ranges(sensors: &Vec<Sensor>, max_coord: isize) -> isize {
 
     let beacon_point = (0..=max_coord)
         .find_map(|y| {
+            type Range = (isize, isize);
             let mut x_ranges = sensors
                 .iter()
                 .filter_map(|sensor| {
                     let horizontal_range_at_y = sensor.range - isize::abs(sensor.position.y - y);
                     if horizontal_range_at_y > 0 {
-                        Some(
-                            max(sensor.position.x - horizontal_range_at_y, minx)
-                                ..=min(sensor.position.x + horizontal_range_at_y, maxx),
-                        )
+                        Some((
+                            min(max(sensor.position.x - horizontal_range_at_y, minx), maxx),
+                            max(min(sensor.position.x + horizontal_range_at_y, maxx), minx),
+                        ))
                     } else {
                         None
                     }
                 })
                 .collect::<Vec<_>>();
-            x_ranges.sort_by(|r1, r2| isize::cmp(r1.start(), r2.start()));
+
+            x_ranges.sort_by(|r1, r2| isize::cmp(&r1.0, &r2.0));
             let reduced_range = x_ranges
                 .into_iter()
                 .reduce(|r1, r2| {
-                    if r1.end() < r2.start() {
+                    if r1.1 < r2.0 {
                         r1
                     } else {
-                        *min(r1.start(), r2.start())..=*max(r1.end(), r2.end())
+                        (min(r1.0, r2.0), max(r1.1, r2.1))
                     }
                 })
-                .expect("Couldn't reduce ranges");
-            //println!("x_ranges: {:?}", reduced_range);
-            if *reduced_range.end() != maxx {
-                let x = reduced_range.end() + 1;
+                .expect("Couldn't get reduced range");
+
+            if reduced_range.1 != maxx {
+                let x = reduced_range.1 + 1;
                 Some(Point { x, y })
-            } else if *reduced_range.start() != minx {
-                let x = reduced_range.start() - 1;
+            } else if reduced_range.0 != minx {
+                let x = reduced_range.0 - 1;
                 Some(Point { x, y })
             } else {
                 None
