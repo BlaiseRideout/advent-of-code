@@ -102,40 +102,19 @@ fn simulate_rocks(
 
     let start = Instant::now();
 
-    let mut repeat_lengths = HashSet::<(usize, usize)>::new();
+    let mut repeat_lengths = HashSet::<usize>::new();
 
-    for i_rock in 0..num_rocks {
-        let repeat_length = rock_sequence.len() * jet_sequence.len();
-        if i_rock % repeat_length == 0 {
-            let rps = i_rock as f64 / start.elapsed().as_secs_f64();
-            if rps > 0.0 {
-                let rocks_remaining = num_rocks - i_rock;
-                let time_remaining_s: usize = rocks_remaining / rps as usize;
-                let time_remaining_m: usize = time_remaining_s / 60;
-                let time_remaining_h: f64 = time_remaining_m as f64 / 60.0;
-                let time_remaining_d: f64 = time_remaining_h as f64 / 24.0;
-                let avg_repeat_length = (
-                    //(grid.len() as usize + cleared_row_offset) / repeat_length,
-                    0,
-                    (grid.len() as usize + cleared_row_offset) % repeat_length,
-                );
-                if repeat_lengths.contains(&avg_repeat_length) {
-                    println!(
-                    "Rock num: {} ({:.2} rocks/s), {}s/{}m/{:.2}h/{:.2}d remaining; height: {}r{}",
-                    i_rock,
-                    rps,
-                    time_remaining_s,
-                    time_remaining_m,
-                    time_remaining_h,
-                    time_remaining_d,
-                    avg_repeat_length.0,
-                    avg_repeat_length.1,
-                    );
-                } else {
-                    repeat_lengths.insert(avg_repeat_length);
-                }
-            }
-        }
+    //static REPEAT_START_ROCK: usize = 7200; // example
+    static REPEAT_START_ROCK: usize = 398200; // input
+
+    //static REPEAT_LENGTH: usize = 200; // for searching
+    //static REPEAT_LENGTH: usize = 7000; // example
+    static REPEAT_LENGTH: usize = 745200 - REPEAT_START_ROCK; // input
+
+    let mut repeat_start_height = 0;
+    let mut repeat_end_height = 0;
+
+    for i_rock in 0..=num_rocks {
         let current_rock_in_sequence = i_rock % rock_sequence.len();
 
         let highest_y = cleared_row_offset + grid.len() as usize;
@@ -285,8 +264,56 @@ fn simulate_rocks(
             println!("Grid after {} rocks:", i_rock + 1);
             print_grid(&grid);
         }
+        if num_rocks > REPEAT_START_ROCK {
+            let position_in_sequence = (num_rocks - REPEAT_START_ROCK) % REPEAT_LENGTH;
+            if i_rock == REPEAT_START_ROCK {
+                repeat_start_height = grid.len() as usize + cleared_row_offset;
+            } else if i_rock == REPEAT_START_ROCK + REPEAT_LENGTH {
+                repeat_end_height = grid.len() as usize + cleared_row_offset;
+            } else if i_rock == REPEAT_START_ROCK + REPEAT_LENGTH + position_in_sequence {
+                break;
+            }
+            if i_rock > REPEAT_START_ROCK && (i_rock - REPEAT_START_ROCK) % REPEAT_LENGTH == 0 {
+                let rps = i_rock as f64 / start.elapsed().as_secs_f64();
+                if rps > 0.0 {
+                    let rocks_remaining = num_rocks - i_rock;
+                    let time_remaining_s: usize = rocks_remaining / rps as usize;
+                    let time_remaining_m: usize = time_remaining_s / 60;
+                    let time_remaining_h: f64 = time_remaining_m as f64 / 60.0;
+                    let time_remaining_d: f64 = time_remaining_h as f64 / 24.0;
+                    let avg_repeat_length =
+                        (grid.len() as usize + cleared_row_offset) % REPEAT_LENGTH;
+                    if repeat_lengths.contains(&avg_repeat_length) {
+                        println!(
+                            "Rock num: {} ({:.2} rocks/s), {}s/{}m/{:.2}h/{:.2}d remaining; height: {}",
+                            i_rock,
+                            rps,
+                            time_remaining_s,
+                            time_remaining_m,
+                            time_remaining_h,
+                            time_remaining_d,
+                            avg_repeat_length);
+                    } else {
+                        repeat_lengths.insert(avg_repeat_length);
+                    }
+                }
+            }
+        }
     }
-    grid.len() as usize + cleared_row_offset
+
+    let position_in_sequence_height = grid.len() as usize + cleared_row_offset - repeat_end_height;
+    let repeat_height = repeat_end_height - repeat_start_height;
+    if num_rocks > REPEAT_START_ROCK + REPEAT_LENGTH {
+        let position_in_sequence = (num_rocks - REPEAT_START_ROCK) % REPEAT_LENGTH;
+        let num_repeats = (num_rocks - position_in_sequence - REPEAT_START_ROCK) / REPEAT_LENGTH;
+        assert_eq!(
+            num_rocks,
+            position_in_sequence + REPEAT_START_ROCK + num_repeats * REPEAT_LENGTH
+        );
+        position_in_sequence_height + repeat_end_height + repeat_height * (num_repeats - 1) - 1
+    } else {
+        grid.len() as usize + cleared_row_offset
+    }
 }
 
 fn main() {
