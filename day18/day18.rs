@@ -47,17 +47,8 @@ static ADJACENT_COORDS: Lazy<Vec<Cube>> = Lazy::new(|| {
 fn add(c1: &Cube, c2: &Cube) -> Cube {
     (c1.0 + c2.0, c1.1 + c2.1, c1.2 + c2.2)
 }
-fn mul(c1: &Cube, n: isize) -> Cube {
-    (c1.0 * n, c1.1 * n, c1.2 * n)
-}
 
 fn part1(cubes: &HashSet<Cube>) -> usize {
-    println!(
-        "ADJACENT_COORDS: ({}){:?}",
-        ADJACENT_COORDS.len(),
-        *ADJACENT_COORDS
-    );
-
     cubes
         .iter()
         .map(|cube| {
@@ -76,38 +67,7 @@ fn part1(cubes: &HashSet<Cube>) -> usize {
         .sum::<usize>()
 }
 
-//if cube_state ==
-
-/*
-if (x, y, z) == (2, 2, 5) {
-    dbg!(ADJACENT_COORDS
-        .iter()
-        .all(|c| cubes.contains(&add(c, &cube))));
-    dbg!(cubes.contains(&(x, y, z)));
-}*/
-/*
-let blocked_directions = (-bound..=bound)
-    .into_iter()
-    .map(|n| {
-        ADJACENT_COORDS
-            .iter()
-            .positions(|c| cubes.contains(&add(&mul(c, n), &cube)))
-            .collect::<HashSet<usize>>()
-    })
-    .reduce(|mut hs1, hs2| {
-        hs1.extend(&hs2);
-        hs1
-    })
-    .expect("Couldn't count blocked directions");
-if blocked_directions.len() == ADJACENT_COORDS.len()
-    &&
-{
-    1
-} else {
-    0
-}*/
-
-fn generate_cubes<F: FnMut(Cube) -> bool>(bound: isize, mut condition: F) -> HashSet<Cube> {
+fn generate_cubes<F: FnMut(Cube) -> Option<Cube>>(bound: isize, mut condition: F) -> HashSet<Cube> {
     (-bound..=bound)
         .into_iter()
         .filter_map(|x| {
@@ -119,11 +79,7 @@ fn generate_cubes<F: FnMut(Cube) -> bool>(bound: isize, mut condition: F) -> Has
                         .filter_map(|z| {
                             let cube = (x, y, z);
 
-                            if condition(cube) {
-                                Some(cube)
-                            } else {
-                                None
-                            }
+                            condition(cube)
                         })
                         .collect::<HashSet<Cube>>()
                 })
@@ -150,23 +106,35 @@ fn part2(cubes: &HashSet<Cube>) -> usize {
         .max()
         .expect("Couldn't get max bound");
 
-    let empty_cubes: HashSet<Cube> = generate_cubes(bound, Box::new(|cube| !cubes.contains(&cube)));
+    let empty_cubes: HashSet<Cube> = generate_cubes(bound, |cube| {
+        if !cubes.contains(&cube) {
+            Some(cube)
+        } else {
+            None
+        }
+    });
 
     let boundary_cubes: HashSet<Cube> = generate_cubes(bound, |cube| {
-        [cube.0, cube.1, cube.2]
+        if [cube.0, cube.1, cube.2]
             .into_iter()
             .map(isize::abs)
             .filter(|a| *a == bound)
             .count()
             == 3
             && !cubes.contains(&cube)
+        {
+            Some(cube)
+        } else {
+            None
+        }
     });
-    dbg!(boundary_cubes.len());
 
     let start_cube = boundary_cubes
         .into_iter()
         .next()
         .expect("Couldn't get start cube");
+
+    assert!(empty_cubes.contains(&start_cube));
 
     let mut to_check = [start_cube].into_iter().collect::<Vec<Cube>>();
     let mut checked = HashSet::<Cube>::new();
@@ -182,11 +150,11 @@ fn part2(cubes: &HashSet<Cube>) -> usize {
             }
         });
     }
-    dbg!(total_surface);
-    dbg!(empty_cubes.len());
-    dbg!(checked.len());
 
-    total_surface - (empty_cubes.len() - checked.len()) * 6
+    let checked_sides = part1(&checked);
+    let empty_sides = part1(&empty_cubes);
+
+    total_surface - (empty_sides - checked_sides)
 }
 
 fn main() {
@@ -204,8 +172,6 @@ fn main() {
         .collect();
 
     let cubes = parse_cubes(&lines);
-
-    //println!("Cubes: {:?}", cubes);
 
     println!("Part 1: {}", part1(&cubes));
     println!("Part 2: {}", part2(&cubes));
