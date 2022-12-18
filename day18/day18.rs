@@ -143,12 +143,14 @@ fn part2(cubes: &HashSet<Cube>) -> usize {
         //dbg!(to_check.len());
         //dbg!(checked.len());
         checked.insert(cube);
-        ADJACENT_COORDS.iter().for_each(|coord| {
+        to_check.extend(ADJACENT_COORDS.iter().filter_map(|coord| {
             let adjacent_cube = add(&cube, coord);
             if empty_cubes.contains(&adjacent_cube) && !checked.contains(&adjacent_cube) {
-                to_check.push(adjacent_cube);
+                Some(adjacent_cube)
+            } else {
+                None
             }
-        });
+        }));
     }
 
     let checked_sides = part1(&checked);
