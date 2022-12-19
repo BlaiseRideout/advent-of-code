@@ -175,23 +175,6 @@ fn run_blueprint(blueprint: &Blueprint, time: usize, max_state_pool_size: usize)
             );
         }
         states.extend(new_states);
-        states.sort_by_key(|state| {
-            Reverse((
-                state.geodes,
-                state.geode_bots,
-                state.geode_bots_in_progress,
-                state.obsidian,
-                state.obsidian_bots,
-                state.obsidian_bots_in_progress,
-                state.clay,
-                state.clay_bots,
-                state.clay_bots_in_progress,
-                state.ore,
-                state.ore_bots,
-                state.ore_bots_in_progress,
-            ))
-        });
-        states.resize(min(max_state_pool_size, states.len()), State::new());
 
         for state in states.iter_mut() {
             state.ore += state.ore_bots;
@@ -210,6 +193,24 @@ fn run_blueprint(blueprint: &Blueprint, time: usize, max_state_pool_size: usize)
             state.geode_bots_in_progress = 0;
         }
 
+        states.sort_by_key(|state| {
+            Reverse((
+                state.geodes,
+                state.geode_bots,
+                state.geode_bots_in_progress,
+                state.obsidian,
+                state.obsidian_bots,
+                state.obsidian_bots_in_progress,
+                state.clay,
+                state.clay_bots,
+                state.clay_bots_in_progress,
+                state.ore,
+                state.ore_bots,
+                state.ore_bots_in_progress,
+            ))
+        });
+        states.resize(min(max_state_pool_size, states.len()), State::new());
+
         //println!("State 1: {:?}", states[0]);
     }
     states
@@ -221,23 +222,21 @@ fn run_blueprint(blueprint: &Blueprint, time: usize, max_state_pool_size: usize)
 
 fn part1(blueprints: &Vec<Blueprint>) -> usize {
     static MINUTES: usize = 24;
-    static POOL_SIZE: usize = (2 as usize).pow(16);
-    let quality_levels = blueprints
+    static POOL_SIZE: usize = (2 as usize).pow(8);
+    blueprints
         .iter()
         .map(|blueprint| run_blueprint(&blueprint, MINUTES, POOL_SIZE) * blueprint.id)
-        .collect::<Vec<_>>();
-    quality_levels.into_iter().sum()
+        .sum()
 }
 
 fn part2(blueprints: &Vec<Blueprint>) -> usize {
     static MINUTES: usize = 32;
-    static POOL_SIZE: usize = (2 as usize).pow(17);
-    let quality_levels = blueprints
+    static POOL_SIZE: usize = (2 as usize).pow(16);
+    blueprints
         .iter()
         .take(3)
         .map(|blueprint| run_blueprint(&blueprint, MINUTES, POOL_SIZE))
-        .collect::<Vec<_>>();
-    quality_levels.into_iter().product()
+        .product()
 }
 
 fn main() {
