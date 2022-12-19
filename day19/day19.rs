@@ -127,9 +127,9 @@ fn run_blueprint(blueprint: &Blueprint, time: usize, max_state_pool_size: usize)
     for minute in 1..=time {
         //println!("== Minute {} (Blueprint {}) == ", minute, blueprint.id);
 
-        let mut new_states: Vec<State> = vec![];
-        for state in states.iter() {
-            new_states.extend(
+        let new_states = states
+            .iter()
+            .map(|state| {
                 [
                     if state.ore >= blueprint.ore_cost {
                         let mut new_state: State = *state;
@@ -171,9 +171,10 @@ fn run_blueprint(blueprint: &Blueprint, time: usize, max_state_pool_size: usize)
                     },
                 ]
                 .into_iter()
-                .filter_map(identity),
-            );
-        }
+                .filter_map(identity)
+            })
+            .flatten()
+            .collect::<Vec<_>>();
         states.extend(new_states);
 
         for state in states.iter_mut() {
