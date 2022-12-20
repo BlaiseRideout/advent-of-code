@@ -1,4 +1,3 @@
-use std::collections::{HashMap, HashSet};
 use std::env;
 use std::fs::File;
 use std::io::{self, BufRead};
@@ -11,12 +10,12 @@ fn parse(lines: &Vec<String>) -> Vec<isize> {
         .collect()
 }
 
+/*
 fn simple_wrapped_mod(mut i: isize, len: usize) -> usize {
-    while i < 0 {
-        i += len as isize;
-    }
+    assert!(i >= 0);
     i as usize % len
 }
+*/
 
 fn find_wrapped_index(old_i: isize, mut offset: isize, len: usize) -> usize {
     if offset < 0 {
@@ -33,7 +32,7 @@ fn find_wrapped_index(old_i: isize, mut offset: isize, len: usize) -> usize {
 fn mix_numbers(fields: &Vec<isize>, indices: &Vec<usize>) -> (Vec<isize>, Vec<usize>) {
     let len = fields.len();
 
-    let ret = indices
+    let mixed = indices
         .into_iter()
         .fold(
             (
@@ -44,8 +43,9 @@ fn mix_numbers(fields: &Vec<isize>, indices: &Vec<usize>) -> (Vec<isize>, Vec<us
                 let f = fields[*i];
                 let wrapped_offset_i: usize =
                     offsets.iter().fold(*i, |offset_i, (range, range_offset)| {
+                        assert!((0..len).contains(&offset_i));
                         if range.contains(&offset_i) {
-                            simple_wrapped_mod(offset_i as isize + range_offset, len)
+                            (offset_i as isize + range_offset) as usize % len
                         } else {
                             offset_i
                         }
@@ -58,7 +58,8 @@ fn mix_numbers(fields: &Vec<isize>, indices: &Vec<usize>) -> (Vec<isize>, Vec<us
                 new_offsets.iter().for_each(|new_offset| {
                     ret.iter_mut().for_each(|mut field| {
                         if new_offset.0.contains(&field.0) {
-                            field.0 = simple_wrapped_mod(field.0 as isize + new_offset.1, len);
+                            field.0 = (field.0 as isize + new_offset.1) as usize % len;
+                            assert!((0..len).contains(&field.0));
                         }
                     });
                 });
@@ -69,11 +70,11 @@ fn mix_numbers(fields: &Vec<isize>, indices: &Vec<usize>) -> (Vec<isize>, Vec<us
         )
         .1;
     (
-        ret.iter().fold(vec![0; len], |mut ret, (i, f)| {
+        mixed.iter().fold(vec![0; len], |mut ret, (i, f)| {
             ret[*i] = *f;
             ret
         }),
-        ret.iter().map(|(i, _)| *i).collect(),
+        mixed.iter().map(|(i, _)| *i).collect(),
     )
 }
 fn mix_numbers_simple(fields: &Vec<isize>) -> (Vec<isize>, Vec<usize>) {
@@ -87,7 +88,11 @@ fn grove_coordinates(mixed: &Vec<isize>) -> isize {
         .expect("Couldn't find position of value 0");
     [1000, 2000, 3000]
         .into_iter()
-        .map(|i| simple_wrapped_mod(zero_pos as isize + i, mixed.len()))
+        .map(|i| {
+            let wrapped_i = (zero_pos as isize + i) as usize % mixed.len();
+            assert!((0..mixed.len()).contains(&wrapped_i));
+            wrapped_i
+        })
         //.inspect(|i| println!("wrapped_i: {}", i))
         .map(|i| mixed[i])
         //.inspect(|i| println!("val: {}", i))
@@ -106,11 +111,12 @@ fn part2(fields: &Vec<isize>) -> isize {
         .iter()
         .map(|x| x * DECRYPTION_KEY)
         .collect::<Vec<_>>();
-    println!("Initial arrangement: \n{:?}", mixed);
+    //println!("Initial arrangement: \n{:?}", mixed);
     let mut indices: Vec<usize> = (0..fields.len()).collect();
     for iteration in 1..=NUM_ITERATIONS {
+        println!("Round {}", iteration);
         (mixed, indices) = mix_numbers(&mixed, &indices);
-        println!("After {} round of mixing: \n{:?}", iteration, mixed);
+        //println!("After {} round of mixing: \n{:?}", iteration, mixed);
     }
     grove_coordinates(&mixed)
 }
@@ -132,5 +138,5 @@ fn main() {
     let nums = parse(&lines);
 
     println!("Part 1: {}", part1(&nums));
-    //println!("Part 2: {}", part2(&nums));
+    println!("Part 2: {}", part2(&nums));
 }
