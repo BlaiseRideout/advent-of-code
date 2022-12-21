@@ -1,5 +1,4 @@
 use std::collections::HashMap;
-use std::convert::identity;
 use std::env;
 use std::fs::File;
 use std::io::{self, BufRead};
@@ -139,24 +138,36 @@ fn part2(mut monkeys: HashMap<String, Monkey>) -> isize {
         *op = Operation::Eq;
     }
 
-    let mut lower_bound: isize = -118565889858886;
-    let mut upper_bound: isize = 118565889858886;
-    loop {
-        let test_val = lower_bound + (upper_bound - lower_bound) / 2;
-        if let Some(Monkey::Number(x)) = monkeys.get_mut("humn") {
-            *x = test_val;
-        }
-        let results = process_monkeys(&monkeys);
-        let result = results["root"];
-        if result == 0 {
-            return test_val as isize;
-        } else if result > 0 {
-            // > for input, < for example
-            lower_bound = test_val;
-        } else {
-            upper_bound = test_val;
+    static SEARCH_START: isize = 10isize.pow(14);
+    let mut lower_bound: isize = -SEARCH_START;
+    let mut upper_bound: isize = SEARCH_START;
+    for invert_cmp in [true, false] {
+        loop {
+            let test_val = lower_bound + (upper_bound - lower_bound) / 2;
+            if let Some(Monkey::Number(x)) = monkeys.get_mut("humn") {
+                *x = test_val;
+            }
+            let results = process_monkeys(&monkeys);
+            let result = results["root"];
+            if result == 0 {
+                return test_val as isize;
+            } else if (!invert_cmp && result < 0) || (invert_cmp && result > 0) {
+                lower_bound = test_val;
+            } else {
+                upper_bound = test_val;
+            }
+            if isize::abs(lower_bound - upper_bound) <= 1 {
+                lower_bound = -SEARCH_START;
+                upper_bound = SEARCH_START;
+                break;
+            }
         }
     }
+    println!(
+        "Part 2 doesn't seem to be between {} and {}",
+        -SEARCH_START, SEARCH_START
+    );
+    0
 }
 
 fn main() {
