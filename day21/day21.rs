@@ -22,7 +22,7 @@ enum Monkey {
     Number(isize),
 }
 
-fn parse(lines: &Vec<String>) -> HashMap<String, Monkey> {
+fn parse(lines: &Vec<String>) -> Result<HashMap<String, Monkey>, &str> {
     lines
         .iter()
         .map(|line| {
@@ -42,7 +42,7 @@ fn parse(lines: &Vec<String>) -> HashMap<String, Monkey> {
                 let num = monkey_type_vals[0]
                     .parse::<isize>()
                     .expect("Couldn't parse monkey num as int");
-                (name, Monkey::Number(num))
+                Ok((name, Monkey::Number(num)))
             } else if monkey_type_vals.len() == 3 {
                 let lhs = monkey_type_vals[0].to_string();
                 let rhs = monkey_type_vals[2].to_string();
@@ -57,9 +57,9 @@ fn parse(lines: &Vec<String>) -> HashMap<String, Monkey> {
                     _ => None,
                 }
                 .expect("Couldn't parse operation type");
-                (name, Monkey::Operation { op, lhs, rhs })
+                Ok((name, Monkey::Operation { op, lhs, rhs }))
             } else {
-                panic!("Monkey should have 1 or 3 fields");
+                Err("Monkey should have 1 or 3 fields")
             }
         })
         .collect()
@@ -101,11 +101,7 @@ fn process_monkeys(monkeys: &HashMap<String, Monkey>) -> HashMap<String, isize> 
             .expect("Couldn't get top monkey to process");
         match &monkeys[curr.as_str()] {
             Monkey::Operation { op, rhs, lhs } => {
-                let lhs_has_result = results.contains_key(lhs);
-                let rhs_has_result = results.contains_key(rhs);
-                if lhs_has_result && rhs_has_result {
-                    let lhs = *results.get(lhs).expect("Couldn't get lhs result");
-                    let rhs = *results.get(rhs).expect("Couldn't get rhs result");
+                if let (Some(&lhs), Some(&rhs)) = (results.get(lhs), results.get(rhs)) {
                     results.insert(curr.to_string(), do_op(*op, lhs, rhs));
                 } else {
                     to_process.push(curr);
@@ -115,7 +111,6 @@ fn process_monkeys(monkeys: &HashMap<String, Monkey>) -> HashMap<String, isize> 
                     if !results.contains_key(rhs) {
                         to_process.push(rhs.to_string());
                     }
-                    continue;
                 }
             }
             // We insert all the numbers up front
@@ -183,7 +178,7 @@ fn main() {
         .lines()
         .filter_map(Result::ok)
         .collect();
-    let monkeys = parse(&lines);
+    let monkeys = parse(&lines).expect("Couldn't parse file");
 
     //println!("Monkeys: {:?}", monkeys);
 
