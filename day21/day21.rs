@@ -22,44 +22,61 @@ enum Monkey {
     Number(isize),
 }
 
-fn parse(lines: &Vec<String>) -> Result<HashMap<String, Monkey>, &str> {
+#[derive(Debug)]
+enum ParseError {
+    ParseInt(std::num::ParseIntError),
+    Other(String),
+}
+impl From<std::num::ParseIntError> for ParseError {
+    fn from(err: std::num::ParseIntError) -> Self {
+        ParseError::ParseInt(err)
+    }
+}
+impl From<String> for ParseError {
+    fn from(err: String) -> Self {
+        ParseError::Other(err)
+    }
+}
+impl From<&str> for ParseError {
+    fn from(err: &str) -> Self {
+        ParseError::Other(err.to_string())
+    }
+}
+fn parse(lines: &Vec<String>) -> Result<HashMap<String, Monkey>, ParseError> {
     lines
         .iter()
         .map(|line| {
             let mut split_line = line.split(":").into_iter();
             let name = split_line
                 .next()
-                .expect("Couldn't get monkey name")
+                .ok_or("Couldn't get monkey name")?
                 .trim()
                 .to_string();
-            let monkey_type = split_line
+            let monkey_type_vals = split_line
                 .next()
-                .expect("Couldn't get monkey type/operation")
-                .trim();
-            let monkey_type_vals = monkey_type.split_whitespace().collect::<Vec<_>>();
+                .ok_or("Couldn't get monkey type/operation")?
+                .trim()
+                .split_whitespace()
+                .collect::<Vec<_>>();
 
             if monkey_type_vals.len() == 1 {
-                let num = monkey_type_vals[0]
-                    .parse::<isize>()
-                    .expect("Couldn't parse monkey num as int");
+                let num = monkey_type_vals[0].parse::<isize>()?;
                 Ok((name, Monkey::Number(num)))
             } else if monkey_type_vals.len() == 3 {
                 let lhs = monkey_type_vals[0].to_string();
                 let rhs = monkey_type_vals[2].to_string();
 
-                let op_type_str = monkey_type_vals[1];
-
-                let op: Operation = match op_type_str {
+                let op: Operation = match monkey_type_vals[1] {
                     "+" => Some(Operation::Add),
                     "*" => Some(Operation::Multiply),
                     "/" => Some(Operation::Divide),
                     "-" => Some(Operation::Subtract),
                     _ => None,
                 }
-                .expect("Couldn't parse operation type");
+                .ok_or("Couldn't parse operation type")?;
                 Ok((name, Monkey::Operation { op, lhs, rhs }))
             } else {
-                Err("Monkey should have 1 or 3 fields")
+                Err(ParseError::from("Monkey should have 1 or 3 fields"))
             }
         })
         .collect()
