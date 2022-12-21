@@ -2,7 +2,9 @@
 
 if [[ $1 != "" ]]; then
   mkdir -p "$1"
-  cp -R template/* "$1/"
+  export GLOBIGNORE=".:.."
+  shopt -u dotglob
+  cp -R template/* template/.* "$1/"
   REPLACE_PATTERN="s/template/$1/g"
   sed -i "$REPLACE_PATTERN" "$1/"*.*
   rename "$REPLACE_PATTERN" "$1/"*.*
