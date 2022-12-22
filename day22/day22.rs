@@ -5,6 +5,7 @@ use std::fs::File;
 use std::io::{self, BufRead};
 use std::ops::RangeInclusive;
 
+use colored::Colorize;
 use once_cell::sync::Lazy;
 use regex::Regex;
 
@@ -94,25 +95,31 @@ fn add(
     }
 }
 
-fn print_grid(grid: &Vec<Vec<char>>, history: &HashMap<(usize, usize), Direction>) {
-    for x in 0..grid[0].len() {
-        if x < 10 {
-            print!("{}", x);
-        }
-    }
+fn print_grid(
+    grid: &Vec<Vec<char>>,
+    pos: (usize, usize),
+    history: &HashMap<(usize, usize), Direction>,
+) {
     println!("");
     for y in 0..grid.len() {
         for x in 0..grid[0].len() {
-            if let Some(direction) = history.get(&(y, x)) {
-                print!(
-                    "{}",
-                    match direction {
+            if pos == (y, x) {
+                if let Some(direction) = history.get(&(y, x)) {
+                    let c = match direction {
                         Direction::Left => "<",
                         Direction::Up => "^",
                         Direction::Right => ">",
                         Direction::Down => "V",
-                    }
-                );
+                    };
+
+                    //if pos == (y, x) {
+                    print!("{}", format!("{}", c).bold().red());
+                }
+                /*
+                } else {
+                    print!("{}", c);
+                }
+                */
             } else {
                 print!("{}", grid[y][x]);
             }
@@ -120,53 +127,6 @@ fn print_grid(grid: &Vec<Vec<char>>, history: &HashMap<(usize, usize), Direction
         println!("");
     }
     println!("");
-}
-
-fn segment_bounds(
-    dims: (usize, usize),
-) -> (Vec<RangeInclusive<usize>>, Vec<RangeInclusive<usize>>) {
-    let (width, height) = dims;
-    let seg_width = width / 4;
-    let seg_height = height / 3;
-    (
-        (0..4)
-            .map(|x| (seg_width * x)..=(seg_width * (x + 1) - 1))
-            .collect(),
-        (0..3)
-            .map(|y| (seg_height * y)..=(seg_height * (y + 1) - 1))
-            .collect(),
-    )
-}
-
-fn get_section(pos: (usize, usize), dims: (usize, usize)) -> usize {
-    let (x_segs, y_segs) = segment_bounds(dims);
-    let y_seg = y_segs
-        .into_iter()
-        .position(|seg| seg.contains(&pos.0))
-        .expect("Couldn't get seg from y");
-    let x_seg = x_segs
-        .into_iter()
-        .position(|seg| seg.contains(&pos.1))
-        .expect("Couldn't get seg from x");
-    match y_seg {
-        0 => 1,
-        1 => match x_seg {
-            0 => 2,
-            1 => 3,
-            2 => 4,
-            _ => todo!("Couldn't get section from pos {:?}", pos),
-        },
-        2 => match x_seg {
-            2 => 5,
-            3 => 6,
-            _ => todo!("Couldn't get section from pos {:?}", pos),
-        },
-        _ => todo!("Couldn't get section from pos {:?}", pos),
-    }
-}
-
-fn grid_dims(grid: &Vec<Vec<char>>) -> (usize, usize) {
-    (grid[0].len(), grid.len())
 }
 
 fn wrap_pos_simple_2d(
@@ -226,15 +186,62 @@ fn wrap_pos_simple_2d(
     }
 }
 
-fn wrap_pos_cube(
+fn segment_bounds_example(
+    dims: (usize, usize),
+) -> (Vec<RangeInclusive<usize>>, Vec<RangeInclusive<usize>>) {
+    let (width, height) = dims;
+    let seg_width = width / 4;
+    let seg_height = height / 3;
+    (
+        (0..4)
+            .map(|x| (seg_width * x)..=(seg_width * (x + 1) - 1))
+            .collect(),
+        (0..3)
+            .map(|y| (seg_height * y)..=(seg_height * (y + 1) - 1))
+            .collect(),
+    )
+}
+
+fn get_section_example(pos: (usize, usize), dims: (usize, usize)) -> usize {
+    let (x_segs, y_segs) = segment_bounds_example(dims);
+    let y_seg = y_segs
+        .into_iter()
+        .position(|seg| seg.contains(&pos.0))
+        .expect("Couldn't get seg from y");
+    let x_seg = x_segs
+        .into_iter()
+        .position(|seg| seg.contains(&pos.1))
+        .expect("Couldn't get seg from x");
+    match y_seg {
+        0 => 1,
+        1 => match x_seg {
+            0 => 2,
+            1 => 3,
+            2 => 4,
+            _ => todo!("Couldn't get section from pos {:?}", pos),
+        },
+        2 => match x_seg {
+            2 => 5,
+            3 => 6,
+            _ => todo!("Couldn't get section from pos {:?}", pos),
+        },
+        _ => todo!("Couldn't get section from pos {:?}", pos),
+    }
+}
+
+fn grid_dims(grid: &Vec<Vec<char>>) -> (usize, usize) {
+    (grid[0].len(), grid.len())
+}
+
+fn wrap_pos_cube_example(
     grid: &Vec<Vec<char>>,
     pos: (usize, usize),
     direction: Direction,
 ) -> ((usize, usize), Direction) {
     let dims = grid_dims(&grid);
     let (width, height) = dims;
-    let (x_segs, y_segs) = segment_bounds(dims);
-    let section = get_section(pos, grid_dims(grid));
+    let (x_segs, y_segs) = segment_bounds_example(dims);
+    let section = get_section_example(pos, grid_dims(grid));
     match section {
         1 => match direction {
             Direction::Right => ((height - 1 - pos.0, width - 1), Direction::Left),
@@ -359,7 +366,223 @@ fn wrap_pos_cube(
     }
 }
 
+fn segment_bounds_input(
+    dims: (usize, usize),
+) -> (Vec<RangeInclusive<usize>>, Vec<RangeInclusive<usize>>) {
+    let (width, height) = dims;
+    let seg_width = width / 3;
+    let seg_height = height / 4;
+    (
+        (0..3)
+            .map(|x| (seg_width * x)..=(seg_width * (x + 1) - 1))
+            .collect(),
+        (0..4)
+            .map(|y| (seg_height * y)..=(seg_height * (y + 1) - 1))
+            .collect(),
+    )
+}
+
+fn get_section_input(pos: (usize, usize), dims: (usize, usize)) -> usize {
+    let (x_segs, y_segs) = segment_bounds_input(dims);
+    let y_seg = y_segs
+        .into_iter()
+        .position(|seg| seg.contains(&pos.0))
+        .expect("Couldn't get seg from y");
+    let x_seg = x_segs
+        .into_iter()
+        .position(|seg| seg.contains(&pos.1))
+        .expect("Couldn't get seg from x");
+    match x_seg {
+        0 => match y_seg {
+            2 => 1,
+            3 => 2,
+            _ => todo!("Couldn't get section from pos {:?}", pos),
+        },
+        1 => match y_seg {
+            0 => 5,
+            1 => 4,
+            2 => 3,
+            _ => todo!("Couldn't get section from pos {:?}", pos),
+        },
+        2 => 6,
+        _ => todo!("Couldn't get section from pos {:?}", pos),
+    }
+}
+
+fn wrap_pos_cube_input(
+    grid: &Vec<Vec<char>>,
+    pos: (usize, usize),
+    direction: Direction,
+) -> ((usize, usize), Direction) {
+    let dims = grid_dims(&grid);
+    let (x_segs, y_segs) = segment_bounds_input(dims);
+    let section = get_section_input(pos, grid_dims(grid));
+    match section {
+        1 => match direction {
+            Direction::Up => (
+                (
+                    pos.1 - x_segs[0].start() + y_segs[1].start(),
+                    *x_segs[1].start(),
+                ),
+                Direction::Right,
+            ),
+            Direction::Left => (
+                (
+                    y_segs[2].end() - pos.0 + y_segs[0].start(),
+                    *x_segs[1].start(),
+                ),
+                Direction::Right,
+            ),
+            Direction::Right => todo!(
+                "Shouldn't have wrapped going {:?} from {}",
+                direction,
+                section
+            ),
+            Direction::Down => todo!(
+                "Shouldn't have wrapped going {:?} from {}",
+                direction,
+                section
+            ),
+        },
+        2 => match direction {
+            Direction::Left => (
+                (
+                    *y_segs[0].start(),
+                    pos.0 - y_segs[3].start() + x_segs[1].start(),
+                ),
+                Direction::Down,
+            ),
+            Direction::Right => (
+                (
+                    *y_segs[2].end(),
+                    pos.0 - y_segs[3].start() + x_segs[1].start(),
+                ),
+                Direction::Up,
+            ),
+            Direction::Down => (
+                (
+                    *y_segs[0].start(),
+                    pos.1 - x_segs[0].start() + x_segs[2].start(),
+                ),
+                Direction::Down,
+            ),
+            Direction::Up => todo!(
+                "Shouldn't have wrapped going {:?} from {}",
+                direction,
+                section
+            ),
+        },
+        3 => match direction {
+            Direction::Right => (
+                (
+                    y_segs[2].end() - pos.0 + y_segs[0].start(),
+                    *x_segs[2].end(),
+                ),
+                Direction::Left,
+            ),
+            Direction::Down => (
+                (
+                    pos.1 - x_segs[1].start() + y_segs[3].start(),
+                    *x_segs[0].end(),
+                ),
+                Direction::Left,
+            ),
+            Direction::Left => todo!(
+                "Shouldn't have wrapped going {:?} from {} ({:?})",
+                direction,
+                section,
+                pos
+            ),
+            Direction::Up => todo!(
+                "Shouldn't have wrapped going {:?} from {}",
+                direction,
+                section
+            ),
+        },
+        4 => match direction {
+            Direction::Right => (
+                (
+                    *y_segs[0].end(),
+                    pos.0 - y_segs[1].start() + x_segs[2].start(),
+                ),
+                Direction::Up,
+            ),
+            Direction::Left => (
+                (*y_segs[2].start(), pos.0 - y_segs[1].start()),
+                Direction::Down,
+            ),
+            Direction::Down => todo!(
+                "Shouldn't have wrapped going {:?} from {}",
+                direction,
+                section
+            ),
+            Direction::Up => todo!(
+                "Shouldn't have wrapped going {:?} from {}",
+                direction,
+                section
+            ),
+        },
+        5 => match direction {
+            Direction::Left => (
+                (
+                    y_segs[0].end() - pos.0 + y_segs[2].start(),
+                    *x_segs[0].start(),
+                ),
+                Direction::Right,
+            ),
+            Direction::Up => (
+                (
+                    pos.1 - x_segs[1].start() + y_segs[3].start(),
+                    *x_segs[0].start(),
+                ),
+                Direction::Right,
+            ),
+            Direction::Down => todo!(
+                "Shouldn't have wrapped going {:?} from {}",
+                direction,
+                section
+            ),
+            Direction::Right => todo!(
+                "Shouldn't have wrapped going {:?} from {}",
+                direction,
+                section
+            ),
+        },
+        6 => match direction {
+            Direction::Right => (
+                (
+                    y_segs[0].end() - pos.0 + y_segs[2].start(),
+                    *x_segs[1].end(),
+                ),
+                Direction::Left,
+            ),
+            Direction::Down => (
+                (
+                    pos.1 - x_segs[2].start() + y_segs[1].start(),
+                    *x_segs[1].end(),
+                ),
+                Direction::Left,
+            ),
+            Direction::Up => (
+                (
+                    *y_segs[3].end(),
+                    pos.1 - x_segs[2].start() + x_segs[0].start(),
+                ),
+                Direction::Up,
+            ),
+            Direction::Left => todo!(
+                "Shouldn't have wrapped going {:?} from {}",
+                direction,
+                section
+            ),
+        },
+        _ => todo!("Couldn't wrap from section {}", section),
+    }
+}
+
 static DEBUG: bool = false;
+static DEBUG_WRAPPING: bool = false;
+static IS_INPUT: bool = true;
 
 fn walk_grid(
     grid: &Vec<Vec<char>>,
@@ -380,10 +603,10 @@ fn walk_grid(
         .into_iter()
         .collect::<HashMap<(usize, usize), Direction>>();
     if DEBUG {
-        print_grid(&grid, &history);
+        print_grid(&grid, pos, &history);
     }
     for m in moves {
-        println!("Move: {:?}", m);
+        //println!("Move: {:?}", m);
         match m {
             Move::Left => direction = Direction::from_isize((direction as isize - 1).rem_euclid(4)),
             Move::Right => {
@@ -407,17 +630,31 @@ fn walk_grid(
                         '#' => break,
                         ' ' => {
                             let (new_pos, new_dir) = if is_cube {
-                                wrap_pos_cube(&grid, pos, direction)
+                                if IS_INPUT {
+                                    wrap_pos_cube_input(&grid, pos, direction)
+                                } else {
+                                    wrap_pos_cube_example(&grid, pos, direction)
+                                }
                             } else {
                                 (wrap_pos_simple_2d(&grid, pos, direction), direction)
                             };
                             if grid[new_pos.0][new_pos.1] == '.' {
-                                println!(
-                                    "Wrapped {:?} {:?} to {:?} {:?}",
-                                    pos, direction, new_pos, new_dir
-                                );
+                                if DEBUG_WRAPPING {
+                                    println!(
+                                        "Wrapped {:?} {:?} to {:?} {:?}",
+                                        pos, direction, new_pos, new_dir
+                                    );
+
+                                    print_grid(&grid, pos, &history);
+                                }
+
                                 pos = new_pos;
                                 direction = new_dir;
+                                history.insert(pos, direction);
+
+                                if DEBUG_WRAPPING {
+                                    print_grid(&grid, pos, &history);
+                                }
                             }
                         }
                         _ => {
@@ -432,7 +669,7 @@ fn walk_grid(
         }
         history.insert(pos, direction);
         if DEBUG {
-            print_grid(&grid, &history);
+            print_grid(&grid, pos, &history);
         }
     }
     (pos, direction)
@@ -466,6 +703,6 @@ fn main() {
 
     //println!("Parsed: {:?},{:?}", grid, moves);
 
-    //println!("Part 1: {}", part1(&grid, &moves));
+    println!("Part 1: {}", part1(&grid, &moves));
     println!("Part 2: {}", part2(&grid, &moves));
 }
