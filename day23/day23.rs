@@ -148,7 +148,7 @@ fn simulate_rounds(mut elves: HashSet<Point>, rounds: Option<usize>) -> usize {
                 }
             })
             .collect::<Vec<_>>();
-        if proposed_directions.len() == 0 {
+        if proposed_directions.is_empty() {
             return round;
         }
         let proposed_direction_counts = proposed_directions.iter().fold(
