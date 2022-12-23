@@ -154,10 +154,7 @@ fn simulate_rounds(mut elves: HashSet<Point>, rounds: Option<usize>) -> usize {
         let proposed_direction_counts = proposed_directions.iter().fold(
             HashMap::<(isize, isize), usize>::new(),
             |mut counts, (new_field, _)| {
-                counts.insert(
-                    *new_field,
-                    *counts.get(new_field).unwrap_or(&0usize) + 1usize,
-                );
+                counts.insert(*new_field, *counts.get(new_field).unwrap_or(&0) + 1);
                 counts
             },
         );
