@@ -130,22 +130,19 @@ fn simulate_rounds(mut elves: HashSet<Point>, rounds: Option<usize>) -> usize {
             .filter_map(|elf| -> Option<(Point, Point)> {
                 let possible_directions = direction_check_order
                     .iter()
-                    .map(|direction| {
+                    .filter(|direction| {
                         direction
                             .fields_to_check()
                             .into_iter()
                             .all(|field| !elves.contains(&add(*elf, field)))
                     })
-                    .collect::<Vec<bool>>();
-                if !possible_directions.iter().all(|b| *b) {
-                    Some((
-                        direction_check_order
-                            .iter()
-                            .enumerate()
-                            .find(|(i, _)| possible_directions[*i])
-                            .map(|(_, direction)| add(*elf, direction.to_vec2()))?,
-                        *elf,
-                    ))
+                    .collect::<Vec<_>>();
+
+                if let (true, Some(possible_direction)) = (
+                    possible_directions.len() != direction_check_order.len(),
+                    possible_directions.iter().next(),
+                ) {
+                    Some((add(*elf, possible_direction.to_vec2()), *elf))
                 } else {
                     None
                 }

@@ -103,11 +103,9 @@ fn do_op(op: Operation, lhs: isize, rhs: isize) -> isize {
 fn process_monkeys(monkeys: &HashMap<String, Monkey>) -> HashMap<String, isize> {
     let mut results: HashMap<String, isize> = monkeys
         .iter()
-        .filter_map(|(name, monkey)| -> Option<(String, isize)> {
-            match monkey {
-                Monkey::Number(val) => Some((name.to_string(), *val)),
-                _ => None,
-            }
+        .filter_map(|(name, monkey)| match monkey {
+            Monkey::Number(val) => Some((name.to_string(), *val)),
+            _ => None,
         })
         .collect();
 
