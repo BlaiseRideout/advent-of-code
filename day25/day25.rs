@@ -27,14 +27,16 @@ fn parse(lines: &Vec<String>) -> Vec<isize> {
             line.chars()
                 .rev()
                 .enumerate()
-                .fold(0isize, |acc, (place, c)| {
-                    acc + match c {
-                        '-' => -1isize,
-                        '=' => -2isize,
-                        '0'..='2' => c as isize - '0' as isize,
-                        _ => panic!("Couldn't parse character {}", c),
-                    } * PLACE_VALUES[place]
+                .map(|(place, c)| {
+                    PLACE_VALUES[place]
+                        * match c {
+                            '-' => -1isize,
+                            '=' => -2isize,
+                            '0'..='2' => c as isize - '0' as isize,
+                            _ => panic!("Couldn't parse character {}", c),
+                        }
                 })
+                .sum()
         })
         .collect()
 }
