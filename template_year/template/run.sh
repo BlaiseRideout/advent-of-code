@@ -1,11 +1,11 @@
 #!/bin/bash
 
 echo "EXAMPLE:"
-cat example.txt | cargo run
+cargo run example.txt
 
 if [[ -f input ]]; then
   echo
 
   echo "INPUT:"
-  cat input | cargo run
+  cargo run input
 fi
