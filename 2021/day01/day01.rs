@@ -4,24 +4,16 @@ use std::io::{self, BufRead};
 
 use itertools::Itertools;
 
-fn part1(lines: &Vec<String>) -> usize {
-    lines
-        .iter()
-        .filter_map(|line| line.parse::<usize>().ok())
-        .tuple_windows()
-        .filter(|(a, b)| b > a)
-        .count()
+fn num_increasing<I: IntoIterator<Item = usize>>(a: I) -> usize {
+    a.into_iter().tuple_windows().filter(|(a, b)| b > a).count()
 }
 
-fn part2(lines: &Vec<String>) -> usize {
-    lines
-        .iter()
-        .filter_map(|line| line.parse::<usize>().ok())
-        .tuple_windows()
-        .map(|(a, b, c)| a + b + c)
-        .tuple_windows()
-        .filter(|(a, b)| b > a)
-        .count()
+fn part1(lines: &Vec<usize>) -> usize {
+    num_increasing(lines.into_iter().cloned())
+}
+
+fn part2(lines: &Vec<usize>) -> usize {
+    num_increasing(lines.windows(3).map(|v| v.into_iter().sum()))
 }
 
 fn main() {
@@ -38,6 +30,12 @@ fn main() {
         .filter_map(Result::ok)
         .collect();
 
-    println!("Part 1: {}", part1(&lines));
-    println!("Part 2: {}", part2(&lines));
+    let parsed = lines
+        .iter()
+        .map(|line| line.parse::<usize>())
+        .filter_map(Result::ok)
+        .collect();
+
+    println!("Part 1: {}", part1(&parsed));
+    println!("Part 2: {}", part2(&parsed));
 }
