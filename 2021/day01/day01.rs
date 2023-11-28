@@ -4,16 +4,16 @@ use std::io::{self, BufRead};
 
 use itertools::Itertools;
 
-fn num_increasing<I: IntoIterator<Item = usize>>(a: I) -> usize {
-    a.into_iter().tuple_windows().filter(|(a, b)| b > a).count()
+fn num_increasing<I: Iterator<Item = usize>>(a: I) -> usize {
+    a.tuple_windows().filter(|(a, b)| b > a).count()
 }
 
 fn part1(lines: &Vec<usize>) -> usize {
-    num_increasing(lines.into_iter().cloned())
+    num_increasing(lines.iter().cloned())
 }
 
 fn part2(lines: &Vec<usize>) -> usize {
-    num_increasing(lines.windows(3).map(|v| v.into_iter().sum()))
+    num_increasing(lines.windows(3).map(|v| v.iter().sum()))
 }
 
 fn main() {
