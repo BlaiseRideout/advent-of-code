@@ -11,6 +11,9 @@
 
 main.rs.tpl
 
+# AoC doesn't want us uploading input files
+input
+
 day[0-9]*
 !day[0-9]*.rs
 !day[0-9]*/
