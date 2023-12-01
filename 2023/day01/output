@@ -1,0 +1,10206 @@
+    Finished dev [unoptimized + debuginfo] target(s) in 0.09s
+     Running `target/debug/day01 input`
+Part 1: 36359
+[day01.rs:60] line = "cmpptgjc3qhcjxcbcqgqkxhrms"
+[day01.rs:60] &nums = [
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "9sixonefour"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    94,
+)
+[day01.rs:60] line = "eighttwo2twofour9"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    2,
+    2,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "7eightseveneightthree"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    7,
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "tlnllks2jcfdlgsjbhpfnineone"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "one44fivesevenjzsfzddg"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    4,
+    5,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "787seveneight75five"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    7,
+    7,
+    8,
+    7,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    75,
+)
+[day01.rs:60] line = "7q7nine3"
+[day01.rs:60] &nums = [
+    7,
+    7,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "hlqphphn5dtzzbqvk3three8seven"
+[day01.rs:60] &nums = [
+    5,
+    3,
+    3,
+    8,
+    7,
+]
+[day01.rs:60] ret = Some(
+    57,
+)
+[day01.rs:60] line = "ninekkbvsfq8seven7321bpdcdh"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    7,
+    7,
+    3,
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "9kxgfxntgdzs1ns5"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "nineblxtnrt79t8fourbcqdzpb"
+[day01.rs:60] &nums = [
+    9,
+    7,
+    9,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    94,
+)
+[day01.rs:60] line = "3mjqgthreeseven36gkvvvqppx"
+[day01.rs:60] &nums = [
+    3,
+    3,
+    7,
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "zpcvkjjqeight94one82mrvfzdvlgjgkhj"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    4,
+    1,
+    8,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "nine11"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "rnscpccv8"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "7eightrcqnbtkn"
+[day01.rs:60] &nums = [
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "four31zqgrccc4eight"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    1,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "two65fourfourt1"
+[day01.rs:60] &nums = [
+    2,
+    6,
+    5,
+    4,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "twomg2764threesix"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    7,
+    6,
+    4,
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "546grjcrsix9"
+[day01.rs:60] &nums = [
+    5,
+    4,
+    6,
+    6,
+    9,
+]
+[day01.rs:60] ret = Some(
+    59,
+)
+[day01.rs:60] line = "4ffourfourff1"
+[day01.rs:60] &nums = [
+    4,
+    4,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "dpfkcrzjxr8four"
+[day01.rs:60] &nums = [
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    84,
+)
+[day01.rs:60] line = "641one"
+[day01.rs:60] &nums = [
+    6,
+    4,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "kseven8"
+[day01.rs:60] &nums = [
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "two4four"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "ldzpzgch325hsttqvmp9foureightmvsknbd"
+[day01.rs:60] &nums = [
+    3,
+    2,
+    5,
+    9,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    38,
+)
+[day01.rs:60] line = "onexrbclqlnvp5kqtrsgdh8nine"
+[day01.rs:60] &nums = [
+    1,
+    5,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "rk9qfzvszksjqsixg"
+[day01.rs:60] &nums = [
+    9,
+    6,
+]
+[day01.rs:60] ret = Some(
+    96,
+)
+[day01.rs:60] line = "dcnhlcqzhthreebhrnfgjbfive1threetwo53"
+[day01.rs:60] &nums = [
+    3,
+    5,
+    1,
+    3,
+    2,
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "1twoeightfivefjmpkdlg"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    8,
+    5,
+]
+[day01.rs:60] ret = Some(
+    15,
+)
+[day01.rs:60] line = "eight6bmnbcth"
+[day01.rs:60] &nums = [
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "nineczfgrphfeight7sixrnzphsqsq7cxfrsv"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    7,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    97,
+)
+[day01.rs:60] line = "9f"
+[day01.rs:60] &nums = [
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "xcnqtvp451jxvvninefourdcvvnvxb"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    1,
+    9,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "threegqlsctbp871nine"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    7,
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    39,
+)
+[day01.rs:60] line = "hfjgjhctwotwo9twobqfour"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    9,
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "twoeightmhhvprgq7two8five54"
+[day01.rs:60] &nums = [
+    2,
+    8,
+    7,
+    2,
+    8,
+    5,
+    5,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "qqqvtjxnbgseven8nvmbxsvtblqml4seven1z"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    4,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    71,
+)
+[day01.rs:60] line = "9mfbcd745rlxmjzrqgxql"
+[day01.rs:60] &nums = [
+    9,
+    7,
+    4,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "sixonepmqlqprf3"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    63,
+)
+[day01.rs:60] line = "lzkjxckkone1two92bt"
+[day01.rs:60] &nums = [
+    1,
+    1,
+    2,
+    9,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "threelftflq7"
+[day01.rs:60] &nums = [
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "htqxfmfx665"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "fivegggb3"
+[day01.rs:60] &nums = [
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    53,
+)
+[day01.rs:60] line = "jbgkbzmtrxcng5sixvbxbjxttql"
+[day01.rs:60] &nums = [
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    56,
+)
+[day01.rs:60] line = "ninesixmlfjxhscninehqcdvxf8nzfivetwonehhd"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    9,
+    8,
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    92,
+)
+[day01.rs:60] line = "64sixbjtkh5txqngv"
+[day01.rs:60] &nums = [
+    6,
+    4,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "vlcn6bkbf7dlnine"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    9,
+]
+[day01.rs:60] ret = Some(
+    69,
+)
+[day01.rs:60] line = "186"
+[day01.rs:60] &nums = [
+    1,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "4five9c7kbhbmkz2"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    9,
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "7tfourqjjzkktzplr47sjkkplrnrprll"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    4,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "eightthreelrjdvhbfkd8"
+[day01.rs:60] &nums = [
+    8,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "46nineone"
+[day01.rs:60] &nums = [
+    4,
+    6,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "two9lhktgj2nvldxljfzjb3fmdzpm9"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    2,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    29,
+)
+[day01.rs:60] line = "four46twohssd3"
+[day01.rs:60] &nums = [
+    4,
+    4,
+    6,
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    43,
+)
+[day01.rs:60] line = "4sixx34kxqllszlseven"
+[day01.rs:60] &nums = [
+    4,
+    6,
+    3,
+    4,
+    7,
+]
+[day01.rs:60] ret = Some(
+    47,
+)
+[day01.rs:60] line = "phnthreebtjxspeight7f"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "sixglcvfbsqonexkflggbeight8tzkktdm5"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    8,
+    8,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "sevenninethree1eightone1six"
+[day01.rs:60] &nums = [
+    7,
+    9,
+    3,
+    1,
+    8,
+    1,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "bcbrrhnpcmmbdz9qshthhb5ggjvb"
+[day01.rs:60] &nums = [
+    9,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "twoonectcxjbclv9pmqvvddxlkgqxcmfqgppzt"
+[day01.rs:60] &nums = [
+    2,
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    29,
+)
+[day01.rs:60] line = "jqzjrk8lr"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "dfoursfivenine6"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    9,
+    6,
+]
+[day01.rs:60] ret = Some(
+    46,
+)
+[day01.rs:60] line = "eighteightsevenmxsssjdvgdphfg9z"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    7,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "4seven2psg8hqg9oneightnzc"
+[day01.rs:60] &nums = [
+    4,
+    7,
+    2,
+    8,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "threefive5twoeighteight561"
+[day01.rs:60] &nums = [
+    3,
+    5,
+    5,
+    2,
+    8,
+    8,
+    5,
+    6,
+    1,
+]
+[day01.rs:60] ret = Some(
+    31,
+)
+[day01.rs:60] line = "onesix8onethreeninefoursix"
+[day01.rs:60] &nums = [
+    1,
+    6,
+    8,
+    1,
+    3,
+    9,
+    4,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "4sdfsgbzdkseven1rtlcdtrxmone7"
+[day01.rs:60] &nums = [
+    4,
+    7,
+    1,
+    1,
+    7,
+]
+[day01.rs:60] ret = Some(
+    47,
+)
+[day01.rs:60] line = "3gmfbc"
+[day01.rs:60] &nums = [
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "33szvbrpzjqsvjmvhntwo"
+[day01.rs:60] &nums = [
+    3,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "1ninehrhqzxqqvf7bzckpjfbbzgt3seven"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    7,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "rkgzrsmtg9fournvplkkxsmslmkr"
+[day01.rs:60] &nums = [
+    9,
+    4,
+]
+[day01.rs:60] ret = Some(
+    94,
+)
+[day01.rs:60] line = "foursevenkmdvtxflrddnthreetwofive8"
+[day01.rs:60] &nums = [
+    4,
+    7,
+    3,
+    2,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "zfourvxngsmmqsldpkrrbfnjf2mvkdhfs7eightwotc"
+[day01.rs:60] &nums = [
+    4,
+    2,
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "8sixnczfxtwotstrfourflsmzone"
+[day01.rs:60] &nums = [
+    8,
+    6,
+    2,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "rtnvpld4fivesdgtmdvghtjk4two"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "ninenine3"
+[day01.rs:60] &nums = [
+    9,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "ninefivetwofoureight41qsrbtfhkk"
+[day01.rs:60] &nums = [
+    9,
+    5,
+    2,
+    4,
+    8,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "741zcshxvrflgpdheight"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "eight8jgjrrtpfivefour"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    5,
+    4,
+]
+[day01.rs:60] ret = Some(
+    84,
+)
+[day01.rs:60] line = "9fourninenine1two"
+[day01.rs:60] &nums = [
+    9,
+    4,
+    9,
+    9,
+    1,
+    2,
+]
+[day01.rs:60] ret = Some(
+    92,
+)
+[day01.rs:60] line = "mcltnxsevenfzbqtfkkz4twommrcdgxqktbxph"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    72,
+)
+[day01.rs:60] line = "nine85jrthpqfvzzfzrbdtvfd"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "1mdpqzkc"
+[day01.rs:60] &nums = [
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "nineonefivetwosix42"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    5,
+    2,
+    6,
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    92,
+)
+[day01.rs:60] line = "sixtwoeightbqnzljxdv48sevenfour"
+[day01.rs:60] &nums = [
+    6,
+    2,
+    8,
+    4,
+    8,
+    7,
+    4,
+]
+[day01.rs:60] ret = Some(
+    64,
+)
+[day01.rs:60] line = "3slzdjzm4"
+[day01.rs:60] &nums = [
+    3,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "four952"
+[day01.rs:60] &nums = [
+    4,
+    9,
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "zfmsfsh8gqgsvntwotdpgjxtzpk21bg2"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    2,
+    1,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "8fivefourninebljjv"
+[day01.rs:60] &nums = [
+    8,
+    5,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "fcscqqsix6fourrprgzqqv"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    64,
+)
+[day01.rs:60] line = "eight4ljj3"
+[day01.rs:60] &nums = [
+    8,
+    4,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "f6gmftwoqdtpmtmnxb1llg"
+[day01.rs:60] &nums = [
+    6,
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "fourninethree2ninedzzxxbpvmtgcrmv"
+[day01.rs:60] &nums = [
+    4,
+    9,
+    3,
+    2,
+    9,
+]
+[day01.rs:60] ret = Some(
+    49,
+)
+[day01.rs:60] line = "54hjbkdthh84fivegpmdl4"
+[day01.rs:60] &nums = [
+    5,
+    4,
+    8,
+    4,
+    5,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "deightwoone8threegfnhhfngtwoeightsix"
+[day01.rs:60] &nums = [
+    8,
+    1,
+    8,
+    3,
+    2,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "onenine9ddsjfrnctonedfz"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "sone2fourtwojt"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "ckhbpvnrklvjkqjsevenfive2six"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    2,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "29one8eight"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    1,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "j4fiveeight"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "ftjjcrdtwocq4"
+[day01.rs:60] &nums = [
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "five72sevenjf59nineeight"
+[day01.rs:60] &nums = [
+    5,
+    7,
+    2,
+    7,
+    5,
+    9,
+    9,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "6thfhvtr5eighteightsix"
+[day01.rs:60] &nums = [
+    6,
+    5,
+    8,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    66,
+)
+[day01.rs:60] line = "seven8nine619"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    9,
+    6,
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "bzloneightqqhxqdvsgjthree1nskcvcxhlzp6"
+[day01.rs:60] &nums = [
+    1,
+    3,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "nine6rcq7lghfjkmksxpbz"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    97,
+)
+[day01.rs:60] line = "hjpstbxsrbx3mrfnsbbgpvnqx9four4"
+[day01.rs:60] &nums = [
+    3,
+    9,
+    4,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "two6knbsevenone"
+[day01.rs:60] &nums = [
+    2,
+    6,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "two149sixpvvpq6nine"
+[day01.rs:60] &nums = [
+    2,
+    1,
+    4,
+    9,
+    6,
+    6,
+    9,
+]
+[day01.rs:60] ret = Some(
+    29,
+)
+[day01.rs:60] line = "onedmvpc2kb"
+[day01.rs:60] &nums = [
+    1,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "sbzvkxclj33zgfrqrv"
+[day01.rs:60] &nums = [
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "rjxsixseveneightbpnmgfpfourcrlxfhf1"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    8,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "hdpfoureightfive2dvcxzmvkcpsix"
+[day01.rs:60] &nums = [
+    4,
+    8,
+    5,
+    2,
+    6,
+]
+[day01.rs:60] ret = Some(
+    46,
+)
+[day01.rs:60] line = "four31qklnqrzj8"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "threejdjql2jzsjxmxmmm"
+[day01.rs:60] &nums = [
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "53dxnzlcpone2jnfjeightfbl"
+[day01.rs:60] &nums = [
+    5,
+    3,
+    1,
+    2,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "38four77hbvlfz"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    4,
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "five387sixeight8"
+[day01.rs:60] &nums = [
+    5,
+    3,
+    8,
+    7,
+    6,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "2pkvnlpzkpn224"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "one4two7one9"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    2,
+    7,
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "ninexvxscjhxgp5bmssbkxq"
+[day01.rs:60] &nums = [
+    9,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "2vrgxknnljx3"
+[day01.rs:60] &nums = [
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "8xzqgnngtsxlzgszc3"
+[day01.rs:60] &nums = [
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "cjlkeightrndmxlgteightone8"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "sbkhrnxh1nkrzmbzl2two5three"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    2,
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    13,
+)
+[day01.rs:60] line = "94zpvx8"
+[day01.rs:60] &nums = [
+    9,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    98,
+)
+[day01.rs:60] line = "geight7sixthreethree"
+[day01.rs:60] &nums = [
+    8,
+    7,
+    6,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "3sixsevenjlp4xkfthone"
+[day01.rs:60] &nums = [
+    3,
+    6,
+    7,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    31,
+)
+[day01.rs:60] line = "zvg1"
+[day01.rs:60] &nums = [
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "3eight3fiveeightsck"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    3,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    38,
+)
+[day01.rs:60] line = "3one4one3"
+[day01.rs:60] &nums = [
+    3,
+    1,
+    4,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "6nine8"
+[day01.rs:60] &nums = [
+    6,
+    9,
+    8,
+]
+[day01.rs:60] ret = Some(
+    68,
+)
+[day01.rs:60] line = "three9328skfxpseven"
+[day01.rs:60] &nums = [
+    3,
+    9,
+    3,
+    2,
+    8,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "sixrsix2jclzqqjkg"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    62,
+)
+[day01.rs:60] line = "1vpdjgfxbxccrt5txkkzdmz1gxrdndmone8"
+[day01.rs:60] &nums = [
+    1,
+    5,
+    1,
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    18,
+)
+[day01.rs:60] line = "sixfiveeightthreetwo4"
+[day01.rs:60] &nums = [
+    6,
+    5,
+    8,
+    3,
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    64,
+)
+[day01.rs:60] line = "84threehb7fnkkzhsthree"
+[day01.rs:60] &nums = [
+    8,
+    4,
+    3,
+    7,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "three6ninerjshsg"
+[day01.rs:60] &nums = [
+    3,
+    6,
+    9,
+]
+[day01.rs:60] ret = Some(
+    39,
+)
+[day01.rs:60] line = "rfnhdh4dseven"
+[day01.rs:60] &nums = [
+    4,
+    7,
+]
+[day01.rs:60] ret = Some(
+    47,
+)
+[day01.rs:60] line = "four1one4mjbnjnrrthreerlvhfkfzseven"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    1,
+    4,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    47,
+)
+[day01.rs:60] line = "9rqkkjzk1six6fgfzfdnvnprf8six"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    6,
+    6,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    96,
+)
+[day01.rs:60] line = "5jfpcbrrqfivemzjrqgdlnine6msmqxkzgcj"
+[day01.rs:60] &nums = [
+    5,
+    5,
+    9,
+    6,
+]
+[day01.rs:60] ret = Some(
+    56,
+)
+[day01.rs:60] line = "sevenonevg489fourhtvssdcb1"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    4,
+    8,
+    9,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    71,
+)
+[day01.rs:60] line = "threeeightsevenbjmhkllzrpsntmmjr2"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "qvcrg4sdxkbvtr93"
+[day01.rs:60] &nums = [
+    4,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    43,
+)
+[day01.rs:60] line = "bgrsevenpfcttmm7"
+[day01.rs:60] &nums = [
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "98xxnkzdhrjsvccrf6fivezbkksix"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    6,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    96,
+)
+[day01.rs:60] line = "gcxgflt5r3"
+[day01.rs:60] &nums = [
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    53,
+)
+[day01.rs:60] line = "51lhnzxkblsr"
+[day01.rs:60] &nums = [
+    5,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "9eightfourrblfncg"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    94,
+)
+[day01.rs:60] line = "ppjxmqfqpsthree1ninesixthreetwoseven"
+[day01.rs:60] &nums = [
+    3,
+    1,
+    9,
+    6,
+    3,
+    2,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "7eight86onenpgmdxfs43"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    8,
+    6,
+    1,
+    4,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "three4zhrtksksfsfslrkk"
+[day01.rs:60] &nums = [
+    3,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "7three2seven1"
+[day01.rs:60] &nums = [
+    7,
+    3,
+    2,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    71,
+)
+[day01.rs:60] line = "eightninexvxqmzrzzmrpmhcdf41eight"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    4,
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "37pmvml1zfdqvxjn8"
+[day01.rs:60] &nums = [
+    3,
+    7,
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    38,
+)
+[day01.rs:60] line = "sixnineseven1six1"
+[day01.rs:60] &nums = [
+    6,
+    9,
+    7,
+    1,
+    6,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "zqqcnmnk4rtrmfxh"
+[day01.rs:60] &nums = [
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "5fourfive4jjvvhdzfgtctxrzfour"
+[day01.rs:60] &nums = [
+    5,
+    4,
+    5,
+    4,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "63thfzthsixhfrpvmfive"
+[day01.rs:60] &nums = [
+    6,
+    3,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "kzvsgnlfive144six4"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    4,
+    4,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "eight5two4five35onej"
+[day01.rs:60] &nums = [
+    8,
+    5,
+    2,
+    4,
+    5,
+    3,
+    5,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "mnfbqk8seven6glnzmmsthree"
+[day01.rs:60] &nums = [
+    8,
+    7,
+    6,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "xnrhrkpfzvtvljbljltrbzsjpfivevzldrbbjcl622"
+[day01.rs:60] &nums = [
+    5,
+    6,
+    2,
+    2,
+]
+[day01.rs:60] ret = Some(
+    52,
+)
+[day01.rs:60] line = "5sb"
+[day01.rs:60] &nums = [
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "fivetwo4"
+[day01.rs:60] &nums = [
+    5,
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "eighttwoone27"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    1,
+    2,
+    7,
+]
+[day01.rs:60] ret = Some(
+    87,
+)
+[day01.rs:60] line = "pcrlmgh4qsixeightz8dpfour"
+[day01.rs:60] &nums = [
+    4,
+    6,
+    8,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "cnvoneight9gmmthreedqvzqcgsxfnhjpmrtwothree"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    3,
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    13,
+)
+[day01.rs:60] line = "5713"
+[day01.rs:60] &nums = [
+    5,
+    7,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    53,
+)
+[day01.rs:60] line = "jjzdfour77lkbjhznrseven"
+[day01.rs:60] &nums = [
+    4,
+    7,
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    47,
+)
+[day01.rs:60] line = "bgqjjszhv9fiverfive6jcfour3"
+[day01.rs:60] &nums = [
+    9,
+    5,
+    5,
+    6,
+    4,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "hzxznrhdnvnbsd4sixprlsvcthree"
+[day01.rs:60] &nums = [
+    4,
+    6,
+    3,
+]
+[day01.rs:60] ret = Some(
+    43,
+)
+[day01.rs:60] line = "tbmsxscxtlqfbl3sevenvlbsvzcn"
+[day01.rs:60] &nums = [
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "vndbbjkcqn5twofivexhm"
+[day01.rs:60] &nums = [
+    5,
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "ggggbxfxd6eight5"
+[day01.rs:60] &nums = [
+    6,
+    8,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "bdbfcb5four9"
+[day01.rs:60] &nums = [
+    5,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    59,
+)
+[day01.rs:60] line = "14threedbbfqlthreetwoz"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    3,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "onefour9"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "three28seven"
+[day01.rs:60] &nums = [
+    3,
+    2,
+    8,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "1vbnrfrklk46qzbthreetnine"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    6,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "eight45onesix"
+[day01.rs:60] &nums = [
+    8,
+    4,
+    5,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "threepl81k"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    1,
+]
+[day01.rs:60] ret = Some(
+    31,
+)
+[day01.rs:60] line = "sevenglpgthreethree93one7"
+[day01.rs:60] &nums = [
+    7,
+    3,
+    3,
+    9,
+    3,
+    1,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "8one4seven1"
+[day01.rs:60] &nums = [
+    8,
+    1,
+    4,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "djkhlmgct3nbftrrthreesixseven56"
+[day01.rs:60] &nums = [
+    3,
+    3,
+    6,
+    7,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "ninethreeonetwo49dh1"
+[day01.rs:60] &nums = [
+    9,
+    3,
+    1,
+    2,
+    4,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "8mssvsgtkskninesixdznsgthree"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    6,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "1sixeight"
+[day01.rs:60] &nums = [
+    1,
+    6,
+    8,
+]
+[day01.rs:60] ret = Some(
+    18,
+)
+[day01.rs:60] line = "6npqbhmfmnzthree669"
+[day01.rs:60] &nums = [
+    6,
+    3,
+    6,
+    6,
+    9,
+]
+[day01.rs:60] ret = Some(
+    69,
+)
+[day01.rs:60] line = "9dgnbhnzsevenfd"
+[day01.rs:60] &nums = [
+    9,
+    7,
+]
+[day01.rs:60] ret = Some(
+    97,
+)
+[day01.rs:60] line = "four5jljzpjgd9"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    9,
+]
+[day01.rs:60] ret = Some(
+    49,
+)
+[day01.rs:60] line = "pzcrgfhxzblkmczjstl12nxkgglgmznlgjgnszc"
+[day01.rs:60] &nums = [
+    1,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "39twotwoxqsj14"
+[day01.rs:60] &nums = [
+    3,
+    9,
+    2,
+    2,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "2rzvpfpgzxk3863eightoneighttbb"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    8,
+    6,
+    3,
+    8,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "8seveneightfour1mgdkrqltcvshss"
+[day01.rs:60] &nums = [
+    8,
+    7,
+    8,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "eight6mfjdlkffttbnzdj7pqhdddfv"
+[day01.rs:60] &nums = [
+    8,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    87,
+)
+[day01.rs:60] line = "sixc7c"
+[day01.rs:60] &nums = [
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "2eightfivetwoshj6"
+[day01.rs:60] &nums = [
+    2,
+    8,
+    5,
+    2,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "twonjn4threekxdkzctspb2"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "foureight3122lmtdrpvlkq8"
+[day01.rs:60] &nums = [
+    4,
+    8,
+    3,
+    1,
+    2,
+    2,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "58xdnine9csmvrnjdk"
+[day01.rs:60] &nums = [
+    5,
+    8,
+    9,
+    9,
+]
+[day01.rs:60] ret = Some(
+    59,
+)
+[day01.rs:60] line = "znkn4jznzgclhzfnhcqfgsdkbmmg4nsx"
+[day01.rs:60] &nums = [
+    4,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "736"
+[day01.rs:60] &nums = [
+    7,
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "two3cgb"
+[day01.rs:60] &nums = [
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "fplfcfs7four9cp8nine"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    9,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "83seven"
+[day01.rs:60] &nums = [
+    8,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    87,
+)
+[day01.rs:60] line = "716"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "eight64925eightffnlprnnfkpggkkl"
+[day01.rs:60] &nums = [
+    8,
+    6,
+    4,
+    9,
+    2,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "one3nkbmdkxneight"
+[day01.rs:60] &nums = [
+    1,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    18,
+)
+[day01.rs:60] line = "sevensix9threesixmgdpeight"
+[day01.rs:60] &nums = [
+    7,
+    6,
+    9,
+    3,
+    6,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "6six437phtmrnm"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    4,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "7ckfkqbkmkeight266five"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    2,
+    6,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    75,
+)
+[day01.rs:60] line = "nine11sixsixeightwonpf"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    1,
+    6,
+    6,
+    8,
+]
+[day01.rs:60] ret = Some(
+    98,
+)
+[day01.rs:60] line = "fourdbhpksjtwo1"
+[day01.rs:60] &nums = [
+    4,
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "kdfrppmhgseven1seven4mhktztvfour1"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    7,
+    4,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    71,
+)
+[day01.rs:60] line = "sixddgtqm4gbrjvfive1onep"
+[day01.rs:60] &nums = [
+    6,
+    4,
+    5,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "prxsbcbs16npg7"
+[day01.rs:60] &nums = [
+    1,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "rtxxfxl1s"
+[day01.rs:60] &nums = [
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "six22nineninevnfznsdqltg7"
+[day01.rs:60] &nums = [
+    6,
+    2,
+    2,
+    9,
+    9,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "snvtwonesgxqpnmp79one5"
+[day01.rs:60] &nums = [
+    2,
+    7,
+    9,
+    1,
+    5,
+]
+[day01.rs:60] ret = Some(
+    25,
+)
+[day01.rs:60] line = "lppcnndmsdms61"
+[day01.rs:60] &nums = [
+    6,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "vtspflkxfive5332"
+[day01.rs:60] &nums = [
+    5,
+    5,
+    3,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    52,
+)
+[day01.rs:60] line = "231three"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "ninetbrsixm89"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "8eight6bxtx2sixfive5kjtj"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    6,
+    2,
+    6,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    85,
+)
+[day01.rs:60] line = "24zfjbcsevenbvnxhbfgpzteight"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "four9754zpjjjgsddxvxmsfzzfour8"
+[day01.rs:60] &nums = [
+    4,
+    9,
+    7,
+    5,
+    4,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "one2twopbggv"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "7zldhnmcptvtwo5seven73"
+[day01.rs:60] &nums = [
+    7,
+    2,
+    5,
+    7,
+    7,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "sixgctgprqgzspb5bqlqxdrpdp2sevenr"
+[day01.rs:60] &nums = [
+    6,
+    5,
+    2,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "49lxmrzvzzr3"
+[day01.rs:60] &nums = [
+    4,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    43,
+)
+[day01.rs:60] line = "feightwoglj4ctrzmvvfive7hb6"
+[day01.rs:60] &nums = [
+    8,
+    4,
+    5,
+    7,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "fkdtzf24onetwo"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    1,
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "61ntkdflftmvmtvrgklnjhjtjsvfqjsjvsevenjrljdsix"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    7,
+    6,
+]
+[day01.rs:60] ret = Some(
+    66,
+)
+[day01.rs:60] line = "9nineonenbmjvmsncggzcbbpc5klckzkvtn"
+[day01.rs:60] &nums = [
+    9,
+    9,
+    1,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "3fivejmzpfdc8one"
+[day01.rs:60] &nums = [
+    3,
+    5,
+    8,
+    1,
+]
+[day01.rs:60] ret = Some(
+    31,
+)
+[day01.rs:60] line = "zsskqhfhpnine684twofive"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    8,
+    4,
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "3bsix"
+[day01.rs:60] &nums = [
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "39one68six"
+[day01.rs:60] &nums = [
+    3,
+    9,
+    1,
+    6,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "8djbfxf"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "tmfhtlzqkjlvggckfkggng9eightthreesix9"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    3,
+    6,
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "915onefour3"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    5,
+    1,
+    4,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "td7nineppxltprlsevenxftpsvcfourvqzpr"
+[day01.rs:60] &nums = [
+    7,
+    9,
+    7,
+    4,
+]
+[day01.rs:60] ret = Some(
+    74,
+)
+[day01.rs:60] line = "72k695two"
+[day01.rs:60] &nums = [
+    7,
+    2,
+    6,
+    9,
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    72,
+)
+[day01.rs:60] line = "873bpgkbmeight"
+[day01.rs:60] &nums = [
+    8,
+    7,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "twoninexmrhxptfive31"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    5,
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "tseightwoeightfourrhlsbsvmk5"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    4,
+    5,
+]
+[day01.rs:60] ret = Some(
+    85,
+)
+[day01.rs:60] line = "7xxnlgggcncfivefour7five4eight"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    4,
+    7,
+    5,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "4one2eightsixrlkl"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    2,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    46,
+)
+[day01.rs:60] line = "746five6foureight"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    6,
+    5,
+    6,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "ljjn7nineonepjqnsgzvvg79nine"
+[day01.rs:60] &nums = [
+    7,
+    9,
+    1,
+    7,
+    9,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "rtcjxtqzsevenfhmsnmmb35"
+[day01.rs:60] &nums = [
+    7,
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    75,
+)
+[day01.rs:60] line = "sevenqjjpndspl1six"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "threefourmnhhvdssbkqnsnphzb5b6btnjszj"
+[day01.rs:60] &nums = [
+    3,
+    4,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "2fiveeight"
+[day01.rs:60] &nums = [
+    2,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "sixeightone2mpkvkvxdnbhjqrsxsbmtltr1two"
+[day01.rs:60] &nums = [
+    6,
+    8,
+    1,
+    2,
+    1,
+    2,
+]
+[day01.rs:60] ret = Some(
+    62,
+)
+[day01.rs:60] line = "3fourfivenine929"
+[day01.rs:60] &nums = [
+    3,
+    4,
+    5,
+    9,
+    9,
+    2,
+    9,
+]
+[day01.rs:60] ret = Some(
+    39,
+)
+[day01.rs:60] line = "8sqgxpceightseveneightone2gvfmjqc"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    7,
+    8,
+    1,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "eight8threesixllngjhzlcbmjbscsone"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    3,
+    6,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "mpb7onenine"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "three76four"
+[day01.rs:60] &nums = [
+    3,
+    7,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "4rmh4ninebsixtwo"
+[day01.rs:60] &nums = [
+    4,
+    4,
+    9,
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "threeknjdnnmcbnknpfs5xxhptlstpsqqjvm"
+[day01.rs:60] &nums = [
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    35,
+)
+[day01.rs:60] line = "onexqnhxrkc3sixsix9four"
+[day01.rs:60] &nums = [
+    1,
+    3,
+    6,
+    6,
+    9,
+    4,
+]
+[day01.rs:60] ret = Some(
+    14,
+)
+[day01.rs:60] line = "ztwoneseventhreesixfive159seven"
+[day01.rs:60] &nums = [
+    2,
+    7,
+    3,
+    6,
+    5,
+    1,
+    5,
+    9,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "jteightwov9one8bzlqbrnhtjb31"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    1,
+    8,
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "jxdhxtcfzmfgqtqnine8one"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "hcbtwoneseventnrkgs5dfsix"
+[day01.rs:60] &nums = [
+    2,
+    7,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "499zlfphzfxqjvsjzzqv"
+[day01.rs:60] &nums = [
+    4,
+    9,
+    9,
+]
+[day01.rs:60] ret = Some(
+    49,
+)
+[day01.rs:60] line = "4fourtpbkxcvhdrm"
+[day01.rs:60] &nums = [
+    4,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "xtkt7"
+[day01.rs:60] &nums = [
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "fsmjbcfteightrvvghfp1onefivenrnqjsixxnqrkjpz"
+[day01.rs:60] &nums = [
+    8,
+    1,
+    1,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "4krqtjfntzhld"
+[day01.rs:60] &nums = [
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "kltzvrjbdseveneight63onepqztpqkhrceight"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    6,
+    3,
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "ninellvllxfcqn8six49"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    6,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "711"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    71,
+)
+[day01.rs:60] line = "dmphpfsffghkmpxxrpone1eight"
+[day01.rs:60] &nums = [
+    1,
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    18,
+)
+[day01.rs:60] line = "6seventhree4frdcfeight"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    3,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    68,
+)
+[day01.rs:60] line = "hfrkj2bzg2fivebprjpt"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    25,
+)
+[day01.rs:60] line = "5fournine1tqxs22sixseven"
+[day01.rs:60] &nums = [
+    5,
+    4,
+    9,
+    1,
+    2,
+    2,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    57,
+)
+[day01.rs:60] line = "kvzpd6twofive1"
+[day01.rs:60] &nums = [
+    6,
+    2,
+    5,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "s5toneeightthree"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    53,
+)
+[day01.rs:60] line = "twosevenfour8htggp9"
+[day01.rs:60] &nums = [
+    2,
+    7,
+    4,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    29,
+)
+[day01.rs:60] line = "zfourcs6onefour"
+[day01.rs:60] &nums = [
+    4,
+    6,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "9ppm5vmtcrvzfn"
+[day01.rs:60] &nums = [
+    9,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "rvtsqjztqvpfourthree7zspszmjrmjrxrgcldththree"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    7,
+    3,
+]
+[day01.rs:60] ret = Some(
+    43,
+)
+[day01.rs:60] line = "gcqbthree7vkthree85"
+[day01.rs:60] &nums = [
+    3,
+    7,
+    3,
+    8,
+    5,
+]
+[day01.rs:60] ret = Some(
+    35,
+)
+[day01.rs:60] line = "twolsfive41"
+[day01.rs:60] &nums = [
+    2,
+    5,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "9nine6five"
+[day01.rs:60] &nums = [
+    9,
+    9,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "6ftxkzfmr83six"
+[day01.rs:60] &nums = [
+    6,
+    8,
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    66,
+)
+[day01.rs:60] line = "fourneightone1nine4tvkrxqlq"
+[day01.rs:60] &nums = [
+    4,
+    8,
+    1,
+    1,
+    9,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "four1jkskfoursncbzpfive"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    4,
+    5,
+]
+[day01.rs:60] ret = Some(
+    45,
+)
+[day01.rs:60] line = "7fnffmtdllthree"
+[day01.rs:60] &nums = [
+    7,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "jdjbzhfctvq9five5seven"
+[day01.rs:60] &nums = [
+    9,
+    5,
+    5,
+    7,
+]
+[day01.rs:60] ret = Some(
+    97,
+)
+[day01.rs:60] line = "rtrsmnv4eight3qkrhnv5xtcgdccm"
+[day01.rs:60] &nums = [
+    4,
+    8,
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    45,
+)
+[day01.rs:60] line = "zzkdlvpxzjqsx8hfctgconeone23"
+[day01.rs:60] &nums = [
+    8,
+    1,
+    1,
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "nshsvxrbssmfour72"
+[day01.rs:60] &nums = [
+    4,
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "fivepkzgbqlvrjmrcnzq9sevenkqpjplg"
+[day01.rs:60] &nums = [
+    5,
+    9,
+    7,
+]
+[day01.rs:60] ret = Some(
+    57,
+)
+[day01.rs:60] line = "37dds5"
+[day01.rs:60] &nums = [
+    3,
+    7,
+    5,
+]
+[day01.rs:60] ret = Some(
+    35,
+)
+[day01.rs:60] line = "vcfour5"
+[day01.rs:60] &nums = [
+    4,
+    5,
+]
+[day01.rs:60] ret = Some(
+    45,
+)
+[day01.rs:60] line = "52one"
+[day01.rs:60] &nums = [
+    5,
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "five7threetvrxvdsrpq"
+[day01.rs:60] &nums = [
+    5,
+    7,
+    3,
+]
+[day01.rs:60] ret = Some(
+    53,
+)
+[day01.rs:60] line = "lmqseven476four"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    7,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    74,
+)
+[day01.rs:60] line = "9bvkcsts4sfourfiveeightwocz"
+[day01.rs:60] &nums = [
+    9,
+    4,
+    4,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    98,
+)
+[day01.rs:60] line = "41slptg3three"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    43,
+)
+[day01.rs:60] line = "5sixvtzgbhsqsl57eight"
+[day01.rs:60] &nums = [
+    5,
+    6,
+    5,
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "jvslvrh4five7fivemdvphj"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    7,
+    5,
+]
+[day01.rs:60] ret = Some(
+    45,
+)
+[day01.rs:60] line = "7five3rbpsbsfffstone4fivenine"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    3,
+    1,
+    4,
+    5,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "2fourtmcjnczqtvcgs162x"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    1,
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "7vnd5eightsjnfdfsxvxblhql3pckltds"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "8zmt3zr"
+[day01.rs:60] &nums = [
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "13cbmlmkdlfljhthreeoneightv"
+[day01.rs:60] &nums = [
+    1,
+    3,
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "dzsfeight29five6oneseven"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    9,
+    5,
+    6,
+    1,
+    7,
+]
+[day01.rs:60] ret = Some(
+    87,
+)
+[day01.rs:60] line = "lvdzxlhgmztdfive2rzsftzhgzgxqt4"
+[day01.rs:60] &nums = [
+    5,
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "jrznkqfjmvkhvmxdpdone6jzjntv5fivedfrtgbdvz"
+[day01.rs:60] &nums = [
+    1,
+    6,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    15,
+)
+[day01.rs:60] line = "5hrnkgsnmnj"
+[day01.rs:60] &nums = [
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "7oneklbccfmpqtwoeightfivetfqnqflgnjfoureight"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    2,
+    8,
+    5,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "six8786"
+[day01.rs:60] &nums = [
+    6,
+    8,
+    7,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    66,
+)
+[day01.rs:60] line = "3hmbvfdqxkknine2st"
+[day01.rs:60] &nums = [
+    3,
+    9,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "qfgskxcxphfmlcvshseven4qkbhtgsznnsix"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "7mjnvsscjchtwo"
+[day01.rs:60] &nums = [
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    72,
+)
+[day01.rs:60] line = "2sixpzqfkjlqsjkjpstmzfivethfvmsvq7"
+[day01.rs:60] &nums = [
+    2,
+    6,
+    5,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "qttgtwobxbzmndbmcjdp1rpqmrf"
+[day01.rs:60] &nums = [
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "4ninefour"
+[day01.rs:60] &nums = [
+    4,
+    9,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "8vv"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "75nine6cnm9zmkqjbjpb1"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    9,
+    6,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    71,
+)
+[day01.rs:60] line = "six8hfnl"
+[day01.rs:60] &nums = [
+    6,
+    8,
+]
+[day01.rs:60] ret = Some(
+    68,
+)
+[day01.rs:60] line = "eight2xxmzr"
+[day01.rs:60] &nums = [
+    8,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "39two2seven1onethreefour"
+[day01.rs:60] &nums = [
+    3,
+    9,
+    2,
+    2,
+    7,
+    1,
+    1,
+    3,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "5zvt"
+[day01.rs:60] &nums = [
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "27fournshsbhfsnz"
+[day01.rs:60] &nums = [
+    2,
+    7,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "twovpglcchhcrg9zfive"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    5,
+]
+[day01.rs:60] ret = Some(
+    25,
+)
+[day01.rs:60] line = "jxgj1seven"
+[day01.rs:60] &nums = [
+    1,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "nineone281mfshfzm4"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    2,
+    8,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    94,
+)
+[day01.rs:60] line = "rljbtcknczjn1nine"
+[day01.rs:60] &nums = [
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "mrxztmtsix32"
+[day01.rs:60] &nums = [
+    6,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    62,
+)
+[day01.rs:60] line = "seven95three9"
+[day01.rs:60] &nums = [
+    7,
+    9,
+    5,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "btwonekzg6fivefoursixsix"
+[day01.rs:60] &nums = [
+    2,
+    6,
+    5,
+    4,
+    6,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "ninesgnclqpcrlmm8"
+[day01.rs:60] &nums = [
+    9,
+    8,
+]
+[day01.rs:60] ret = Some(
+    98,
+)
+[day01.rs:60] line = "fiveonethreedsbzxl7fjkzqcxq4"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    3,
+    7,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "bzkr2twolcjbxjbzlx7seven"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "8zzcdftnz"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "4prpzmtwo"
+[day01.rs:60] &nums = [
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "cnzbcj95cqnjmzzbonevtcxllpzdt2ssbpmblcd1"
+[day01.rs:60] &nums = [
+    9,
+    5,
+    1,
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "4vncs241fivefnfcqcnpp6six"
+[day01.rs:60] &nums = [
+    4,
+    2,
+    4,
+    1,
+    5,
+    6,
+    6,
+]
+[day01.rs:60] ret = Some(
+    46,
+)
+[day01.rs:60] line = "34bmqvhnfqnine"
+[day01.rs:60] &nums = [
+    3,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    39,
+)
+[day01.rs:60] line = "twocsdp46threethreeptskb"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    6,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "bclh6ninengrgceight4"
+[day01.rs:60] &nums = [
+    6,
+    9,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    64,
+)
+[day01.rs:60] line = "kpkf6cxrqjck9"
+[day01.rs:60] &nums = [
+    6,
+    9,
+]
+[day01.rs:60] ret = Some(
+    69,
+)
+[day01.rs:60] line = "three44five6nine3dbnrxq"
+[day01.rs:60] &nums = [
+    3,
+    4,
+    4,
+    5,
+    6,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "2onesixrleight2rshfour"
+[day01.rs:60] &nums = [
+    2,
+    1,
+    6,
+    8,
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "eightvfflfour8gmldcggzlgmbcdnsqfourdvsksvmgh"
+[day01.rs:60] &nums = [
+    8,
+    4,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    84,
+)
+[day01.rs:60] line = "st79nine25htmnhzqzdbcfb"
+[day01.rs:60] &nums = [
+    7,
+    9,
+    9,
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    75,
+)
+[day01.rs:60] line = "xdvm14"
+[day01.rs:60] &nums = [
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    14,
+)
+[day01.rs:60] line = "eightfivethreefiveninemhdvnmnssmfmnhcc3fqmcjbhptwonebj"
+[day01.rs:60] &nums = [
+    8,
+    5,
+    3,
+    5,
+    9,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "7gkpgeight"
+[day01.rs:60] &nums = [
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "threepdfkppttpdsltvhz97three1seven"
+[day01.rs:60] &nums = [
+    3,
+    9,
+    7,
+    3,
+    1,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "nine3ntwo"
+[day01.rs:60] &nums = [
+    9,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    92,
+)
+[day01.rs:60] line = "three4seven2jtqqfnineqlzrcjtwo"
+[day01.rs:60] &nums = [
+    3,
+    4,
+    7,
+    2,
+    9,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "48sixfhrzseven"
+[day01.rs:60] &nums = [
+    4,
+    8,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    47,
+)
+[day01.rs:60] line = "1262"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "xgfxtb4ninecnsix6pplllvmb"
+[day01.rs:60] &nums = [
+    4,
+    9,
+    6,
+    6,
+]
+[day01.rs:60] ret = Some(
+    46,
+)
+[day01.rs:60] line = "1bfvc3xnmrsxqttthreecshtkllpbbfh7"
+[day01.rs:60] &nums = [
+    1,
+    3,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "3four4qg76threeqq"
+[day01.rs:60] &nums = [
+    3,
+    4,
+    4,
+    7,
+    6,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "zkxsjqlqlpqzlczsix2glbgj5five"
+[day01.rs:60] &nums = [
+    6,
+    2,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "onezv2sevenfklgjbflsjtcbpseven1"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    7,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "fivehht7rplnlrxrfkspsglmbzsone7one"
+[day01.rs:60] &nums = [
+    5,
+    7,
+    1,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "sixseven696zsixzjrgqhhzhpfour"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    6,
+    9,
+    6,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    64,
+)
+[day01.rs:60] line = "sixnine7rbmggnxjmv85cdxrgkksb"
+[day01.rs:60] &nums = [
+    6,
+    9,
+    7,
+    8,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "1fourfiventhreefive"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    5,
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    15,
+)
+[day01.rs:60] line = "5five5nineone"
+[day01.rs:60] &nums = [
+    5,
+    5,
+    5,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "threedgfkpdhrp7"
+[day01.rs:60] &nums = [
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "66seventhree"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    7,
+    3,
+]
+[day01.rs:60] ret = Some(
+    63,
+)
+[day01.rs:60] line = "3twoonef9"
+[day01.rs:60] &nums = [
+    3,
+    2,
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    39,
+)
+[day01.rs:60] line = "1683h3"
+[day01.rs:60] &nums = [
+    1,
+    6,
+    8,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    13,
+)
+[day01.rs:60] line = "onezddcone49sevencrcrkjsst"
+[day01.rs:60] &nums = [
+    1,
+    1,
+    4,
+    9,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "9324eight"
+[day01.rs:60] &nums = [
+    9,
+    3,
+    2,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    98,
+)
+[day01.rs:60] line = "rfgqmrr8"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "sgmqht941tx9eightstlsdrqfbgccgtc"
+[day01.rs:60] &nums = [
+    9,
+    4,
+    1,
+    9,
+    8,
+]
+[day01.rs:60] ret = Some(
+    98,
+)
+[day01.rs:60] line = "threefive62fqfhfdh"
+[day01.rs:60] &nums = [
+    3,
+    5,
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "8fbz"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "oneeightb3cbrlrsbhbgjbcjjhjvs6"
+[day01.rs:60] &nums = [
+    1,
+    8,
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "7jzfndreightseven9"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    7,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "mkoneightfive1mpx1tsjskpl4"
+[day01.rs:60] &nums = [
+    1,
+    5,
+    1,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    14,
+)
+[day01.rs:60] line = "six7bdx37fiveninesbp"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    3,
+    7,
+    5,
+    9,
+]
+[day01.rs:60] ret = Some(
+    69,
+)
+[day01.rs:60] line = "nbsrgxh4sgggnzdxcfourpstvtvlsfiventsjsqnsix"
+[day01.rs:60] &nums = [
+    4,
+    4,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    46,
+)
+[day01.rs:60] line = "hbtwone5fouronercjmz3eight4"
+[day01.rs:60] &nums = [
+    2,
+    5,
+    4,
+    1,
+    3,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "three5nqzpzdonethreethreev"
+[day01.rs:60] &nums = [
+    3,
+    5,
+    1,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "89six4threefour"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    6,
+    4,
+    3,
+    4,
+]
+[day01.rs:60] ret = Some(
+    84,
+)
+[day01.rs:60] line = "jtrqvnhsxkkfour783nmtfjzzone"
+[day01.rs:60] &nums = [
+    4,
+    7,
+    8,
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "2threethreexdkgtfcxpjpzvbrjjfiveeight8njtcxg"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    3,
+    5,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "eight839lhftninekcvkpv2"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    3,
+    9,
+    9,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "dkcdnhdsbqcbpronegljjmbjtfour3"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    3,
+]
+[day01.rs:60] ret = Some(
+    13,
+)
+[day01.rs:60] line = "fmfhzfsevenpnbtjvvdtwo37eight5nine"
+[day01.rs:60] &nums = [
+    7,
+    2,
+    3,
+    7,
+    8,
+    5,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "34fkcpmc"
+[day01.rs:60] &nums = [
+    3,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "oneseven39"
+[day01.rs:60] &nums = [
+    1,
+    7,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "gz5ninebdxxcmhskvjm775"
+[day01.rs:60] &nums = [
+    5,
+    9,
+    7,
+    7,
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "qzgeight5clhs2"
+[day01.rs:60] &nums = [
+    8,
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "41seventhree5seven4seven1"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    7,
+    3,
+    5,
+    7,
+    4,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "rztlppfpfbsix87"
+[day01.rs:60] &nums = [
+    6,
+    8,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "33sixdsqttqzgmpqvlxschqlvqttsixtbqm"
+[day01.rs:60] &nums = [
+    3,
+    3,
+    6,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "pzzngknine75vglbflqxt3plpqcrtrbmfpqsdrmh"
+[day01.rs:60] &nums = [
+    9,
+    7,
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "kvvtlx2three8vjqgvksrone"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    8,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "ninethree1cnmrdzdkfb1threergjdcfmthreecktfrhgh"
+[day01.rs:60] &nums = [
+    9,
+    3,
+    1,
+    1,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "6ffdlktltvssevenp"
+[day01.rs:60] &nums = [
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "kpfmsevenczcnfive3five"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    75,
+)
+[day01.rs:60] line = "xfive39"
+[day01.rs:60] &nums = [
+    5,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    59,
+)
+[day01.rs:60] line = "lhmj4xtjglmlthreethree1zjlbdfnncteighteightwop"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    3,
+    1,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "9seven985"
+[day01.rs:60] &nums = [
+    9,
+    7,
+    9,
+    8,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "eight6fourfive"
+[day01.rs:60] &nums = [
+    8,
+    6,
+    4,
+    5,
+]
+[day01.rs:60] ret = Some(
+    85,
+)
+[day01.rs:60] line = "55k"
+[day01.rs:60] &nums = [
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "24twogpbggkpxnjdsxdlhb73mjqz"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    2,
+    7,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "njqtnjh8sfskrhtpmx"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "sixffnkq1ltfstjk"
+[day01.rs:60] &nums = [
+    6,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "8foursixqqlzgch"
+[day01.rs:60] &nums = [
+    8,
+    4,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "zhbvngkkcx9onegbxdggmlph"
+[day01.rs:60] &nums = [
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "3threerxjsn"
+[day01.rs:60] &nums = [
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "seven9qk"
+[day01.rs:60] &nums = [
+    7,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "seven4sixsxdtgppsix6seven"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    6,
+    6,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "onebbsqvthree5"
+[day01.rs:60] &nums = [
+    1,
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    15,
+)
+[day01.rs:60] line = "72eight8hnqqntwo"
+[day01.rs:60] &nums = [
+    7,
+    2,
+    8,
+    8,
+    2,
+]
+[day01.rs:60] ret = Some(
+    72,
+)
+[day01.rs:60] line = "6six7threebmdqbsgkmhnfive"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    7,
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "6oneseven"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "lcjts7k5lvptsevenqdtbtqpmhlcjn"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "twofoursix4fivesixthreecvlbthree"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    6,
+    4,
+    5,
+    6,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "two7dskdzgs4onethreethreeseven"
+[day01.rs:60] &nums = [
+    2,
+    7,
+    4,
+    1,
+    3,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "qchrtnineblmhspplmllhvrjbth7bkzql"
+[day01.rs:60] &nums = [
+    9,
+    7,
+]
+[day01.rs:60] ret = Some(
+    97,
+)
+[day01.rs:60] line = "lkmdbdpgnr2threefjxnqztjhpsvfourl"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "twofive9fiveninecnhlrm5tgkqgjjj"
+[day01.rs:60] &nums = [
+    2,
+    5,
+    9,
+    5,
+    9,
+    5,
+]
+[day01.rs:60] ret = Some(
+    25,
+)
+[day01.rs:60] line = "fkkbkdnnfnzgxclppzbsq2llkzhntsevenbtmlft"
+[day01.rs:60] &nums = [
+    2,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "6six73fivetwonjbbxkccdgmlbpjoneightnlj"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    7,
+    3,
+    5,
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "zdthreefv1"
+[day01.rs:60] &nums = [
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    31,
+)
+[day01.rs:60] line = "q4hnvkk3five4"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    5,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "nine9bprrfvsqldtwojrvgcvcj6nine"
+[day01.rs:60] &nums = [
+    9,
+    9,
+    2,
+    6,
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "six48bhptnsix5"
+[day01.rs:60] &nums = [
+    6,
+    4,
+    8,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "one78rfnfive6pjxnbqz9"
+[day01.rs:60] &nums = [
+    1,
+    7,
+    8,
+    5,
+    6,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "phzjrp8pjfq"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "2threethree"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "mhnmzzseven1hrmxlbjpzjfjfsrdbqplgzrnsix9oneightpl"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    6,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    71,
+)
+[day01.rs:60] line = "51jq1nfive48one"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    1,
+    5,
+    4,
+    8,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "sixfivethree2pfpgqtvqs87six"
+[day01.rs:60] &nums = [
+    6,
+    5,
+    3,
+    2,
+    8,
+    7,
+    6,
+]
+[day01.rs:60] ret = Some(
+    66,
+)
+[day01.rs:60] line = "seven48vmkcfbq8"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "ngfzcrghc5dzlqggnvt6sixjgkhzgbzx9"
+[day01.rs:60] &nums = [
+    5,
+    6,
+    6,
+    9,
+]
+[day01.rs:60] ret = Some(
+    59,
+)
+[day01.rs:60] line = "bthreerdpbpntf28"
+[day01.rs:60] &nums = [
+    3,
+    2,
+    8,
+]
+[day01.rs:60] ret = Some(
+    38,
+)
+[day01.rs:60] line = "foursevenfive2"
+[day01.rs:60] &nums = [
+    4,
+    7,
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "56ctbkpvjrncfour"
+[day01.rs:60] &nums = [
+    5,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "pdzldtghgvmstfsevenlhnkxfive86seven7"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    8,
+    6,
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "3fourccfjskml1nine2"
+[day01.rs:60] &nums = [
+    3,
+    4,
+    1,
+    9,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "twosevennine3dn"
+[day01.rs:60] &nums = [
+    2,
+    7,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "1crtzbsprbttlszppqcdrfjsz"
+[day01.rs:60] &nums = [
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "8vjlsb36six"
+[day01.rs:60] &nums = [
+    8,
+    3,
+    6,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "five19beight7snmbk11"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    9,
+    8,
+    7,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "nineonejjjcqhpzblljdqfmxfhhlhfzc7four"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    7,
+    4,
+]
+[day01.rs:60] ret = Some(
+    94,
+)
+[day01.rs:60] line = "3eightthreellninecfllmfmcgcxsxvbgjsl6seven"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    3,
+    9,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "1mjxzjngbs7sixhvtlzsspninerrrvlppjggpkzsx7"
+[day01.rs:60] &nums = [
+    1,
+    7,
+    6,
+    9,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "1twosixthreennrxkltvpzncbfvvfjsqfjone"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    6,
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "5cb"
+[day01.rs:60] &nums = [
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "zfhhdq432sevenphqone"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    2,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "29eightqvz22"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    8,
+    2,
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "2ninefour"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "16one8sixpmjbvqr1six"
+[day01.rs:60] &nums = [
+    1,
+    6,
+    1,
+    8,
+    6,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "jhdh2xcqxpn"
+[day01.rs:60] &nums = [
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "gqxftjxfiveninefour7sevenczone"
+[day01.rs:60] &nums = [
+    5,
+    9,
+    4,
+    7,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "1nhgqthree1"
+[day01.rs:60] &nums = [
+    1,
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "jrrsp1ldrpqcnq3tj5nine"
+[day01.rs:60] &nums = [
+    1,
+    3,
+    5,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "4one9kmknhf4mrjbzx6onenine"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    9,
+    4,
+    6,
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    49,
+)
+[day01.rs:60] line = "nvqsdcnbrhbzckbjbseven4"
+[day01.rs:60] &nums = [
+    7,
+    4,
+]
+[day01.rs:60] ret = Some(
+    74,
+)
+[day01.rs:60] line = "mvtkvrpp8sevenonerc"
+[day01.rs:60] &nums = [
+    8,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "onekmfg98ngqceightkvm"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    18,
+)
+[day01.rs:60] line = "1nhvv5foursevenpd"
+[day01.rs:60] &nums = [
+    1,
+    5,
+    4,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "twotwo771gsqhs9eight7"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    7,
+    7,
+    1,
+    9,
+    8,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "sixseven82hmghbsbtwo"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    8,
+    2,
+    2,
+]
+[day01.rs:60] ret = Some(
+    62,
+)
+[day01.rs:60] line = "1vkkbrtcqdnjpmfksbzq"
+[day01.rs:60] &nums = [
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "three4sevenltfxr75eightseven8"
+[day01.rs:60] &nums = [
+    3,
+    4,
+    7,
+    7,
+    5,
+    8,
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    38,
+)
+[day01.rs:60] line = "eight9six"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "9351"
+[day01.rs:60] &nums = [
+    9,
+    3,
+    5,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "jqqqphgqthzjfnxrttnsjgvchzj7fmjrk"
+[day01.rs:60] &nums = [
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "ph7"
+[day01.rs:60] &nums = [
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "kpqvr6onekf3kmblbhtd"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    63,
+)
+[day01.rs:60] line = "qjhr5"
+[day01.rs:60] &nums = [
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "f3ninesix"
+[day01.rs:60] &nums = [
+    3,
+    9,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "onetjfivephhhcz8m6"
+[day01.rs:60] &nums = [
+    1,
+    5,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "rpcmcctqzh1eight1fourtwognd"
+[day01.rs:60] &nums = [
+    1,
+    8,
+    1,
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "342124"
+[day01.rs:60] &nums = [
+    3,
+    4,
+    2,
+    1,
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "njqzsqm5kkmlrkbh"
+[day01.rs:60] &nums = [
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "thhjgv9onepzzzhv"
+[day01.rs:60] &nums = [
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "6six9mqhkzkzpnhb1dbmrgqblgbcsndbfnv4"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    9,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    64,
+)
+[day01.rs:60] line = "nine8x5eightsrmgpfqsrnvkkql4"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    5,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    94,
+)
+[day01.rs:60] line = "95sixfour7nine"
+[day01.rs:60] &nums = [
+    9,
+    5,
+    6,
+    4,
+    7,
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "seven6tknmlgclllnjbt5rbhqfq"
+[day01.rs:60] &nums = [
+    7,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    75,
+)
+[day01.rs:60] line = "fourfoursevenmone1"
+[day01.rs:60] &nums = [
+    4,
+    4,
+    7,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "hxgkxkczcm7eight45"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    4,
+    5,
+]
+[day01.rs:60] ret = Some(
+    75,
+)
+[day01.rs:60] line = "85three"
+[day01.rs:60] &nums = [
+    8,
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "one51nineseven"
+[day01.rs:60] &nums = [
+    1,
+    5,
+    1,
+    9,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "223eight8qgzvlzninelhhvlzhxq"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    3,
+    8,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    29,
+)
+[day01.rs:60] line = "6vdrkgxjnine9"
+[day01.rs:60] &nums = [
+    6,
+    9,
+    9,
+]
+[day01.rs:60] ret = Some(
+    69,
+)
+[day01.rs:60] line = "twofourcq68four"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    6,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "seveneightsevenfivetwoone1cmxdbvtg"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    7,
+    5,
+    2,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    71,
+)
+[day01.rs:60] line = "seven6nineflcvcljf"
+[day01.rs:60] &nums = [
+    7,
+    6,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "6zvlxr23five"
+[day01.rs:60] &nums = [
+    6,
+    2,
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "geight94foursevendldmv2"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    4,
+    4,
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "fiveoneseven5two8hzpdkvjznpd"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    7,
+    5,
+    2,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "6lkcvqteight2eightnhbjrk3vdqmf"
+[day01.rs:60] &nums = [
+    6,
+    8,
+    2,
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    63,
+)
+[day01.rs:60] line = "3three23"
+[day01.rs:60] &nums = [
+    3,
+    3,
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "8twospseight36rsscccxvkn"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    8,
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "8fivethreetdrbmsfdzheightfour9kxnssglvb"
+[day01.rs:60] &nums = [
+    8,
+    5,
+    3,
+    8,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "2pvx4threegkgmfthxddbm"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "five754379five5eightwozxv"
+[day01.rs:60] &nums = [
+    5,
+    7,
+    5,
+    4,
+    3,
+    7,
+    9,
+    5,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "hcbmfrrs9s2smqpfcjbfour"
+[day01.rs:60] &nums = [
+    9,
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    94,
+)
+[day01.rs:60] line = "pxhqsbmfdlczcvx8eight8xfsxzfztxthreeseven"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    8,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    87,
+)
+[day01.rs:60] line = "seventworfkc9bmpxtwosevenprnfpbkmrn"
+[day01.rs:60] &nums = [
+    7,
+    2,
+    9,
+    2,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "8vlfkpfnbq"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "sixgtvzxlnjone8hcpkgbvpcczmflcqfrfdghfivefour"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    8,
+    5,
+    4,
+]
+[day01.rs:60] ret = Some(
+    64,
+)
+[day01.rs:60] line = "eighttwo7tznhgdhhthreethree"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    7,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "65four2one"
+[day01.rs:60] &nums = [
+    6,
+    5,
+    4,
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "qfcjdvnrl1threesrptvdsbnzteight9"
+[day01.rs:60] &nums = [
+    1,
+    3,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "fourninefour25"
+[day01.rs:60] &nums = [
+    4,
+    9,
+    4,
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    45,
+)
+[day01.rs:60] line = "twomgh3tp"
+[day01.rs:60] &nums = [
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "knsccxrpmfsixplvxndnzz4"
+[day01.rs:60] &nums = [
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    64,
+)
+[day01.rs:60] line = "eightfive43vbhskonefive"
+[day01.rs:60] &nums = [
+    8,
+    5,
+    4,
+    3,
+    1,
+    5,
+]
+[day01.rs:60] ret = Some(
+    85,
+)
+[day01.rs:60] line = "52ninefive"
+[day01.rs:60] &nums = [
+    5,
+    2,
+    9,
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "1fourninefourone65fourrstps"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    9,
+    4,
+    1,
+    6,
+    5,
+    4,
+]
+[day01.rs:60] ret = Some(
+    14,
+)
+[day01.rs:60] line = "eight6qcfone8ninecssbjfnlg"
+[day01.rs:60] &nums = [
+    8,
+    6,
+    1,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "6nine6one"
+[day01.rs:60] &nums = [
+    6,
+    9,
+    6,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "eight5jpprhfx4four"
+[day01.rs:60] &nums = [
+    8,
+    5,
+    4,
+    4,
+]
+[day01.rs:60] ret = Some(
+    84,
+)
+[day01.rs:60] line = "hkcqnfour8fourvsqzxzj"
+[day01.rs:60] &nums = [
+    4,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "26lmtqvxqhftksqgbrlrcsixsix"
+[day01.rs:60] &nums = [
+    2,
+    6,
+    6,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "4threedp24two"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    2,
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "6zgplsrmmqf9mfphjv9eighteight"
+[day01.rs:60] &nums = [
+    6,
+    9,
+    9,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    68,
+)
+[day01.rs:60] line = "4threeeightkfpn"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "threetwoqxglsgvjt9dprbnzvjf"
+[day01.rs:60] &nums = [
+    3,
+    2,
+    9,
+]
+[day01.rs:60] ret = Some(
+    39,
+)
+[day01.rs:60] line = "two4sevencppdpcskb"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "v84qzxqdpjnxfcdbrcrbn7sdtpm7"
+[day01.rs:60] &nums = [
+    8,
+    4,
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    87,
+)
+[day01.rs:60] line = "4zcgpcfdbxpfbtbfbpspxxjqkcgpf631five2"
+[day01.rs:60] &nums = [
+    4,
+    6,
+    3,
+    1,
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "onetwo3fivefive"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    3,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    15,
+)
+[day01.rs:60] line = "2fclzpjxqpnine"
+[day01.rs:60] &nums = [
+    2,
+    9,
+]
+[day01.rs:60] ret = Some(
+    29,
+)
+[day01.rs:60] line = "kftrczvt36ncsftn7djchszjlcpdmrpxh"
+[day01.rs:60] &nums = [
+    3,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "6qgdchbfive"
+[day01.rs:60] &nums = [
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "6spqxqdgsnxvdcxrvkrfourfouronex"
+[day01.rs:60] &nums = [
+    6,
+    4,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "2lqbmhmgtmkbcf94three"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    4,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "7pddrgp2npqcjseven"
+[day01.rs:60] &nums = [
+    7,
+    2,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "91threevfpdjbxrrkcnlcgqq"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "nphgjscsklsixkrtpvz6qvvngmn6twofive"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    6,
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "fivexhppdjnjdphnzjzfbdpdfour1"
+[day01.rs:60] &nums = [
+    5,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "three1two6seven7six"
+[day01.rs:60] &nums = [
+    3,
+    1,
+    2,
+    6,
+    7,
+    7,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "ninefoursevenvvpsjpsmtstjrqb4two"
+[day01.rs:60] &nums = [
+    9,
+    4,
+    7,
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    92,
+)
+[day01.rs:60] line = "hlfpzrxxfgfvvhbtnnmzcbxseventfcqcslrd2"
+[day01.rs:60] &nums = [
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    72,
+)
+[day01.rs:60] line = "6dbkvcb2"
+[day01.rs:60] &nums = [
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    62,
+)
+[day01.rs:60] line = "968sevengczvvqc25"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    8,
+    7,
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "c3zqzgnz9"
+[day01.rs:60] &nums = [
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    39,
+)
+[day01.rs:60] line = "fivehkxcseven8djnoneightvb"
+[day01.rs:60] &nums = [
+    5,
+    7,
+    8,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "dkvshkxv5two"
+[day01.rs:60] &nums = [
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    52,
+)
+[day01.rs:60] line = "9khljm"
+[day01.rs:60] &nums = [
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "74threethree46nine24"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    3,
+    3,
+    4,
+    6,
+    9,
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    74,
+)
+[day01.rs:60] line = "57fourfivedkhzqvsxqeightrqqfour8"
+[day01.rs:60] &nums = [
+    5,
+    7,
+    4,
+    5,
+    8,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "22znhr59kqjeight3"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    5,
+    9,
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "6seveneightsevenbqksdtxztffive"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    8,
+    7,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "23threenzv7fivethreeone8"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    3,
+    7,
+    5,
+    3,
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "fiveb1twocgseven7"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    2,
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    57,
+)
+[day01.rs:60] line = "3jxrflshs"
+[day01.rs:60] &nums = [
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "zrjbpfkppltssrc718"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "9rkfsmeight5pgmr"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "2ljspks"
+[day01.rs:60] &nums = [
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "67sixnineqeightonefive"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    6,
+    9,
+    8,
+    1,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "vk42two5eightmstgrzndc"
+[day01.rs:60] &nums = [
+    4,
+    2,
+    2,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "4eighttwotwo5hbchfnthree7"
+[day01.rs:60] &nums = [
+    4,
+    8,
+    2,
+    2,
+    5,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    47,
+)
+[day01.rs:60] line = "7pdvcdfive5seventhree"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    5,
+    7,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "6hthreesevenlbgqjl65"
+[day01.rs:60] &nums = [
+    6,
+    3,
+    7,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "nine6oneqfjlxtbzmnfsrskqhonexkphxlvrmh"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "7four5eight"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "8lrseven8cjlthreefive"
+[day01.rs:60] &nums = [
+    8,
+    7,
+    8,
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    85,
+)
+[day01.rs:60] line = "mnr5thfqfgfsr"
+[day01.rs:60] &nums = [
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "7three7threeqfrgl"
+[day01.rs:60] &nums = [
+    7,
+    3,
+    7,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "15sevenzdzttjcmppeight"
+[day01.rs:60] &nums = [
+    1,
+    5,
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    18,
+)
+[day01.rs:60] line = "five3ninefive1"
+[day01.rs:60] &nums = [
+    5,
+    3,
+    9,
+    5,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "62l9dxjtrv5fivethreeoneightrf"
+[day01.rs:60] &nums = [
+    6,
+    2,
+    9,
+    5,
+    5,
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "njgrrqddnsvxmfvljbsclbjqnkskmrpglgjr7three7"
+[day01.rs:60] &nums = [
+    7,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "g8ninethree"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "nds8"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "koneightlztzvzshjnnl6sevenn"
+[day01.rs:60] &nums = [
+    1,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "ninethree2eighttwohldqxcbtzn3"
+[day01.rs:60] &nums = [
+    9,
+    3,
+    2,
+    8,
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "26ssczpmhsng"
+[day01.rs:60] &nums = [
+    2,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "nine7czmjl16"
+[day01.rs:60] &nums = [
+    9,
+    7,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    96,
+)
+[day01.rs:60] line = "two49294"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    9,
+    2,
+    9,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "threenrcrvseveneightone33dvggqv2"
+[day01.rs:60] &nums = [
+    3,
+    7,
+    8,
+    1,
+    3,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "8bpqrdftcqtwo1fxhlsixspfpzt"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "6sevensevenfourlzjszs9"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    7,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    69,
+)
+[day01.rs:60] line = "gttlbcjpn74"
+[day01.rs:60] &nums = [
+    7,
+    4,
+]
+[day01.rs:60] ret = Some(
+    74,
+)
+[day01.rs:60] line = "cdfhbccrr8three13"
+[day01.rs:60] &nums = [
+    8,
+    3,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "ninehrldjvccjnrcdqv2"
+[day01.rs:60] &nums = [
+    9,
+    2,
+]
+[day01.rs:60] ret = Some(
+    92,
+)
+[day01.rs:60] line = "8onenine1gzvfphsgmq"
+[day01.rs:60] &nums = [
+    8,
+    1,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "22five446"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    5,
+    4,
+    4,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "eightbksdflljdrznvmxjqg1nine"
+[day01.rs:60] &nums = [
+    8,
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "2nine7onenine9"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    7,
+    1,
+    9,
+    9,
+]
+[day01.rs:60] ret = Some(
+    29,
+)
+[day01.rs:60] line = "gtnhfd72"
+[day01.rs:60] &nums = [
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    72,
+)
+[day01.rs:60] line = "1svgmggsevenfiveseven"
+[day01.rs:60] &nums = [
+    1,
+    7,
+    5,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "1fiveqbvnr2"
+[day01.rs:60] &nums = [
+    1,
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "4one71four"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    7,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "51eight38mhkfz9kvmkhj"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    8,
+    3,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    59,
+)
+[day01.rs:60] line = "6onexnbv4twoz3twoqtjvdl"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    4,
+    2,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    62,
+)
+[day01.rs:60] line = "5sht6fkhqlonefour"
+[day01.rs:60] &nums = [
+    5,
+    6,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "drjldqrbxxsix6two8five11"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    2,
+    8,
+    5,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "tvseven3ninelzvx3"
+[day01.rs:60] &nums = [
+    7,
+    3,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "five1four883bk9"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    4,
+    8,
+    8,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    59,
+)
+[day01.rs:60] line = "4three32three75eight"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    3,
+    2,
+    3,
+    7,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "ninexvn14"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    94,
+)
+[day01.rs:60] line = "pnxzrqvkbfive3lzh"
+[day01.rs:60] &nums = [
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    53,
+)
+[day01.rs:60] line = "1kzkmgnzn9five"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    5,
+]
+[day01.rs:60] ret = Some(
+    15,
+)
+[day01.rs:60] line = "3l"
+[day01.rs:60] &nums = [
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "fourqjsp832eight8"
+[day01.rs:60] &nums = [
+    4,
+    8,
+    3,
+    2,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "931346xngfkmhrcj5"
+[day01.rs:60] &nums = [
+    9,
+    3,
+    1,
+    3,
+    4,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "24cvbxthpzzkfiveleight"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "k7scmbsxlvqlsbtqdnxn8nine"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "fsdv5"
+[day01.rs:60] &nums = [
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "79nineonegpmbghmck6bsjnf"
+[day01.rs:60] &nums = [
+    7,
+    9,
+    9,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "one6844"
+[day01.rs:60] &nums = [
+    1,
+    6,
+    8,
+    4,
+    4,
+]
+[day01.rs:60] ret = Some(
+    14,
+)
+[day01.rs:60] line = "9dxbtcmtwo93"
+[day01.rs:60] &nums = [
+    9,
+    2,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "kzhffive4"
+[day01.rs:60] &nums = [
+    5,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "7ninesevengxlv"
+[day01.rs:60] &nums = [
+    7,
+    9,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "rqcfztrpjlmnine9ffgg7"
+[day01.rs:60] &nums = [
+    9,
+    9,
+    7,
+]
+[day01.rs:60] ret = Some(
+    97,
+)
+[day01.rs:60] line = "1tbfpflrhzb"
+[day01.rs:60] &nums = [
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "zmmfdsixonefive7onethree9"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    5,
+    7,
+    1,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    69,
+)
+[day01.rs:60] line = "7fivezspfkjpbgz"
+[day01.rs:60] &nums = [
+    7,
+    5,
+]
+[day01.rs:60] ret = Some(
+    75,
+)
+[day01.rs:60] line = "threetscqrztsix3bmtls7threeseven"
+[day01.rs:60] &nums = [
+    3,
+    6,
+    3,
+    7,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "ninehtrvzrlfqmqtdk6twosevenkkdbzsrccd"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    2,
+    7,
+]
+[day01.rs:60] ret = Some(
+    97,
+)
+[day01.rs:60] line = "694nnzfkjcprp3"
+[day01.rs:60] &nums = [
+    6,
+    9,
+    4,
+    3,
+]
+[day01.rs:60] ret = Some(
+    63,
+)
+[day01.rs:60] line = "sevenzfbslgstn1dbqnblrrffourfournvrx7"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    4,
+    4,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "onetwo4hzljtcrdks13five"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    4,
+    1,
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    15,
+)
+[day01.rs:60] line = "93threedrhgg5svpm4seven6"
+[day01.rs:60] &nums = [
+    9,
+    3,
+    3,
+    5,
+    4,
+    7,
+    6,
+]
+[day01.rs:60] ret = Some(
+    96,
+)
+[day01.rs:60] line = "1sixsixnineonesbvcptsk"
+[day01.rs:60] &nums = [
+    1,
+    6,
+    6,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "3sixjnkvq5tqtzone"
+[day01.rs:60] &nums = [
+    3,
+    6,
+    5,
+    1,
+]
+[day01.rs:60] ret = Some(
+    31,
+)
+[day01.rs:60] line = "sevenfivevjrmqqgf4"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    4,
+]
+[day01.rs:60] ret = Some(
+    74,
+)
+[day01.rs:60] line = "18eightppqfivebmncqgrfour"
+[day01.rs:60] &nums = [
+    1,
+    8,
+    8,
+    5,
+    4,
+]
+[day01.rs:60] ret = Some(
+    14,
+)
+[day01.rs:60] line = "sixonefourhdzbgjhlj29one"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    4,
+    2,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "three1jrgjjtq"
+[day01.rs:60] &nums = [
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    31,
+)
+[day01.rs:60] line = "41three3three62"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    3,
+    3,
+    3,
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "sevenonesix9one"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    6,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    71,
+)
+[day01.rs:60] line = "dr6one7"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "sevenrvgljfc9"
+[day01.rs:60] &nums = [
+    7,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "7sgqngt7sixfour"
+[day01.rs:60] &nums = [
+    7,
+    7,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    74,
+)
+[day01.rs:60] line = "9smcksthreekbpczppvv"
+[day01.rs:60] &nums = [
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "7fivedptmgrkd4seven"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    4,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "82onefourfivepzqcqzq9"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    1,
+    4,
+    5,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "6zx"
+[day01.rs:60] &nums = [
+    6,
+]
+[day01.rs:60] ret = Some(
+    66,
+)
+[day01.rs:60] line = "7dfk8lsix"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "eight2nl8573seven1"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    8,
+    5,
+    7,
+    3,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "5tx6seven3gmhxkcclmrsrggpbgl4"
+[day01.rs:60] &nums = [
+    5,
+    6,
+    7,
+    3,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "fivetwo2three42onegzt1"
+[day01.rs:60] &nums = [
+    5,
+    2,
+    2,
+    3,
+    4,
+    2,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "eightninelbltqg448eight"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    4,
+    4,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "9lhbrvfhsbtzlrfivefour2"
+[day01.rs:60] &nums = [
+    9,
+    5,
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    92,
+)
+[day01.rs:60] line = "dhlhk31znbvzbxkxzhvnone2gglg8"
+[day01.rs:60] &nums = [
+    3,
+    1,
+    1,
+    2,
+    8,
+]
+[day01.rs:60] ret = Some(
+    38,
+)
+[day01.rs:60] line = "twobxrrlpdcb6five"
+[day01.rs:60] &nums = [
+    2,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    25,
+)
+[day01.rs:60] line = "ddgmsevensevenv99six"
+[day01.rs:60] &nums = [
+    7,
+    7,
+    9,
+    9,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "5vztngb"
+[day01.rs:60] &nums = [
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "qlfnc3five"
+[day01.rs:60] &nums = [
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    35,
+)
+[day01.rs:60] line = "tslrgmptqlntwoxt5qsxfclzgzkgfzsnfkhj"
+[day01.rs:60] &nums = [
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    25,
+)
+[day01.rs:60] line = "87mmsxvpfrtfour"
+[day01.rs:60] &nums = [
+    8,
+    7,
+    4,
+]
+[day01.rs:60] ret = Some(
+    84,
+)
+[day01.rs:60] line = "mjtkmlfpk7eight"
+[day01.rs:60] &nums = [
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "4k12ljdx"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "2bgrmlszl"
+[day01.rs:60] &nums = [
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "qmfffgpdgtwo3rfgfmpxk3rjxthn9five"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    3,
+    9,
+    5,
+]
+[day01.rs:60] ret = Some(
+    25,
+)
+[day01.rs:60] line = "4lpgxn6sg4"
+[day01.rs:60] &nums = [
+    4,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "1xpktpcmmgbnrct8358one3"
+[day01.rs:60] &nums = [
+    1,
+    8,
+    3,
+    5,
+    8,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    13,
+)
+[day01.rs:60] line = "xtzdqjthreeeightone575"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    1,
+    5,
+    7,
+    5,
+]
+[day01.rs:60] ret = Some(
+    35,
+)
+[day01.rs:60] line = "jdps3nbjdsjtpgl389z6twonebgt"
+[day01.rs:60] &nums = [
+    3,
+    3,
+    8,
+    9,
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "1eighteightxfour77"
+[day01.rs:60] &nums = [
+    1,
+    8,
+    8,
+    4,
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "rqrmk1m7gbkseven1xlxmncc"
+[day01.rs:60] &nums = [
+    1,
+    7,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "cfkz24zh"
+[day01.rs:60] &nums = [
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "18z"
+[day01.rs:60] &nums = [
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    18,
+)
+[day01.rs:60] line = "7kjbthk3twonine9lgn"
+[day01.rs:60] &nums = [
+    7,
+    3,
+    2,
+    9,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "7seventhree"
+[day01.rs:60] &nums = [
+    7,
+    7,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "3dxsmd5six"
+[day01.rs:60] &nums = [
+    3,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "r2threefv"
+[day01.rs:60] &nums = [
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "lbtlbvfvconegmcxnineclgbzsvkz5drtwo"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "45cpxfivethree"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    43,
+)
+[day01.rs:60] line = "one9six"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "7fivefivelthree"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "sevensixfour4lrlgrhszpb2"
+[day01.rs:60] &nums = [
+    7,
+    6,
+    4,
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    72,
+)
+[day01.rs:60] line = "twokrvnhgsixzmtmqth9one6"
+[day01.rs:60] &nums = [
+    2,
+    6,
+    9,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "eightsixfsfr958716"
+[day01.rs:60] &nums = [
+    8,
+    6,
+    9,
+    5,
+    8,
+    7,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "smznctwozzphfk48eight"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "mfvlq546onesxl56"
+[day01.rs:60] &nums = [
+    5,
+    4,
+    6,
+    1,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    56,
+)
+[day01.rs:60] line = "6fivemhh"
+[day01.rs:60] &nums = [
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "jhteightwonzpgtdbxgb3"
+[day01.rs:60] &nums = [
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "12gvh"
+[day01.rs:60] &nums = [
+    1,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "four3eightone56"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    8,
+    1,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    46,
+)
+[day01.rs:60] line = "vnhbkcvbkldcrtqthhbbzbqkgkdkbgcznpfour4five8"
+[day01.rs:60] &nums = [
+    4,
+    4,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "992three75znxghjzzxkvtmthp"
+[day01.rs:60] &nums = [
+    9,
+    9,
+    2,
+    3,
+    7,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "three3three6dfivexbffbnbnjj26"
+[day01.rs:60] &nums = [
+    3,
+    3,
+    3,
+    6,
+    5,
+    2,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "three5zllrfthreecpfcvpflkm"
+[day01.rs:60] &nums = [
+    3,
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "ftbdshfsjhpttsscpgcplz6ndzsk"
+[day01.rs:60] &nums = [
+    6,
+]
+[day01.rs:60] ret = Some(
+    66,
+)
+[day01.rs:60] line = "trsfrxlndtwothree3rzkvhgdnlq2three"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    3,
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "998"
+[day01.rs:60] &nums = [
+    9,
+    9,
+    8,
+]
+[day01.rs:60] ret = Some(
+    98,
+)
+[day01.rs:60] line = "fntnfour3seveneight1five9"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    7,
+    8,
+    1,
+    5,
+    9,
+]
+[day01.rs:60] ret = Some(
+    49,
+)
+[day01.rs:60] line = "88485rhdfrgsix"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    4,
+    8,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "jgzbgcvjoneonefour39"
+[day01.rs:60] &nums = [
+    1,
+    1,
+    4,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "88vmxnine"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "2tjxscvpnhlbstthrees88"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "zonesthvqnfczfive67two81"
+[day01.rs:60] &nums = [
+    1,
+    5,
+    6,
+    7,
+    2,
+    8,
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "4sixckzftfh1mcfjdc"
+[day01.rs:60] &nums = [
+    4,
+    6,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "ktmnjmlone3lthreetwolhxtpqftrbljmjjhbkl"
+[day01.rs:60] &nums = [
+    1,
+    3,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "8mmsevenfiveddjxqgpseven"
+[day01.rs:60] &nums = [
+    8,
+    7,
+    5,
+    7,
+]
+[day01.rs:60] ret = Some(
+    87,
+)
+[day01.rs:60] line = "two3tzszcrf"
+[day01.rs:60] &nums = [
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "4qmstsmrfive"
+[day01.rs:60] &nums = [
+    4,
+    5,
+]
+[day01.rs:60] ret = Some(
+    45,
+)
+[day01.rs:60] line = "5threennjstfivemnpgndnpkbfour5"
+[day01.rs:60] &nums = [
+    5,
+    3,
+    5,
+    4,
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "fivetmpcsbtjlgdkct68sevenonet"
+[day01.rs:60] &nums = [
+    5,
+    6,
+    8,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "seven1one16seven47"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    1,
+    1,
+    6,
+    7,
+    4,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "lpmxtlq7"
+[day01.rs:60] &nums = [
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "six1jmnhrsbktdlfqjrmg21"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "six2nine7xdzb6twoneqbk"
+[day01.rs:60] &nums = [
+    6,
+    2,
+    9,
+    7,
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    62,
+)
+[day01.rs:60] line = "two5eight2jmfxqgrsfiveeight"
+[day01.rs:60] &nums = [
+    2,
+    5,
+    8,
+    2,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "gvmcfzpthfourfivefourfive5lqskhz6"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    4,
+    5,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    46,
+)
+[day01.rs:60] line = "fourfive1"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "tzzkgsthsevenfour6seven"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "twofour9"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    29,
+)
+[day01.rs:60] line = "hdbqpvvr3qjsq"
+[day01.rs:60] &nums = [
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "seventwo1beight8"
+[day01.rs:60] &nums = [
+    7,
+    2,
+    1,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "eight8eightvzhsxjjkfkvtpr"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "7three74gfph"
+[day01.rs:60] &nums = [
+    7,
+    3,
+    7,
+    4,
+]
+[day01.rs:60] ret = Some(
+    74,
+)
+[day01.rs:60] line = "cxnine6fivexjvstcvpblmc3"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "3xqhlksmqdzrrptnine1bjknntpts15j"
+[day01.rs:60] &nums = [
+    3,
+    9,
+    1,
+    1,
+    5,
+]
+[day01.rs:60] ret = Some(
+    35,
+)
+[day01.rs:60] line = "7zrg"
+[day01.rs:60] &nums = [
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "dhhjdjvzv42one3"
+[day01.rs:60] &nums = [
+    4,
+    2,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    43,
+)
+[day01.rs:60] line = "54mlg8ldhdtcp"
+[day01.rs:60] &nums = [
+    5,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "five3zrpfphtone1dszspzqkqcqfzcm"
+[day01.rs:60] &nums = [
+    5,
+    3,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "vzjdxhbnnxvfnb6nnjone3twonine"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    3,
+    2,
+    9,
+]
+[day01.rs:60] ret = Some(
+    69,
+)
+[day01.rs:60] line = "lbjsfzfmcn7two"
+[day01.rs:60] &nums = [
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    72,
+)
+[day01.rs:60] line = "gctcfive3l8twonezbr"
+[day01.rs:60] &nums = [
+    5,
+    3,
+    8,
+    2,
+]
+[day01.rs:60] ret = Some(
+    52,
+)
+[day01.rs:60] line = "43sevenfour81three"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    7,
+    4,
+    8,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    43,
+)
+[day01.rs:60] line = "eight82one56gmlgvchbf7five"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    2,
+    1,
+    5,
+    6,
+    7,
+    5,
+]
+[day01.rs:60] ret = Some(
+    85,
+)
+[day01.rs:60] line = "fournb2"
+[day01.rs:60] &nums = [
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "2czhjproneq"
+[day01.rs:60] &nums = [
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "449oneskqjdcxszvvlhhddb"
+[day01.rs:60] &nums = [
+    4,
+    4,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "fdnkhnvnzpfive7six"
+[day01.rs:60] &nums = [
+    5,
+    7,
+    6,
+]
+[day01.rs:60] ret = Some(
+    56,
+)
+[day01.rs:60] line = "four6slzcflxhthree5zbfour"
+[day01.rs:60] &nums = [
+    4,
+    6,
+    3,
+    5,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "8fsmsvhnkgnf53jvcshnp3sixqffls"
+[day01.rs:60] &nums = [
+    8,
+    5,
+    3,
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    86,
+)
+[day01.rs:60] line = "2mckdlh5"
+[day01.rs:60] &nums = [
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    25,
+)
+[day01.rs:60] line = "3onemnvfzpsevenseven1"
+[day01.rs:60] &nums = [
+    3,
+    1,
+    7,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    31,
+)
+[day01.rs:60] line = "fourgbzcvvzninemzcvj625"
+[day01.rs:60] &nums = [
+    4,
+    9,
+    6,
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    45,
+)
+[day01.rs:60] line = "hmkgzmtwonine1threesdsdxfbgmpqrrsftz"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "seven4hrmkdmmhmr9sixthreefour85"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    9,
+    6,
+    3,
+    4,
+    8,
+    5,
+]
+[day01.rs:60] ret = Some(
+    75,
+)
+[day01.rs:60] line = "dbnpgh9vkdtjtct5five"
+[day01.rs:60] &nums = [
+    9,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "fourzzffg9vbgjmh"
+[day01.rs:60] &nums = [
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    49,
+)
+[day01.rs:60] line = "35sixqdvxmxpbntwo"
+[day01.rs:60] &nums = [
+    3,
+    5,
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "two3ninefourfivefivecllv"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    9,
+    4,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    25,
+)
+[day01.rs:60] line = "ninerdscsdxthveight1sevenpvksjzqdhfjvhgs"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    1,
+    7,
+]
+[day01.rs:60] ret = Some(
+    97,
+)
+[day01.rs:60] line = "sixfive84xbgqjkthreexnine"
+[day01.rs:60] &nums = [
+    6,
+    5,
+    8,
+    4,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    69,
+)
+[day01.rs:60] line = "pmqbk9khcrhxjxmksixrxbffllkf"
+[day01.rs:60] &nums = [
+    9,
+    6,
+]
+[day01.rs:60] ret = Some(
+    96,
+)
+[day01.rs:60] line = "2eightsevenone51mdnrhs"
+[day01.rs:60] &nums = [
+    2,
+    8,
+    7,
+    1,
+    5,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "62jfjdsklvnqthree8"
+[day01.rs:60] &nums = [
+    6,
+    2,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    68,
+)
+[day01.rs:60] line = "9sixfivetk3threeqxbkmgzxgpt"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    5,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "rgrkj1sixfive5"
+[day01.rs:60] &nums = [
+    1,
+    6,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    15,
+)
+[day01.rs:60] line = "8ljlxjlcnthreelhjpngxmxnxdgv"
+[day01.rs:60] &nums = [
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "nine7snjkt3"
+[day01.rs:60] &nums = [
+    9,
+    7,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "x8fourdqfksrft3eight7fiveeight"
+[day01.rs:60] &nums = [
+    8,
+    4,
+    3,
+    8,
+    7,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "two7snltljp6"
+[day01.rs:60] &nums = [
+    2,
+    7,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "gflvdblndveighteight5sevenone3nineone"
+[day01.rs:60] &nums = [
+    8,
+    8,
+    5,
+    7,
+    1,
+    3,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "6five77oneninesmbtbtzp"
+[day01.rs:60] &nums = [
+    6,
+    5,
+    7,
+    7,
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    69,
+)
+[day01.rs:60] line = "fiveqzxt96"
+[day01.rs:60] &nums = [
+    5,
+    9,
+    6,
+]
+[day01.rs:60] ret = Some(
+    56,
+)
+[day01.rs:60] line = "cbjnmcmb3vhljkrxlxnkdtjprzh8nine"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    39,
+)
+[day01.rs:60] line = "33dfqq"
+[day01.rs:60] &nums = [
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "8one76fourxb"
+[day01.rs:60] &nums = [
+    8,
+    1,
+    7,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    84,
+)
+[day01.rs:60] line = "dxxhb6bclg5dtmxzxrmb"
+[day01.rs:60] &nums = [
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "eight2jcgch2"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "twoseventqkxzb4"
+[day01.rs:60] &nums = [
+    2,
+    7,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "rhnp7dmsz42two4"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    2,
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    74,
+)
+[day01.rs:60] line = "three7ninejxszpkln7twov"
+[day01.rs:60] &nums = [
+    3,
+    7,
+    9,
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "4fivenhmsbkfnx51"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    5,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "756zvfktjqc8"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    6,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "five45dvdjmk6two49"
+[day01.rs:60] &nums = [
+    5,
+    4,
+    5,
+    6,
+    2,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    59,
+)
+[day01.rs:60] line = "8one8fhrs5threefbfrd"
+[day01.rs:60] &nums = [
+    8,
+    1,
+    8,
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "2mh7zpgbfourglvt7"
+[day01.rs:60] &nums = [
+    2,
+    7,
+    4,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "8vbzdvdmghrtwojmcmlbqzn"
+[day01.rs:60] &nums = [
+    8,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "twoninefive3qvseven3seven8"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    5,
+    3,
+    7,
+    3,
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "four3n2znkrjvz45"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    2,
+    4,
+    5,
+]
+[day01.rs:60] ret = Some(
+    45,
+)
+[day01.rs:60] line = "dkgbsx869qrgvtwo"
+[day01.rs:60] &nums = [
+    8,
+    6,
+    9,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "fttsp2twothreetsffjpk9cs"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    29,
+)
+[day01.rs:60] line = "7nine3ksbjznrblrgbsrzvpm"
+[day01.rs:60] &nums = [
+    7,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    73,
+)
+[day01.rs:60] line = "six7xqqssrdgkgbqjmsevenfivefour3"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    7,
+    5,
+    4,
+    3,
+]
+[day01.rs:60] ret = Some(
+    63,
+)
+[day01.rs:60] line = "9gsfhktv"
+[day01.rs:60] &nums = [
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "2fgmmxjjzx"
+[day01.rs:60] &nums = [
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "one8gnhrkjonesix"
+[day01.rs:60] &nums = [
+    1,
+    8,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "5eight99zlcrkdp69eight8"
+[day01.rs:60] &nums = [
+    5,
+    8,
+    9,
+    9,
+    6,
+    9,
+    8,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "lpghsqqltgqkvbphnspn9ldxsbdsqbgjpnl3"
+[day01.rs:60] &nums = [
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "xpvvngqf37mng2"
+[day01.rs:60] &nums = [
+    3,
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "sixscvk8two"
+[day01.rs:60] &nums = [
+    6,
+    8,
+    2,
+]
+[day01.rs:60] ret = Some(
+    62,
+)
+[day01.rs:60] line = "3xv8twofoursix"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    2,
+    4,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "eight4eightrxjcnzcqh3seventhree57"
+[day01.rs:60] &nums = [
+    8,
+    4,
+    8,
+    3,
+    7,
+    3,
+    5,
+    7,
+]
+[day01.rs:60] ret = Some(
+    87,
+)
+[day01.rs:60] line = "threethree537eightfour"
+[day01.rs:60] &nums = [
+    3,
+    3,
+    5,
+    3,
+    7,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "njk6threesevenzdzjmldmvkp"
+[day01.rs:60] &nums = [
+    6,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "onenpb53six"
+[day01.rs:60] &nums = [
+    1,
+    5,
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "three9144sixknrfjvveight"
+[day01.rs:60] &nums = [
+    3,
+    9,
+    1,
+    4,
+    4,
+    6,
+    8,
+]
+[day01.rs:60] ret = Some(
+    38,
+)
+[day01.rs:60] line = "9twotwovjtdq8fourcmjnp9hq"
+[day01.rs:60] &nums = [
+    9,
+    2,
+    2,
+    8,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "threepdfl3sfjg"
+[day01.rs:60] &nums = [
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "twokngvrbsq3threesixthreesix"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    3,
+    6,
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "eight2six89msjtqqqsdlgjrdgh"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    6,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "sixnine2five74three5"
+[day01.rs:60] &nums = [
+    6,
+    9,
+    2,
+    5,
+    7,
+    4,
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "9xdmhncneightzjsznthflxsix"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    96,
+)
+[day01.rs:60] line = "51eightzjmlfctzfcf"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "4sixhjrnine2eight4"
+[day01.rs:60] &nums = [
+    4,
+    6,
+    9,
+    2,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "ninesixonetwoeight1four"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    1,
+    2,
+    8,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    94,
+)
+[day01.rs:60] line = "4sixfkllzstwo91"
+[day01.rs:60] &nums = [
+    4,
+    6,
+    2,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "rtlkqg2fourxhgcfive92hsvjpczsjtq"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    5,
+    9,
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "two17"
+[day01.rs:60] &nums = [
+    2,
+    1,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "three85two5five6twobpftvzkcq"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    5,
+    2,
+    5,
+    5,
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "sevensevenone5"
+[day01.rs:60] &nums = [
+    7,
+    7,
+    1,
+    5,
+]
+[day01.rs:60] ret = Some(
+    75,
+)
+[day01.rs:60] line = "ng43gcvc3eight"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "jzjbsttcrdgfhsddrhkhzgqjjsmpntjqz3sixcvbksklr"
+[day01.rs:60] &nums = [
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "hpzeightksvmxhsix6chnllpzh7"
+[day01.rs:60] &nums = [
+    8,
+    6,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    87,
+)
+[day01.rs:60] line = "ninek98sixnineeightjptkmbbsghseven"
+[day01.rs:60] &nums = [
+    9,
+    9,
+    8,
+    6,
+    9,
+    8,
+    7,
+]
+[day01.rs:60] ret = Some(
+    97,
+)
+[day01.rs:60] line = "lssfiveone5five6zone"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    5,
+    5,
+    6,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "5cjdzgtsixseven4seven6bkprzxn"
+[day01.rs:60] &nums = [
+    5,
+    6,
+    7,
+    4,
+    7,
+    6,
+]
+[day01.rs:60] ret = Some(
+    56,
+)
+[day01.rs:60] line = "3fivemtbpznnine4sqhc"
+[day01.rs:60] &nums = [
+    3,
+    5,
+    9,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "fourdllqn4"
+[day01.rs:60] &nums = [
+    4,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "86kxftxhrvbv7bqgvbflh"
+[day01.rs:60] &nums = [
+    8,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    87,
+)
+[day01.rs:60] line = "6one91ctlzztdkkt5"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    9,
+    1,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "three81seven"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    1,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "5fivedltbtfl1hsixnine"
+[day01.rs:60] &nums = [
+    5,
+    5,
+    1,
+    6,
+    9,
+]
+[day01.rs:60] ret = Some(
+    59,
+)
+[day01.rs:60] line = "3eightone2five5nfbdqnxftkvnznjkqmf"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    1,
+    2,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    35,
+)
+[day01.rs:60] line = "fiveltxdrgzlnptvql7"
+[day01.rs:60] &nums = [
+    5,
+    7,
+]
+[day01.rs:60] ret = Some(
+    57,
+)
+[day01.rs:60] line = "two83eight"
+[day01.rs:60] &nums = [
+    2,
+    8,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "zggkonefour46eightninesdcxthree"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    4,
+    6,
+    8,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    13,
+)
+[day01.rs:60] line = "one7sevensck"
+[day01.rs:60] &nums = [
+    1,
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "mnd12fourhjplkzkbzb5dvhnttq9zdftpk"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    4,
+    5,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "oneljbdxmggg4"
+[day01.rs:60] &nums = [
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    14,
+)
+[day01.rs:60] line = "6six6eight5"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    6,
+    8,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "threefourtwo9"
+[day01.rs:60] &nums = [
+    3,
+    4,
+    2,
+    9,
+]
+[day01.rs:60] ret = Some(
+    39,
+)
+[day01.rs:60] line = "3three4bdbzmhfkc"
+[day01.rs:60] &nums = [
+    3,
+    3,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "9zcsixhfrvsmjbh"
+[day01.rs:60] &nums = [
+    9,
+    6,
+]
+[day01.rs:60] ret = Some(
+    96,
+)
+[day01.rs:60] line = "2pmdhtmlxtfive7"
+[day01.rs:60] &nums = [
+    2,
+    5,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "16bfldpmhvpr"
+[day01.rs:60] &nums = [
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "trshxpzhrz5seven5vcsqfgkl5"
+[day01.rs:60] &nums = [
+    5,
+    7,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "srfqlzzsmsix5sixdjqnzfjfqrzpqcklgn"
+[day01.rs:60] &nums = [
+    6,
+    5,
+    6,
+]
+[day01.rs:60] ret = Some(
+    66,
+)
+[day01.rs:60] line = "fqvvjmhsix53kqvdzxllmp7"
+[day01.rs:60] &nums = [
+    6,
+    5,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "fjgkq71ninetwosix"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    9,
+    2,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "62nsdmxtrtdt7429"
+[day01.rs:60] &nums = [
+    6,
+    2,
+    7,
+    4,
+    2,
+    9,
+]
+[day01.rs:60] ret = Some(
+    69,
+)
+[day01.rs:60] line = "8fivefive"
+[day01.rs:60] &nums = [
+    8,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    85,
+)
+[day01.rs:60] line = "four8nineninenine9"
+[day01.rs:60] &nums = [
+    4,
+    8,
+    9,
+    9,
+    9,
+    9,
+]
+[day01.rs:60] ret = Some(
+    49,
+)
+[day01.rs:60] line = "ndfkcn26twoone9"
+[day01.rs:60] &nums = [
+    2,
+    6,
+    2,
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    29,
+)
+[day01.rs:60] line = "dmchjmdone1tvnqspjpkgj"
+[day01.rs:60] &nums = [
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "98gdlrmclhlninexg"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "qv8"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "sevensjzpkjdkvh3mztx9toneightjn"
+[day01.rs:60] &nums = [
+    7,
+    3,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    71,
+)
+[day01.rs:60] line = "1fx6q"
+[day01.rs:60] &nums = [
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "four423threepvs5"
+[day01.rs:60] &nums = [
+    4,
+    4,
+    2,
+    3,
+    3,
+    5,
+]
+[day01.rs:60] ret = Some(
+    45,
+)
+[day01.rs:60] line = "tqjllvqgtjxdplzmjnmvjjsgtwo2one77"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    1,
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "zfvdbctxnnine1"
+[day01.rs:60] &nums = [
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "2three4cddhchjtseven6"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    4,
+    7,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "6dkceight5threexdzsdthreelqftbt"
+[day01.rs:60] &nums = [
+    6,
+    8,
+    5,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    63,
+)
+[day01.rs:60] line = "cneightwonine5csjzkt79zn"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    5,
+    7,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "vcshhvsx2frfrxsvph"
+[day01.rs:60] &nums = [
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "hsrhpld6jeightcqnx3"
+[day01.rs:60] &nums = [
+    6,
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    63,
+)
+[day01.rs:60] line = "zqljvbk672six"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    2,
+    6,
+]
+[day01.rs:60] ret = Some(
+    66,
+)
+[day01.rs:60] line = "sixfckdsbtmkj193onetwonexm"
+[day01.rs:60] &nums = [
+    6,
+    1,
+    9,
+    3,
+    1,
+    2,
+]
+[day01.rs:60] ret = Some(
+    62,
+)
+[day01.rs:60] line = "zvrspqsmrkxdztwo7"
+[day01.rs:60] &nums = [
+    2,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "98fourninecvcddkfqkthree"
+[day01.rs:60] &nums = [
+    9,
+    8,
+    4,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "npg78frlvhzlvksgfive9eight6"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    5,
+    9,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "6sixsixfive"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "hfgtwonemxlrsbzhbrssttxnbz8zxggdkfivekp1"
+[day01.rs:60] &nums = [
+    2,
+    8,
+    5,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "bkrlvfhvfiveninefivefiverbbjrzvcglzztvbh3"
+[day01.rs:60] &nums = [
+    5,
+    9,
+    5,
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    53,
+)
+[day01.rs:60] line = "2six4"
+[day01.rs:60] &nums = [
+    2,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "onepsp876"
+[day01.rs:60] &nums = [
+    1,
+    8,
+    7,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "8bhfstfgpbhgknqdcbnfvhrqxthreer"
+[day01.rs:60] &nums = [
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "3dqnkpdxbffvnt9"
+[day01.rs:60] &nums = [
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    39,
+)
+[day01.rs:60] line = "913sixsixcvvccvrkdg5"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    3,
+    6,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "sixthree6sevenjnxqxpt"
+[day01.rs:60] &nums = [
+    6,
+    3,
+    6,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "3one345hvspxcxds"
+[day01.rs:60] &nums = [
+    3,
+    1,
+    3,
+    4,
+    5,
+]
+[day01.rs:60] ret = Some(
+    35,
+)
+[day01.rs:60] line = "pgtdlvrpvn4crkct7sevenonelhvjhg"
+[day01.rs:60] &nums = [
+    4,
+    7,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "6threetlhxbbhg7n"
+[day01.rs:60] &nums = [
+    6,
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    67,
+)
+[day01.rs:60] line = "ggbfkmhv94five4325"
+[day01.rs:60] &nums = [
+    9,
+    4,
+    5,
+    4,
+    3,
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    95,
+)
+[day01.rs:60] line = "gdsmhtgx4qhjhg8tblb"
+[day01.rs:60] &nums = [
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "dtckfqtq58six2sevennine"
+[day01.rs:60] &nums = [
+    5,
+    8,
+    6,
+    2,
+    7,
+    9,
+]
+[day01.rs:60] ret = Some(
+    59,
+)
+[day01.rs:60] line = "2zljcfivebmclpgtgzpchblxjtwovnrhnine9"
+[day01.rs:60] &nums = [
+    2,
+    5,
+    2,
+    9,
+    9,
+]
+[day01.rs:60] ret = Some(
+    29,
+)
+[day01.rs:60] line = "eightninenine9nine"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    9,
+    9,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "rlmch2sddddvlc2one4xzvpmprrzcthree"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    1,
+    4,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "dcsjglpn233zhpfn9three"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    3,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "nineqclzpbzsix3cltjqlnbcklgbrvgrqtngqgslhqfsh"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "gskkptdskgqkbt9onepfjnzlcsslzzjmrkrbfhrfqfjnc"
+[day01.rs:60] &nums = [
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "27sevenseven"
+[day01.rs:60] &nums = [
+    2,
+    7,
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    27,
+)
+[day01.rs:60] line = "7rnvlms2"
+[day01.rs:60] &nums = [
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    72,
+)
+[day01.rs:60] line = "ninecthtfive7vbfoursix"
+[day01.rs:60] &nums = [
+    9,
+    5,
+    7,
+    4,
+    6,
+]
+[day01.rs:60] ret = Some(
+    96,
+)
+[day01.rs:60] line = "6four1sevenrvfmkrtbgbszpgxrmcdrseventhreefour"
+[day01.rs:60] &nums = [
+    6,
+    4,
+    1,
+    7,
+    7,
+    3,
+    4,
+]
+[day01.rs:60] ret = Some(
+    64,
+)
+[day01.rs:60] line = "one85mfivelncvhxthree1ktflkxq"
+[day01.rs:60] &nums = [
+    1,
+    8,
+    5,
+    5,
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "dpmpzqklqh3seven"
+[day01.rs:60] &nums = [
+    3,
+    7,
+]
+[day01.rs:60] ret = Some(
+    37,
+)
+[day01.rs:60] line = "91twolzjmtseven49"
+[day01.rs:60] &nums = [
+    9,
+    1,
+    2,
+    7,
+    4,
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "sevensix384"
+[day01.rs:60] &nums = [
+    7,
+    6,
+    3,
+    8,
+    4,
+]
+[day01.rs:60] ret = Some(
+    74,
+)
+[day01.rs:60] line = "three45pcrn96"
+[day01.rs:60] &nums = [
+    3,
+    4,
+    5,
+    9,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "fkhhpninedt3eightbqlsvn"
+[day01.rs:60] &nums = [
+    9,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    98,
+)
+[day01.rs:60] line = "threefjkvdhdrxjkdnxceightzkqz6"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    36,
+)
+[day01.rs:60] line = "fivevbmlmmxhdxthdfqtfourthree8nine39"
+[day01.rs:60] &nums = [
+    5,
+    4,
+    3,
+    8,
+    9,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    59,
+)
+[day01.rs:60] line = "fpzvnpzsrl6qxbltmxrs1"
+[day01.rs:60] &nums = [
+    6,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "xjmoneightfourthreesixrjnx3fourfivelzsghpfcvtwo"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    3,
+    6,
+    3,
+    4,
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "sixbcbtlfjvfour3pqmjtzk8fmjx"
+[day01.rs:60] &nums = [
+    6,
+    4,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    68,
+)
+[day01.rs:60] line = "77"
+[day01.rs:60] &nums = [
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "1ckkblncjm9sevenbkdvmbxxgnsix"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    7,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "five5fpbxxonephfdqjnpdcpjvpboneightrd"
+[day01.rs:60] &nums = [
+    5,
+    5,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "3nztmnhcncfncpnzvpbfivehltwomrsdgp"
+[day01.rs:60] &nums = [
+    3,
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "twosixthreethree7threessqchc8"
+[day01.rs:60] &nums = [
+    2,
+    6,
+    3,
+    3,
+    7,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "rlxzjfm2four2"
+[day01.rs:60] &nums = [
+    2,
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "five75l65"
+[day01.rs:60] &nums = [
+    5,
+    7,
+    5,
+    6,
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "19onejm3bjhrf"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    13,
+)
+[day01.rs:60] line = "7cjnsthreezxxzrld9dcqcsgkng"
+[day01.rs:60] &nums = [
+    7,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "vqbxmtmfspddpkthreeseven2vx"
+[day01.rs:60] &nums = [
+    3,
+    7,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "417sixhgdgfour3jflksddlvfour"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    7,
+    6,
+    4,
+    3,
+    4,
+]
+[day01.rs:60] ret = Some(
+    44,
+)
+[day01.rs:60] line = "8htlbhrtkmzqvqv9three2"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "rdrsqzcvxcnine6onehthree"
+[day01.rs:60] &nums = [
+    9,
+    6,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    93,
+)
+[day01.rs:60] line = "plptwone5sixnineg285foursnkklcjzdg"
+[day01.rs:60] &nums = [
+    2,
+    5,
+    6,
+    9,
+    2,
+    8,
+    5,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "fivesix8one"
+[day01.rs:60] &nums = [
+    5,
+    6,
+    8,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "vmseven19"
+[day01.rs:60] &nums = [
+    7,
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    79,
+)
+[day01.rs:60] line = "lfour1qfmzxqrv9nine4eight"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    9,
+    9,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "vfczbqzrkbfivejzfgxzvssixrcxphssfoursix6mrzm"
+[day01.rs:60] &nums = [
+    5,
+    6,
+    4,
+    6,
+    6,
+]
+[day01.rs:60] ret = Some(
+    56,
+)
+[day01.rs:60] line = "49ndvplzlzkqffngqbdrscgmsxvtxhseven"
+[day01.rs:60] &nums = [
+    4,
+    9,
+    7,
+]
+[day01.rs:60] ret = Some(
+    47,
+)
+[day01.rs:60] line = "fivejxnine4fldq2"
+[day01.rs:60] &nums = [
+    5,
+    9,
+    4,
+    2,
+]
+[day01.rs:60] ret = Some(
+    52,
+)
+[day01.rs:60] line = "onegzxhrgksnvnine8zfnvqfxponeljx"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    8,
+    1,
+]
+[day01.rs:60] ret = Some(
+    11,
+)
+[day01.rs:60] line = "jjx6ntghmhznlrjfbksgfcbbrhmklltfddkrvlzmzx2"
+[day01.rs:60] &nums = [
+    6,
+    2,
+]
+[day01.rs:60] ret = Some(
+    62,
+)
+[day01.rs:60] line = "six53316eightgxggjdt"
+[day01.rs:60] &nums = [
+    6,
+    5,
+    3,
+    3,
+    1,
+    6,
+    8,
+]
+[day01.rs:60] ret = Some(
+    68,
+)
+[day01.rs:60] line = "three7mxndngcvxbkgxqthreetwoneh"
+[day01.rs:60] &nums = [
+    3,
+    7,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    32,
+)
+[day01.rs:60] line = "7nvcshvrkrlsd"
+[day01.rs:60] &nums = [
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "fivefive4four5kjqvpbqftfiveqxknvmx"
+[day01.rs:60] &nums = [
+    5,
+    5,
+    4,
+    4,
+    5,
+    5,
+]
+[day01.rs:60] ret = Some(
+    55,
+)
+[day01.rs:60] line = "tbpmvq9"
+[day01.rs:60] &nums = [
+    9,
+]
+[day01.rs:60] ret = Some(
+    99,
+)
+[day01.rs:60] line = "qnxmspzq2lcdzvskhzgfour"
+[day01.rs:60] &nums = [
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "ninetwoftqzfqcskvhzd4tgqdkvrttmtb77"
+[day01.rs:60] &nums = [
+    9,
+    2,
+    4,
+    7,
+    7,
+]
+[day01.rs:60] ret = Some(
+    97,
+)
+[day01.rs:60] line = "fivethreedqzrhpseven6two64"
+[day01.rs:60] &nums = [
+    5,
+    3,
+    7,
+    6,
+    2,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "7bl"
+[day01.rs:60] &nums = [
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "294nine7eight"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    4,
+    9,
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "three9threevqzlxgrzsx"
+[day01.rs:60] &nums = [
+    3,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "three1rvdtcgctl8nine48jhtfscthree"
+[day01.rs:60] &nums = [
+    3,
+    1,
+    8,
+    9,
+    4,
+    8,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "qgl1czghsevengnkztgszx"
+[day01.rs:60] &nums = [
+    1,
+    7,
+]
+[day01.rs:60] ret = Some(
+    17,
+)
+[day01.rs:60] line = "879onedxhh"
+[day01.rs:60] &nums = [
+    8,
+    7,
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "five95qmeight"
+[day01.rs:60] &nums = [
+    5,
+    9,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "onerhbvfxcxtwonine32nxgjprtzc"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    9,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "xchd7kcpjvmm2qnsnjntc7"
+[day01.rs:60] &nums = [
+    7,
+    2,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "rbeightfnzrfsnv6six4"
+[day01.rs:60] &nums = [
+    8,
+    6,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    84,
+)
+[day01.rs:60] line = "hbfoneight2lkrqsgtffvl"
+[day01.rs:60] &nums = [
+    1,
+    2,
+]
+[day01.rs:60] ret = Some(
+    12,
+)
+[day01.rs:60] line = "onehppls9"
+[day01.rs:60] &nums = [
+    1,
+    9,
+]
+[day01.rs:60] ret = Some(
+    19,
+)
+[day01.rs:60] line = "7sksblpkpkfourtone"
+[day01.rs:60] &nums = [
+    7,
+    4,
+    1,
+]
+[day01.rs:60] ret = Some(
+    71,
+)
+[day01.rs:60] line = "mscbl2c9zvdztmthreeonesix"
+[day01.rs:60] &nums = [
+    2,
+    9,
+    3,
+    1,
+    6,
+]
+[day01.rs:60] ret = Some(
+    26,
+)
+[day01.rs:60] line = "foursskfbdgnd7mbqtl4threetwo5"
+[day01.rs:60] &nums = [
+    4,
+    7,
+    4,
+    3,
+    2,
+    5,
+]
+[day01.rs:60] ret = Some(
+    45,
+)
+[day01.rs:60] line = "threelpkgvrcsix13knhspknpjhonefour"
+[day01.rs:60] &nums = [
+    3,
+    6,
+    1,
+    3,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    34,
+)
+[day01.rs:60] line = "4twovkrbhcm5three7eightcdxjlz2"
+[day01.rs:60] &nums = [
+    4,
+    2,
+    5,
+    3,
+    7,
+    8,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "qmtdbh1eight2four4gh8"
+[day01.rs:60] &nums = [
+    1,
+    8,
+    2,
+    4,
+    4,
+    8,
+]
+[day01.rs:60] ret = Some(
+    18,
+)
+[day01.rs:60] line = "one13"
+[day01.rs:60] &nums = [
+    1,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    13,
+)
+[day01.rs:60] line = "twotwo98three71four"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    9,
+    8,
+    3,
+    7,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "4gmqvfour7pfgj8"
+[day01.rs:60] &nums = [
+    4,
+    4,
+    7,
+    8,
+]
+[day01.rs:60] ret = Some(
+    48,
+)
+[day01.rs:60] line = "8twoseven"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    7,
+]
+[day01.rs:60] ret = Some(
+    87,
+)
+[day01.rs:60] line = "qxcxqztxppgsgpphttfqkbd14htjvrvq"
+[day01.rs:60] &nums = [
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    14,
+)
+[day01.rs:60] line = "7heighttwothreegvtvhtbxfqj8"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    2,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "154nfzx6bxmxb4cpj"
+[day01.rs:60] &nums = [
+    1,
+    5,
+    4,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    14,
+)
+[day01.rs:60] line = "5qfknfrhdmr7tffjrzzpctwotwo1"
+[day01.rs:60] &nums = [
+    5,
+    7,
+    2,
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "fourjdfgcqzfdgzlhshcxthree3"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    3,
+]
+[day01.rs:60] ret = Some(
+    43,
+)
+[day01.rs:60] line = "glpxpm5qtmsft7vxhvmmgxjpk"
+[day01.rs:60] &nums = [
+    5,
+    7,
+]
+[day01.rs:60] ret = Some(
+    57,
+)
+[day01.rs:60] line = "4threehddfnntzkktwo"
+[day01.rs:60] &nums = [
+    4,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    42,
+)
+[day01.rs:60] line = "eight6tlkmmncfour8eightfivenine"
+[day01.rs:60] &nums = [
+    8,
+    6,
+    4,
+    8,
+    8,
+    5,
+    9,
+]
+[day01.rs:60] ret = Some(
+    89,
+)
+[day01.rs:60] line = "sixseventhreens2bgdseven5"
+[day01.rs:60] &nums = [
+    6,
+    7,
+    3,
+    2,
+    7,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "three6three"
+[day01.rs:60] &nums = [
+    3,
+    6,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "qmbfjthreebxf83ninesflzljgrxrv"
+[day01.rs:60] &nums = [
+    3,
+    8,
+    3,
+    9,
+]
+[day01.rs:60] ret = Some(
+    39,
+)
+[day01.rs:60] line = "seven8six"
+[day01.rs:60] &nums = [
+    7,
+    8,
+    6,
+]
+[day01.rs:60] ret = Some(
+    76,
+)
+[day01.rs:60] line = "rpzls2threetwo53tttgfc"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    2,
+    5,
+    3,
+]
+[day01.rs:60] ret = Some(
+    23,
+)
+[day01.rs:60] line = "7ln"
+[day01.rs:60] &nums = [
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "sevenseven482seven"
+[day01.rs:60] &nums = [
+    7,
+    7,
+    4,
+    8,
+    2,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "lkmvnjmhzhseven2jxsix8"
+[day01.rs:60] &nums = [
+    7,
+    2,
+    6,
+    8,
+]
+[day01.rs:60] ret = Some(
+    78,
+)
+[day01.rs:60] line = "oneninelttqjtbgmpq8"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    8,
+]
+[day01.rs:60] ret = Some(
+    18,
+)
+[day01.rs:60] line = "95twopqmf"
+[day01.rs:60] &nums = [
+    9,
+    5,
+    2,
+]
+[day01.rs:60] ret = Some(
+    92,
+)
+[day01.rs:60] line = "9onevmdkrdbntbrgmqhktszxmzjvpdv"
+[day01.rs:60] &nums = [
+    9,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "5h4rnhknfeight7"
+[day01.rs:60] &nums = [
+    5,
+    4,
+    8,
+    7,
+]
+[day01.rs:60] ret = Some(
+    57,
+)
+[day01.rs:60] line = "1nine9xgvph1lnbjdnmhhfour"
+[day01.rs:60] &nums = [
+    1,
+    9,
+    9,
+    1,
+    4,
+]
+[day01.rs:60] ret = Some(
+    14,
+)
+[day01.rs:60] line = "cfhkhgzjtwo23ffqng1"
+[day01.rs:60] &nums = [
+    2,
+    2,
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "five23six"
+[day01.rs:60] &nums = [
+    5,
+    2,
+    3,
+    6,
+]
+[day01.rs:60] ret = Some(
+    56,
+)
+[day01.rs:60] line = "five29ctdtwoqqkf2one"
+[day01.rs:60] &nums = [
+    5,
+    2,
+    9,
+    2,
+    2,
+    1,
+]
+[day01.rs:60] ret = Some(
+    51,
+)
+[day01.rs:60] line = "fourdfive1jqhmbfqjx1"
+[day01.rs:60] &nums = [
+    4,
+    5,
+    1,
+    1,
+]
+[day01.rs:60] ret = Some(
+    41,
+)
+[day01.rs:60] line = "5one5jrsteight"
+[day01.rs:60] &nums = [
+    5,
+    1,
+    5,
+    8,
+]
+[day01.rs:60] ret = Some(
+    58,
+)
+[day01.rs:60] line = "tlkggjmtfxblz9nine7one"
+[day01.rs:60] &nums = [
+    9,
+    9,
+    7,
+    1,
+]
+[day01.rs:60] ret = Some(
+    91,
+)
+[day01.rs:60] line = "89nine2"
+[day01.rs:60] &nums = [
+    8,
+    9,
+    9,
+    2,
+]
+[day01.rs:60] ret = Some(
+    82,
+)
+[day01.rs:60] line = "tbhtxtvsqfmlnbsdghcrqtjgzone6ninethree"
+[day01.rs:60] &nums = [
+    1,
+    6,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    13,
+)
+[day01.rs:60] line = "gknxrgpj3mvrplvf"
+[day01.rs:60] &nums = [
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "twombndtlxdxk5qhj1"
+[day01.rs:60] &nums = [
+    2,
+    5,
+    1,
+]
+[day01.rs:60] ret = Some(
+    21,
+)
+[day01.rs:60] line = "fourfourlrcn6"
+[day01.rs:60] &nums = [
+    4,
+    4,
+    6,
+]
+[day01.rs:60] ret = Some(
+    46,
+)
+[day01.rs:60] line = "r926"
+[day01.rs:60] &nums = [
+    9,
+    2,
+    6,
+]
+[day01.rs:60] ret = Some(
+    96,
+)
+[day01.rs:60] line = "one2727threepzz23"
+[day01.rs:60] &nums = [
+    1,
+    2,
+    7,
+    2,
+    7,
+    3,
+    2,
+    3,
+]
+[day01.rs:60] ret = Some(
+    13,
+)
+[day01.rs:60] line = "zbzb8lgsgrkqcnm"
+[day01.rs:60] &nums = [
+    8,
+]
+[day01.rs:60] ret = Some(
+    88,
+)
+[day01.rs:60] line = "2p1nggbmpklvfivethree8"
+[day01.rs:60] &nums = [
+    2,
+    1,
+    5,
+    3,
+    8,
+]
+[day01.rs:60] ret = Some(
+    28,
+)
+[day01.rs:60] line = "3szfjrv"
+[day01.rs:60] &nums = [
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "75447"
+[day01.rs:60] &nums = [
+    7,
+    5,
+    4,
+    4,
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "1fourthreesix6"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    3,
+    6,
+    6,
+]
+[day01.rs:60] ret = Some(
+    16,
+)
+[day01.rs:60] line = "2mjqdspnmvccpzthree1twofour"
+[day01.rs:60] &nums = [
+    2,
+    3,
+    1,
+    2,
+    4,
+]
+[day01.rs:60] ret = Some(
+    24,
+)
+[day01.rs:60] line = "6two7krbnzm5"
+[day01.rs:60] &nums = [
+    6,
+    2,
+    7,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "dkmmzhbvq3three6threeqgcfgkv"
+[day01.rs:60] &nums = [
+    3,
+    3,
+    6,
+    3,
+]
+[day01.rs:60] ret = Some(
+    33,
+)
+[day01.rs:60] line = "gt7"
+[day01.rs:60] &nums = [
+    7,
+]
+[day01.rs:60] ret = Some(
+    77,
+)
+[day01.rs:60] line = "fivefiveone64"
+[day01.rs:60] &nums = [
+    5,
+    5,
+    1,
+    6,
+    4,
+]
+[day01.rs:60] ret = Some(
+    54,
+)
+[day01.rs:60] line = "klphjpv4one3cmlcrfk"
+[day01.rs:60] &nums = [
+    4,
+    1,
+    3,
+]
+[day01.rs:60] ret = Some(
+    43,
+)
+[day01.rs:60] line = "xone44"
+[day01.rs:60] &nums = [
+    1,
+    4,
+    4,
+]
+[day01.rs:60] ret = Some(
+    14,
+)
+[day01.rs:60] line = "6eightninevkmlrxcht5"
+[day01.rs:60] &nums = [
+    6,
+    8,
+    9,
+    5,
+]
+[day01.rs:60] ret = Some(
+    65,
+)
+[day01.rs:60] line = "6dhmzsixthreetwo3one"
+[day01.rs:60] &nums = [
+    6,
+    6,
+    3,
+    2,
+    3,
+    1,
+]
+[day01.rs:60] ret = Some(
+    61,
+)
+[day01.rs:60] line = "8twosvdmcntf1hfive393"
+[day01.rs:60] &nums = [
+    8,
+    2,
+    1,
+    5,
+    3,
+    9,
+    3,
+]
+[day01.rs:60] ret = Some(
+    83,
+)
+[day01.rs:60] line = "8gqggmssjgjfive6gvgtqhhxpmzmzrone"
+[day01.rs:60] &nums = [
+    8,
+    5,
+    6,
+    1,
+]
+[day01.rs:60] ret = Some(
+    81,
+)
+[day01.rs:60] line = "two17nxbvqqdgcbjhsmdbdclnkzgbzjmcsfgnine2"
+[day01.rs:60] &nums = [
+    2,
+    1,
+    7,
+    9,
+    2,
+]
+[day01.rs:60] ret = Some(
+    22,
+)
+[day01.rs:60] line = "sixeightfive3sdtwo"
+[day01.rs:60] &nums = [
+    6,
+    8,
+    5,
+    3,
+    2,
+]
+[day01.rs:60] ret = Some(
+    62,
+)
+Part 2: 54702
