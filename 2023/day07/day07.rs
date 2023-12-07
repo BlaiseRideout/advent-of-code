@@ -9,7 +9,8 @@ use itertools::Itertools;
 
 #[derive(Eq, PartialEq, Debug, Hash, Clone, Copy)]
 enum Card {
-  One = 0,
+  J,
+  One,
   Two,
   Three,
   Four,
@@ -19,7 +20,6 @@ enum Card {
   Eight,
   Nine,
   T,
-  J,
   Q,
   K,
   A,
@@ -105,22 +105,44 @@ fn score_hand_type(hand: &Hand) -> Option<HandType> {
     .iter()
     .map(|&card| (card, hand.into_iter().filter(|&c| *c == card).count()))
     .collect();
-  if hand_set.len() == 5 {
-    Some(HandType::HighCard)
+  if hand_set.len() == 1 {
+    Some(HandType::FiveKind)
   } else if hand_set.len() == 2 {
-    if hand_map.iter().any(|(_, &count)| count == 4) {
+    if hand_map.contains_key(&Card::J) {
+      Some(HandType::FiveKind)
+    } else if hand_map.iter().any(|(_, &count)| count == 4) {
       Some(HandType::FourKind)
     } else {
       Some(HandType::FullHouse)
     }
-  } else if hand_set.len() == 1 {
-    Some(HandType::FiveKind)
+  } else if hand_set.len() == 5 {
+    if hand_map.contains_key(&Card::J) {
+      Some(HandType::OnePair)
+    } else {
+      Some(HandType::HighCard)
+    }
   } else if hand_map.iter().any(|(_, &count)| count == 3) {
-    Some(HandType::ThreeKind)
+    if hand_map.contains_key(&Card::J) {
+      Some(HandType::FourKind)
+    } else {
+      Some(HandType::ThreeKind)
+    }
   } else if hand_map.iter().filter(|(_, &count)| count == 2).count() == 2 {
-    Some(HandType::TwoPair)
+    if hand_map.contains_key(&Card::J) {
+      if *hand_map.get(&Card::J).unwrap() == 2 {
+        Some(HandType::FourKind)
+      } else {
+        Some(HandType::FullHouse)
+      }
+    } else {
+      Some(HandType::TwoPair)
+    }
   } else if hand_map.iter().filter(|(_, &count)| count == 2).count() == 1 {
-    Some(HandType::OnePair)
+    if hand_map.contains_key(&Card::J) {
+      Some(HandType::ThreeKind)
+    } else {
+      Some(HandType::OnePair)
+    }
   } else {
     None
   }
@@ -151,10 +173,6 @@ fn part1(hands: &Vec<(Hand, usize)>) -> usize {
     .sum()
 }
 
-fn part2(lines: &Vec<String>) -> usize {
-  lines.len()
-}
-
 fn main() {
   if env::args().count() != 2 {
     return println!(
@@ -170,10 +188,11 @@ fn main() {
     .collect();
 
   let parsed = parse(&lines);
-  dbg!(&parsed);
 
+  // p1
   // WRONG 251708371
   // WRONG 250345569
-  println!("Part 1: {}", part1(&parsed));
-  println!("Part 2: {}", part2(&lines));
+  // p2
+  // WRONG 252782999
+  println!("Part 2: {}", part1(&parsed));
 }
