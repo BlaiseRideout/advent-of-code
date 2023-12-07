@@ -9,8 +9,7 @@ use itertools::Itertools;
 
 #[derive(Eq, PartialEq, Debug, Hash, Clone, Copy)]
 enum Card {
-  J,
-  One,
+  One = 0,
   Two,
   Three,
   Four,
@@ -20,6 +19,7 @@ enum Card {
   Eight,
   Nine,
   T,
+  J,
   Q,
   K,
   A,
@@ -99,7 +99,19 @@ enum HandType {
   FiveKind,
 }
 
-fn score_hand_type(hand: &Hand) -> Option<HandType> {
+fn card_ordering_p2(card: Card) -> isize {
+  match card {
+    Card::J => -1,
+    _ => card as isize,
+  }
+}
+
+#[derive(Debug, Eq, PartialEq, Clone)]
+enum Part {
+  P1,
+  P2,
+}
+fn score_hand_type(hand: &Hand, part: &Part) -> Option<HandType> {
   let hand_set: HashSet<_> = hand.iter().cloned().collect();
   let hand_map: HashMap<Card, usize> = hand_set
     .iter()
@@ -108,7 +120,7 @@ fn score_hand_type(hand: &Hand) -> Option<HandType> {
   if hand_set.len() == 1 {
     Some(HandType::FiveKind)
   } else if hand_set.len() == 2 {
-    if hand_map.contains_key(&Card::J) {
+    if *part == Part::P2 && hand_map.contains_key(&Card::J) {
       Some(HandType::FiveKind)
     } else if hand_map.iter().any(|(_, &count)| count == 4) {
       Some(HandType::FourKind)
@@ -116,19 +128,19 @@ fn score_hand_type(hand: &Hand) -> Option<HandType> {
       Some(HandType::FullHouse)
     }
   } else if hand_set.len() == 5 {
-    if hand_map.contains_key(&Card::J) {
+    if *part == Part::P2 && hand_map.contains_key(&Card::J) {
       Some(HandType::OnePair)
     } else {
       Some(HandType::HighCard)
     }
   } else if hand_map.iter().any(|(_, &count)| count == 3) {
-    if hand_map.contains_key(&Card::J) {
+    if *part == Part::P2 && hand_map.contains_key(&Card::J) {
       Some(HandType::FourKind)
     } else {
       Some(HandType::ThreeKind)
     }
   } else if hand_map.iter().filter(|(_, &count)| count == 2).count() == 2 {
-    if hand_map.contains_key(&Card::J) {
+    if *part == Part::P2 && hand_map.contains_key(&Card::J) {
       if *hand_map.get(&Card::J).unwrap() == 2 {
         Some(HandType::FourKind)
       } else {
@@ -138,7 +150,7 @@ fn score_hand_type(hand: &Hand) -> Option<HandType> {
       Some(HandType::TwoPair)
     }
   } else if hand_map.iter().filter(|(_, &count)| count == 2).count() == 1 {
-    if hand_map.contains_key(&Card::J) {
+    if *part == Part::P2 && hand_map.contains_key(&Card::J) {
       Some(HandType::ThreeKind)
     } else {
       Some(HandType::OnePair)
@@ -148,9 +160,9 @@ fn score_hand_type(hand: &Hand) -> Option<HandType> {
   }
 }
 
-fn cmp_hands(h1: &Hand, h2: &Hand) -> Ordering {
-  let t1 = score_hand_type(h1).expect("couldn't score h1");
-  let t2 = score_hand_type(h2).expect("couldn't score h2");
+fn cmp_hands(h1: &Hand, h2: &Hand, part: &Part) -> Ordering {
+  let t1 = score_hand_type(h1, part).expect("couldn't score h1");
+  let t2 = score_hand_type(h2, part).expect("couldn't score h2");
   if t1 == t2 {
     let (v1, v2) = h1
       .into_iter()
@@ -158,16 +170,19 @@ fn cmp_hands(h1: &Hand, h2: &Hand) -> Ordering {
       .tuples()
       .find(|(&c1, &c2)| c1 != c2)
       .expect("Couldn't find tie break difference between hands");
-    isize::cmp(&(*v1 as isize), &(*v2 as isize))
+    match part {
+      Part::P1 => isize::cmp(&(*v1 as isize), &(*v2 as isize)),
+      Part::P2 => isize::cmp(&card_ordering_p2(*v1), &card_ordering_p2(*v2)),
+    }
   } else {
     isize::cmp(&(t1 as isize), &(t2 as isize))
   }
 }
 
-fn part1(hands: &Vec<(Hand, usize)>) -> usize {
+fn solve(hands: &Vec<(Hand, usize)>, part: Part) -> usize {
   hands
     .iter()
-    .sorted_by(|h1, h2| cmp_hands(&h1.0, &h2.0))
+    .sorted_by(|h1, h2| cmp_hands(&h1.0, &h2.0, &part))
     .enumerate()
     .map(|(rank, (_, bet))| (rank + 1) * bet)
     .sum()
@@ -194,5 +209,6 @@ fn main() {
   // WRONG 250345569
   // p2
   // WRONG 252782999
-  println!("Part 2: {}", part1(&parsed));
+  println!("Part 1: {}", solve(&parsed, Part::P1));
+  println!("Part 2: {}", solve(&parsed, Part::P2));
 }
