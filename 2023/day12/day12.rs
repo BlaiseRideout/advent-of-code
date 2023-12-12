@@ -1,10 +1,10 @@
-use std::collections::HashSet;
 use std::env;
 use std::fs::File;
 use std::io::{self, BufRead};
 
 use indicatif::ProgressIterator;
 use itertools::Itertools;
+use pariter::{scope, IteratorExt as _};
 
 #[derive(Copy, Clone, Debug, Hash, Eq, PartialEq)]
 enum Spring {
@@ -119,27 +119,30 @@ fn part1(springs: &Parsed) -> usize {
 }
 
 fn part2(springs: &Parsed) -> usize {
-  springs
-    .iter()
-    .map(|(row, counts)| {
-      (
-        (0..5)
-          .map(|_| row.iter())
-          .flatten()
-          .to_owned()
-          .copied()
-          .collect(),
-        (0..5)
-          .map(|_| counts.iter())
-          .flatten()
-          .to_owned()
-          .copied()
-          .collect(),
-      )
-    })
-    .progress()
-    .map(|(row, counts)| solve_row(row, counts))
-    .sum()
+  scope(|scope| {
+    springs
+      .iter()
+      .map(|(row, counts)| {
+        (
+          (0..5)
+            .map(|_| row.iter())
+            .flatten()
+            .to_owned()
+            .copied()
+            .collect(),
+          (0..5)
+            .map(|_| counts.iter())
+            .flatten()
+            .to_owned()
+            .copied()
+            .collect(),
+        )
+      })
+      .progress()
+      .parallel_map_scoped(scope, |(row, counts)| solve_row(row, counts))
+      .sum()
+  })
+  .unwrap()
 }
 
 fn main() {
