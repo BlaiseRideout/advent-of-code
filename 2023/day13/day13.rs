@@ -173,7 +173,7 @@ mod tests {
   }
 
   #[rstest]
-  #[case(sampledata(), 405)]
+  #[case(sampledata(), 400)]
   fn test_part2_sample(#[case] input: Vec<String>, #[case] expected: usize) {
     assert_eq!(expected, part2(&parse(&input)));
   }
