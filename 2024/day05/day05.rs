@@ -1,3 +1,4 @@
+use std::cmp::Ordering;
 use std::collections::HashSet;
 use std::env;
 use std::fs::File;
@@ -5,9 +6,9 @@ use std::io::{self, BufRead};
 
 use itertools::Itertools;
 
-type Ordering = (usize, usize);
+type PageOrdering = (usize, usize);
 
-fn parse(lines: &Vec<String>) -> (HashSet<Ordering>, Vec<Vec<usize>>) {
+fn parse(lines: &Vec<String>) -> (HashSet<PageOrdering>, Vec<Vec<usize>>) {
     let (rules, updates) = lines.split(String::is_empty).collect_tuple().unwrap();
     (
         rules
@@ -32,7 +33,7 @@ fn parse(lines: &Vec<String>) -> (HashSet<Ordering>, Vec<Vec<usize>>) {
     )
 }
 
-fn update_is_ordered(update: &Vec<usize>, rules: &HashSet<Ordering>) -> bool {
+fn update_is_ordered(update: &Vec<usize>, rules: &HashSet<PageOrdering>) -> bool {
     update.iter().enumerate().all(|(i, left_page)| {
         !update
             .iter()
@@ -41,7 +42,7 @@ fn update_is_ordered(update: &Vec<usize>, rules: &HashSet<Ordering>) -> bool {
     })
 }
 
-fn part1(rules: &HashSet<Ordering>, updates: &Vec<Vec<usize>>) -> usize {
+fn part1(rules: &HashSet<PageOrdering>, updates: &Vec<Vec<usize>>) -> usize {
     updates
         .iter()
         .filter(|update| update_is_ordered(update, rules))
@@ -49,30 +50,21 @@ fn part1(rules: &HashSet<Ordering>, updates: &Vec<Vec<usize>>) -> usize {
         .sum()
 }
 
-fn part2(rules: &HashSet<Ordering>, updates: &Vec<Vec<usize>>) -> usize {
+fn part2(rules: &HashSet<PageOrdering>, updates: &Vec<Vec<usize>>) -> usize {
     updates
         .iter()
         .filter(|update| !update_is_ordered(update, rules))
         .map(|update| {
             let mut update = update.clone();
-            while !update_is_ordered(&update, rules) {
-                let (i, j) = update
-                    .iter()
-                    .enumerate()
-                    .map(|(i, left_page)| {
-                        update
-                            .iter()
-                            .enumerate()
-                            .skip(i + 1)
-                            .filter(|(_, right_page)| rules.contains(&(**right_page, *left_page)))
-                            .map(move |(j, _)| (i, j))
-                    })
-                    .flatten()
-                    .take(1)
-                    .exactly_one()
-                    .expect("Couldn't get inds to swap");
-                update.swap(i, j);
-            }
+            update.sort_by(|a, b| {
+                if rules.contains(&(*a, *b)) {
+                    Ordering::Less
+                } else if rules.contains(&(*b, *a)) {
+                    Ordering::Greater
+                } else {
+                    Ordering::Equal
+                }
+            });
             update
         })
         .map(|update| update[update.len() / 2])
