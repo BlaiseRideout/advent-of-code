@@ -63,5 +63,11 @@ fn main() {
     let parsed = parse(&lines);
 
     println!("Part 1: {}", do_stuff(&parsed, 25));
-    println!("Part 2: {}", do_stuff(&parsed, 75));
+    println!(
+        "Part 2: {}",
+        parsed
+            .iter()
+            .map(|c| do_stuff(&vec![*c], 75))
+            .sum::<usize>()
+    );
 }
