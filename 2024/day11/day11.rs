@@ -113,10 +113,8 @@ fn part2(plots: &Plots) -> usize {
                     //.filter(|dir| !visited_dirs.contains(&(*cur_node, *dir)))
                     .filter(|node| perimeter.contains_key(node))
                     .filter(|node| visited_counts.get(node) != perimeter.get(node))
+                    .min_by_key(|node| visited_counts.get(node).or(Some(&0)))
                     //.filter(|node| visited_counts.get(node) != Some(cur_count))
-                    .take(1)
-                    .exactly_one()
-                    .ok()
                     .map(|next_node| (next_node.0 - cur_node.0, next_node.1 - cur_node.1))
                 {
                     //visited_dirs.insert((*cur_node, (deltax, deltay)));
