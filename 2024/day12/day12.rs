@@ -4,6 +4,7 @@ use std::io::{self, BufRead};
 use std::ops::RangeInclusive;
 
 use itertools::Itertools;
+use nalgebra::{Matrix2, Vector2};
 use once_cell::sync::Lazy;
 use regex::Regex;
 
@@ -44,23 +45,44 @@ fn solve_machine(machine: &Machine, search_range: RangeInclusive<usize>) -> Opti
     search_range
         .clone()
         .cartesian_product(search_range)
-        .map(|(a, b)| {
+        .find(|(a, b)| {
             (
-                (a, b),
-                (
-                    a * machine.a.0 + b * machine.b.0,
-                    a * machine.a.1 + b * machine.b.1,
-                ),
-            )
+                a * machine.a.0 + b * machine.b.0,
+                a * machine.a.1 + b * machine.b.1,
+            ) == machine.prize
         })
-        .find(|(_, pos)| *pos == machine.prize)
-        .map(|(ab, _)| ab)
+}
+
+fn solve_machine_with_math(machine: &Machine) -> Option<(usize, usize)> {
+    let buttons_matrix = Matrix2::new(
+        machine.a.0 as f64,
+        machine.b.0 as f64,
+        machine.a.1 as f64,
+        machine.b.1 as f64,
+    );
+    if let Some(inverse_buttons) = buttons_matrix.try_inverse() {
+        let counts = inverse_buttons * Vector2::new(machine.prize.0 as f64, machine.prize.1 as f64);
+        if let Some((a, b)) = counts
+            .iter()
+            .map(|count| count.round() as usize)
+            .collect_tuple()
+        {
+            if (
+                a * machine.a.0 + b * machine.b.0,
+                a * machine.a.1 + b * machine.b.1,
+            ) == machine.prize
+            {
+                return Some((a, b));
+            }
+        }
+    }
+    None
 }
 
 fn part1(machines: &Vec<Machine>) -> usize {
     machines
         .iter()
-        .filter_map(|machine| solve_machine(machine, 0..=100))
+        .filter_map(|machine| solve_machine_with_math(machine))
         .map(|(a, b)| 3 * a + b)
         .sum()
 }
@@ -74,31 +96,7 @@ fn part2(mut machines: Vec<Machine>) -> usize {
 
     machines
         .iter()
-        .map(|machine| {
-            (
-                machine,
-                [
-                    [machine.a.0, machine.b.0]
-                        .iter()
-                        .map(|button| machine.prize.0 / button)
-                        .collect_vec(),
-                    [machine.a.1, machine.b.1]
-                        .iter()
-                        .map(|button| machine.prize.1 / button)
-                        .collect_vec(),
-                ]
-                .into_iter()
-                .flatten()
-                .collect_vec(),
-            )
-        })
-        .filter_map(|(machine, ratios)| {
-            solve_machine(
-                machine,
-                *ratios.iter().min().unwrap()..=*ratios.iter().max().unwrap(),
-            )
-        })
-        //.map(|(a, b)| dbg!((a, b)))
+        .filter_map(|machine| solve_machine_with_math(machine))
         .map(|(a, b)| 3 * a + b)
         .sum()
 }
